@@ -1,3 +1,0 @@
-{"time":"2025-01-03T02:51:40.271516449Z","level":"INFO","msg":"using version","core version":"0.19.1"}
-{"time":"2025-01-03T02:51:40.271542569Z","level":"INFO","msg":"created symlink","path":"/code/RadarLoc/training/wandb/run-20250103_025140-2u41fcfp/logs/debug-core.log"}
-{"time":"2025-01-03T02:51:40.271646542Z","level":"ERROR+4","msg":"stream_init: failed to fetch credentials: couldn't get API key: settings: failed to get API key from netrc: open /root/.netrc: no such file or directory"}

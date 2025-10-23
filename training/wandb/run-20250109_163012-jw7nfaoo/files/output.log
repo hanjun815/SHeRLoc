@@ -1,7 +1,0 @@
-  0%|                                                                                 | 0/120 [00:00<?, ?it/s]
-Traceback (most recent call last):
-  File "/code/RLoc/training/train.py", line 31, in <module>
-    do_train(params, debug=args.debug, device=device)
-  File "/code/RLoc/training/trainer.py", line 360, in do_train
-    inputs = torch.cat([query, positives, negatives]).to(device)
-RuntimeError: Tensors must have same number of dimensions: got 3 and 4

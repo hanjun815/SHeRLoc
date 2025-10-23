@@ -1,8 +1,0 @@
-{"time":"2025-02-05T09:53:40.363022467Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250205_095339-e8a0s824/logs/debug-core.log"}
-{"time":"2025-02-05T09:53:40.467098735Z","level":"INFO","msg":"created new stream","id":"e8a0s824"}
-{"time":"2025-02-05T09:53:40.467123835Z","level":"INFO","msg":"stream: started","id":"e8a0s824"}
-{"time":"2025-02-05T09:53:40.467193045Z","level":"INFO","msg":"sender: started","stream_id":"e8a0s824"}
-{"time":"2025-02-05T09:53:40.467189686Z","level":"INFO","msg":"writer: Do: started","stream_id":"e8a0s824"}
-{"time":"2025-02-05T09:53:40.467234711Z","level":"INFO","msg":"handler: started","stream_id":"e8a0s824"}
-{"time":"2025-02-05T09:53:40.76312425Z","level":"INFO","msg":"Starting system monitor"}
-{"time":"2025-02-05T11:21:11.534957544Z","level":"INFO","msg":"api: retrying HTTP error","status":429,"url":"https://api.wandb.ai/files/hanjun815-seoul-national-university/RadarLoc/e8a0s824/file_stream","body":"{\"error\":\"rate limit exceeded\"}"}

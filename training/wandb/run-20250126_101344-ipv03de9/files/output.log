@@ -1,9 +1,0 @@
-  0%|                                                                  | 0/40 [00:11<?, ?it/s]
-0 81028 2.129955530166626
-1 81028 1.9143348932266235
-Traceback (most recent call last):
-  File "/code/RLoc/training/train.py", line 31, in <module>
-    do_train(params, debug=args.debug, device=device)
-  File "/code/RLoc/training/trainer.py", line 381, in do_train
-    inputs = torch.cat([query, positives, negatives]).to(device)
-KeyboardInterrupt

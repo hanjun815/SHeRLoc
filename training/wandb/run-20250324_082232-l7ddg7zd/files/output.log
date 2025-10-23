@@ -1,7 +1,0 @@
-  0%|                                                                   | 0/80 [00:02<?, ?it/s]
-Traceback (most recent call last):
-  File "/code/RLoc/training/train.py", line 31, in <module>
-    do_train(params, debug=args.debug, device=device)
-  File "/code/RLoc/training/trainer.py", line 378, in do_train
-    B, n_pos, C, H, W = positives.shape
-ValueError: too many values to unpack (expected 5)

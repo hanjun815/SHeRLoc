@@ -1,1 +1,0 @@
-{"lr":1e-05,"_timestamp":1.7461865688999343e+09,"_runtime":7877.45747732,"_step":19,"_wandb":{"runtime":7878},"epoch":20,"train_loss":0.020424036711857125,"val_loss":0}

@@ -1,7 +1,0 @@
-{"time":"2025-02-12T10:56:42.140842734Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250212_105641-pxuxbbrq/logs/debug-core.log"}
-{"time":"2025-02-12T10:56:42.266922991Z","level":"INFO","msg":"created new stream","id":"pxuxbbrq"}
-{"time":"2025-02-12T10:56:42.266960621Z","level":"INFO","msg":"stream: started","id":"pxuxbbrq"}
-{"time":"2025-02-12T10:56:42.268147161Z","level":"INFO","msg":"sender: started","stream_id":"pxuxbbrq"}
-{"time":"2025-02-12T10:56:42.268190146Z","level":"INFO","msg":"handler: started","stream_id":"pxuxbbrq"}
-{"time":"2025-02-12T10:56:42.268212131Z","level":"INFO","msg":"writer: Do: started","stream_id":"pxuxbbrq"}
-{"time":"2025-02-12T10:56:42.559517899Z","level":"INFO","msg":"Starting system monitor"}

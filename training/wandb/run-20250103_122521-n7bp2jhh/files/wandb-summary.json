@@ -1,1 +1,0 @@
-{"_runtime":716.288890946,"_step":2,"train":{"loss":0.5000948650496346,"active_triplets":16.137773258769702},"val":{"active_triplets":136.07692307692307,"loss":0.5000456504010962},"_wandb":{"runtime":824},"_timestamp":1.7359078383227625e+09}

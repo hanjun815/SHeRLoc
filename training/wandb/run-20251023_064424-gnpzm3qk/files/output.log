@@ -1,9 +1,0 @@
-  0%|                                                    | 0/20 [00:00<?, ?it/s]/usr/local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py:131: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
-  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
-  0%|                                                    | 0/20 [00:00<?, ?it/s]
-Traceback (most recent call last):
-  File "/code/SHeRLoc_pr/training/train.py", line 31, in <module>
-    do_train(model_params, params, debug=args.debug, device=device)
-  File "/code/SHeRLoc_pr/training/trainer.py", line 171, in do_train
-    for key in running_stats[0].keys():
-IndexError: list index out of range

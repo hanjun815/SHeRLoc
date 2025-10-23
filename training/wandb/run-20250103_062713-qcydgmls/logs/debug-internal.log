@@ -1,9 +1,0 @@
-{"time":"2025-01-03T06:27:13.619608248Z","level":"INFO","msg":"using version","core version":"0.19.1"}
-{"time":"2025-01-03T06:27:13.619648469Z","level":"INFO","msg":"created symlink","path":"/code/hanjun/RadarLoc/training/wandb/run-20250103_062713-qcydgmls/logs/debug-core.log"}
-{"time":"2025-01-03T06:27:13.732532673Z","level":"INFO","msg":"created new stream","id":"qcydgmls"}
-{"time":"2025-01-03T06:27:13.73261344Z","level":"INFO","msg":"stream: started","id":"qcydgmls"}
-{"time":"2025-01-03T06:27:13.732647604Z","level":"INFO","msg":"writer: Do: started","stream_id":"qcydgmls"}
-{"time":"2025-01-03T06:27:13.732691945Z","level":"INFO","msg":"sender: started","stream_id":"qcydgmls"}
-{"time":"2025-01-03T06:27:13.732647565Z","level":"INFO","msg":"handler: started","stream_id":"qcydgmls"}
-{"time":"2025-01-03T06:27:14.076597034Z","level":"INFO","msg":"Starting system monitor"}
-{"time":"2025-01-03T07:42:34.948922648Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}

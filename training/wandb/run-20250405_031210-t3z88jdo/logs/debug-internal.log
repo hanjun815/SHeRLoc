@@ -1,7 +1,0 @@
-{"time":"2025-04-05T03:12:11.082998747Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250405_031210-t3z88jdo/logs/debug-core.log"}
-{"time":"2025-04-05T03:12:11.189261544Z","level":"INFO","msg":"created new stream","id":"t3z88jdo"}
-{"time":"2025-04-05T03:12:11.189291408Z","level":"INFO","msg":"stream: started","id":"t3z88jdo"}
-{"time":"2025-04-05T03:12:11.189528461Z","level":"INFO","msg":"handler: started","stream_id":"t3z88jdo"}
-{"time":"2025-04-05T03:12:11.189683663Z","level":"INFO","msg":"writer: Do: started","stream_id":"t3z88jdo"}
-{"time":"2025-04-05T03:12:11.189848134Z","level":"INFO","msg":"sender: started","stream_id":"t3z88jdo"}
-{"time":"2025-04-05T03:12:11.516460058Z","level":"INFO","msg":"Starting system monitor"}

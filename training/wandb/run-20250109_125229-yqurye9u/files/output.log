@@ -1,0 +1,25 @@
+  0%|                                                                                 | 0/120 [00:06<?, ?it/s]
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 353, in do_train
+    for query, positives, negatives in enumerate(dataloaders[phase]):
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 681, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1376, in _next_data
+    return self._process_data(data)
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1402, in _process_data
+    data.reraise()
+  File "/usr/local/lib/python3.9/site-packages/torch/_utils.py", line 461, in reraise
+    raise exception
+TypeError: Caught TypeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/_utils/worker.py", line 302, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/code/RLoc/training/dataset.py", line 99, in __getitem__
+    positives = torch.stack(positives) if positives else torch.empty(0, 3, *query.shape[1:])
+TypeError: expected Tensor as element 0 in argument 0, but got numpy.ndarray

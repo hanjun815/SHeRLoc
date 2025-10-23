@@ -1,0 +1,10 @@
+{"time":"2025-02-12T13:04:16.11848926Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250212_130415-09m6j20w/logs/debug-core.log"}
+{"time":"2025-02-12T13:04:16.223635772Z","level":"INFO","msg":"created new stream","id":"09m6j20w"}
+{"time":"2025-02-12T13:04:16.223669203Z","level":"INFO","msg":"stream: started","id":"09m6j20w"}
+{"time":"2025-02-12T13:04:16.223681753Z","level":"INFO","msg":"handler: started","stream_id":"09m6j20w"}
+{"time":"2025-02-12T13:04:16.223716241Z","level":"INFO","msg":"writer: Do: started","stream_id":"09m6j20w"}
+{"time":"2025-02-12T13:04:16.223696557Z","level":"INFO","msg":"sender: started","stream_id":"09m6j20w"}
+{"time":"2025-02-12T13:04:16.503991457Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-12T15:35:33.911033696Z","level":"INFO","msg":"stream: closing","id":"09m6j20w"}
+{"time":"2025-02-12T15:35:33.911056003Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-12T15:35:33.911529028Z","level":"INFO","msg":"Stopped system monitor"}

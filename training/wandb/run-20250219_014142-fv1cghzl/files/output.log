@@ -1,0 +1,24 @@
+  0%|                                                           | 0/80 [00:22<?, ?it/s]
+0 25113 3.7178609371185303
+1 25113 4.344402313232422
+2 25113 3.3010661602020264
+3 25113 6.766480922698975
+4 25113 8.097177505493164
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 406, in do_train
+    optimizer.step()
+  File "/usr/local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py", line 65, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/optim/optimizer.py", line 113, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/optim/adamw.py", line 161, in step
+    adamw(params_with_grad,
+  File "/usr/local/lib/python3.9/site-packages/torch/optim/adamw.py", line 218, in adamw
+    func(params,
+  File "/usr/local/lib/python3.9/site-packages/torch/optim/adamw.py", line 309, in _single_tensor_adamw
+    denom = (exp_avg_sq.sqrt() / bias_correction2_sqrt).add_(eps)
+KeyboardInterrupt

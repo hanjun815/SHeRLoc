@@ -1,0 +1,16 @@
+{"time":"2025-04-10T13:01:45.117245023Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250410_130144-a57guapa/logs/debug-core.log"}
+{"time":"2025-04-10T13:01:45.220993763Z","level":"INFO","msg":"created new stream","id":"a57guapa"}
+{"time":"2025-04-10T13:01:45.221020755Z","level":"INFO","msg":"stream: started","id":"a57guapa"}
+{"time":"2025-04-10T13:01:45.221097274Z","level":"INFO","msg":"writer: Do: started","stream_id":"a57guapa"}
+{"time":"2025-04-10T13:01:45.221111272Z","level":"INFO","msg":"sender: started","stream_id":"a57guapa"}
+{"time":"2025-04-10T13:01:45.221154998Z","level":"INFO","msg":"handler: started","stream_id":"a57guapa"}
+{"time":"2025-04-10T13:01:45.653554107Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-10T19:25:40.895347757Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/graphql","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-04-10T20:35:30.70187979Z","level":"INFO","msg":"stream: closing","id":"a57guapa"}
+{"time":"2025-04-10T20:35:30.70189593Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-10T20:35:30.702330355Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-10T20:35:31.883473544Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-10T20:35:32.127358862Z","level":"INFO","msg":"handler: closed","stream_id":"a57guapa"}
+{"time":"2025-04-10T20:35:32.127428927Z","level":"INFO","msg":"writer: Close: closed","stream_id":"a57guapa"}
+{"time":"2025-04-10T20:35:32.127452149Z","level":"INFO","msg":"sender: closed","stream_id":"a57guapa"}
+{"time":"2025-04-10T20:35:32.127541923Z","level":"INFO","msg":"stream: closed","id":"a57guapa"}

@@ -1,0 +1,9 @@
+  0%|                                                    | 0/80 [00:10<?, ?it/s]
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 396, in do_train
+    loss, temp_stats, _ = loss_fn(vladQ, vladP, vladN,  sim_p, sim_n)
+  File "/code/RLoc/models/loss.py", line 408, in __call__
+    triplet_losses = torch.relu(hardest_positive_dist - effective_negative_dist + self.margin*(sim_p-sim_n))
+RuntimeError: The size of tensor a (128) must match the size of tensor b (5) at non-singleton dimension 1

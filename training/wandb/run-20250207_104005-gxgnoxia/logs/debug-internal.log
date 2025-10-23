@@ -1,0 +1,11 @@
+{"time":"2025-02-07T10:40:05.749939867Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250207_104005-gxgnoxia/logs/debug-core.log"}
+{"time":"2025-02-07T10:40:05.854627439Z","level":"INFO","msg":"created new stream","id":"gxgnoxia"}
+{"time":"2025-02-07T10:40:05.8546514Z","level":"INFO","msg":"stream: started","id":"gxgnoxia"}
+{"time":"2025-02-07T10:40:05.854668843Z","level":"INFO","msg":"writer: Do: started","stream_id":"gxgnoxia"}
+{"time":"2025-02-07T10:40:05.854719411Z","level":"INFO","msg":"handler: started","stream_id":"gxgnoxia"}
+{"time":"2025-02-07T10:40:05.854742369Z","level":"INFO","msg":"sender: started","stream_id":"gxgnoxia"}
+{"time":"2025-02-07T10:40:06.125598144Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-07T10:40:34.591616299Z","level":"INFO","msg":"stream: closing","id":"gxgnoxia"}
+{"time":"2025-02-07T10:40:34.591640327Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-07T10:40:34.592055318Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-07T10:40:35.355266987Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}

@@ -1,0 +1,17 @@
+{"time":"2025-01-19T10:09:42.464289404Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250119_100942-b6prvsnz/logs/debug-core.log"}
+{"time":"2025-01-19T10:09:42.568665118Z","level":"INFO","msg":"created new stream","id":"b6prvsnz"}
+{"time":"2025-01-19T10:09:42.568694402Z","level":"INFO","msg":"stream: started","id":"b6prvsnz"}
+{"time":"2025-01-19T10:09:42.568760344Z","level":"INFO","msg":"writer: Do: started","stream_id":"b6prvsnz"}
+{"time":"2025-01-19T10:09:42.568811179Z","level":"INFO","msg":"handler: started","stream_id":"b6prvsnz"}
+{"time":"2025-01-19T10:09:42.568848923Z","level":"INFO","msg":"sender: started","stream_id":"b6prvsnz"}
+{"time":"2025-01-19T10:09:42.883500956Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-19T14:01:13.537157776Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/hanjun815-seoul-national-university/RadarLoc/b6prvsnz/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-01-19T14:56:48.867476822Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/hanjun815-seoul-national-university/RadarLoc/b6prvsnz/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-01-20T02:16:03.339346876Z","level":"INFO","msg":"stream: closing","id":"b6prvsnz"}
+{"time":"2025-01-20T02:16:03.33936307Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-20T02:16:03.339767293Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-20T02:16:04.587210649Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-20T02:16:04.858700474Z","level":"INFO","msg":"handler: closed","stream_id":"b6prvsnz"}
+{"time":"2025-01-20T02:16:04.85875744Z","level":"INFO","msg":"writer: Close: closed","stream_id":"b6prvsnz"}
+{"time":"2025-01-20T02:16:04.858787898Z","level":"INFO","msg":"sender: closed","stream_id":"b6prvsnz"}
+{"time":"2025-01-20T02:16:04.858849713Z","level":"INFO","msg":"stream: closed","id":"b6prvsnz"}

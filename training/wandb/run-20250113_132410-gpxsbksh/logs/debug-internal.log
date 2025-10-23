@@ -1,0 +1,16 @@
+{"time":"2025-01-13T13:24:10.552377306Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-13T13:24:10.552415656Z","level":"INFO","msg":"created symlink","path":"/code/RLoc/training/wandb/run-20250113_132410-gpxsbksh/logs/debug-core.log"}
+{"time":"2025-01-13T13:24:10.662922394Z","level":"INFO","msg":"created new stream","id":"gpxsbksh"}
+{"time":"2025-01-13T13:24:10.662973844Z","level":"INFO","msg":"stream: started","id":"gpxsbksh"}
+{"time":"2025-01-13T13:24:10.663144164Z","level":"INFO","msg":"sender: started","stream_id":"gpxsbksh"}
+{"time":"2025-01-13T13:24:10.663113195Z","level":"INFO","msg":"writer: Do: started","stream_id":"gpxsbksh"}
+{"time":"2025-01-13T13:24:10.663204757Z","level":"INFO","msg":"handler: started","stream_id":"gpxsbksh"}
+{"time":"2025-01-13T13:24:10.970767758Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-13T13:24:18.943981032Z","level":"INFO","msg":"stream: closing","id":"gpxsbksh"}
+{"time":"2025-01-13T13:24:18.94404219Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-13T13:24:18.9450007Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-13T13:24:19.820431022Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-13T13:24:20.069656249Z","level":"INFO","msg":"handler: closed","stream_id":"gpxsbksh"}
+{"time":"2025-01-13T13:24:20.06970641Z","level":"INFO","msg":"sender: closed","stream_id":"gpxsbksh"}
+{"time":"2025-01-13T13:24:20.069692858Z","level":"INFO","msg":"writer: Close: closed","stream_id":"gpxsbksh"}
+{"time":"2025-01-13T13:24:20.069795906Z","level":"INFO","msg":"stream: closed","id":"gpxsbksh"}

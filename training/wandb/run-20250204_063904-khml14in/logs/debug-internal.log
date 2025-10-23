@@ -1,0 +1,18 @@
+{"time":"2025-02-04T06:39:05.128048176Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250204_063904-khml14in/logs/debug-core.log"}
+{"time":"2025-02-04T06:39:05.232268034Z","level":"INFO","msg":"created new stream","id":"khml14in"}
+{"time":"2025-02-04T06:39:05.232292873Z","level":"INFO","msg":"stream: started","id":"khml14in"}
+{"time":"2025-02-04T06:39:05.232374092Z","level":"INFO","msg":"writer: Do: started","stream_id":"khml14in"}
+{"time":"2025-02-04T06:39:05.232462375Z","level":"INFO","msg":"sender: started","stream_id":"khml14in"}
+{"time":"2025-02-04T06:39:05.232498796Z","level":"INFO","msg":"handler: started","stream_id":"khml14in"}
+{"time":"2025-02-04T06:39:05.58527832Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-04T16:17:18.263705634Z","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/hanjun815-seoul-national-university/RadarLoc/khml14in/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-02-04T16:17:28.574584391Z","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/hanjun815-seoul-national-university/RadarLoc/khml14in/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2025-02-04T19:09:48.416539114Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/hanjun815-seoul-national-university/RadarLoc/khml14in/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-02-05T00:43:29.127250657Z","level":"INFO","msg":"stream: closing","id":"khml14in"}
+{"time":"2025-02-05T00:43:29.127265942Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-05T00:43:29.127663468Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-05T00:43:30.411345439Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-05T00:43:30.667114858Z","level":"INFO","msg":"handler: closed","stream_id":"khml14in"}
+{"time":"2025-02-05T00:43:30.667157802Z","level":"INFO","msg":"writer: Close: closed","stream_id":"khml14in"}
+{"time":"2025-02-05T00:43:30.667200533Z","level":"INFO","msg":"sender: closed","stream_id":"khml14in"}
+{"time":"2025-02-05T00:43:30.667244504Z","level":"INFO","msg":"stream: closed","id":"khml14in"}

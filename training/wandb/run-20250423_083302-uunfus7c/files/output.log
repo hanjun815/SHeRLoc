@@ -1,0 +1,12 @@
+  0%|                                                   | 0/50 [00:12<?, ?it/s]
+0 45360 0.5663622617721558
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 407, in do_train
+    loss.backward()
+  File "/usr/local/lib/python3.9/site-packages/torch/_tensor.py", line 396, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/usr/local/lib/python3.9/site-packages/torch/autograd/__init__.py", line 173, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: CUDA out of memory. Tried to allocate 1014.00 MiB (GPU 1; 23.70 GiB total capacity; 20.07 GiB already allocated; 824.81 MiB free; 21.14 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

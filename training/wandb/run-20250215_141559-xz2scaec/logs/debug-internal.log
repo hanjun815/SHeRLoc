@@ -1,0 +1,10 @@
+{"time":"2025-02-15T14:15:59.977867833Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250215_141559-xz2scaec/logs/debug-core.log"}
+{"time":"2025-02-15T14:16:00.083484762Z","level":"INFO","msg":"created new stream","id":"xz2scaec"}
+{"time":"2025-02-15T14:16:00.083513573Z","level":"INFO","msg":"stream: started","id":"xz2scaec"}
+{"time":"2025-02-15T14:16:00.083583958Z","level":"INFO","msg":"writer: Do: started","stream_id":"xz2scaec"}
+{"time":"2025-02-15T14:16:00.08364011Z","level":"INFO","msg":"sender: started","stream_id":"xz2scaec"}
+{"time":"2025-02-15T14:16:00.08368298Z","level":"INFO","msg":"handler: started","stream_id":"xz2scaec"}
+{"time":"2025-02-15T14:16:00.356126014Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-15T14:37:40.44703638Z","level":"INFO","msg":"stream: closing","id":"xz2scaec"}
+{"time":"2025-02-15T14:37:40.447057922Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-15T14:37:40.447531469Z","level":"INFO","msg":"Stopped system monitor"}

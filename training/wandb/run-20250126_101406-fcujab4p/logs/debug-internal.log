@@ -1,0 +1,11 @@
+{"time":"2025-01-26T10:14:06.92466964Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250126_101406-fcujab4p/logs/debug-core.log"}
+{"time":"2025-01-26T10:14:07.029164716Z","level":"INFO","msg":"created new stream","id":"fcujab4p"}
+{"time":"2025-01-26T10:14:07.029190085Z","level":"INFO","msg":"stream: started","id":"fcujab4p"}
+{"time":"2025-01-26T10:14:07.029263694Z","level":"INFO","msg":"writer: Do: started","stream_id":"fcujab4p"}
+{"time":"2025-01-26T10:14:07.029336522Z","level":"INFO","msg":"handler: started","stream_id":"fcujab4p"}
+{"time":"2025-01-26T10:14:07.029369092Z","level":"INFO","msg":"sender: started","stream_id":"fcujab4p"}
+{"time":"2025-01-26T10:14:07.329739777Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-26T16:22:27.250115202Z","level":"INFO","msg":"stream: closing","id":"fcujab4p"}
+{"time":"2025-01-26T16:22:27.250139387Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-26T16:22:27.250583187Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-26T16:22:28.244945295Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}

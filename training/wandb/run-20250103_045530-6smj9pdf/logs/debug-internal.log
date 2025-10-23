@@ -1,0 +1,16 @@
+{"time":"2025-01-03T04:55:30.84809219Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-03T04:55:30.848131486Z","level":"INFO","msg":"created symlink","path":"/code/RadarLoc/training/wandb/run-20250103_045530-6smj9pdf/logs/debug-core.log"}
+{"time":"2025-01-03T04:55:30.956945542Z","level":"INFO","msg":"created new stream","id":"6smj9pdf"}
+{"time":"2025-01-03T04:55:30.957003497Z","level":"INFO","msg":"stream: started","id":"6smj9pdf"}
+{"time":"2025-01-03T04:55:30.957092689Z","level":"INFO","msg":"handler: started","stream_id":"6smj9pdf"}
+{"time":"2025-01-03T04:55:30.957133354Z","level":"INFO","msg":"sender: started","stream_id":"6smj9pdf"}
+{"time":"2025-01-03T04:55:30.957100226Z","level":"INFO","msg":"writer: Do: started","stream_id":"6smj9pdf"}
+{"time":"2025-01-03T04:55:31.287416729Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-03T07:54:38.31139131Z","level":"INFO","msg":"stream: closing","id":"6smj9pdf"}
+{"time":"2025-01-03T07:54:38.311446266Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-03T07:54:38.312135542Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-03T07:54:39.090401386Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-03T07:54:39.349693026Z","level":"INFO","msg":"handler: closed","stream_id":"6smj9pdf"}
+{"time":"2025-01-03T07:54:39.349786426Z","level":"INFO","msg":"sender: closed","stream_id":"6smj9pdf"}
+{"time":"2025-01-03T07:54:39.349767056Z","level":"INFO","msg":"writer: Close: closed","stream_id":"6smj9pdf"}
+{"time":"2025-01-03T07:54:39.349954056Z","level":"INFO","msg":"stream: closed","id":"6smj9pdf"}

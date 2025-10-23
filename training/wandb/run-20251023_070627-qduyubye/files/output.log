@@ -1,0 +1,28 @@
+  0%|                                                    | 0/20 [00:21<?, ?it/s]
+0 45360 0.35582590103149414
+1 45360 0.3848832845687866
+2 45360 0.2701779007911682
+3 45360 0.28975334763526917
+4 45360 0.3595682382583618
+5 45360 0.44904184341430664
+6 45360 0.39788272976875305
+7 45360 0.3801436126232147
+8 45360 0.40207844972610474
+9 45360 0.40935876965522766
+10 45360 0.4302524924278259
+11 45360 0.6730732321739197
+12 45360 0.5432743430137634
+13 45360 0.4071773588657379
+14 45360 0.494557648897171
+15 45360 0.5271973013877869
+16 45360 0.47188296914100647
+Traceback (most recent call last):
+  File "/code/SHeRLoc_pr/training/train.py", line 31, in <module>
+    do_train(model_params, params, debug=args.debug, device=device)
+  File "/code/SHeRLoc_pr/training/trainer.py", line 160, in do_train
+    loss.backward()
+  File "/usr/local/lib/python3.9/site-packages/torch/_tensor.py", line 396, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/usr/local/lib/python3.9/site-packages/torch/autograd/__init__.py", line 173, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

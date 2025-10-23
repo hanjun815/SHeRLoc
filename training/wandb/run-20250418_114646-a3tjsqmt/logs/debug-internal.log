@@ -1,0 +1,11 @@
+{"time":"2025-04-18T11:46:47.175440623Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250418_114646-a3tjsqmt/logs/debug-core.log"}
+{"time":"2025-04-18T11:46:47.279209908Z","level":"INFO","msg":"created new stream","id":"a3tjsqmt"}
+{"time":"2025-04-18T11:46:47.279230891Z","level":"INFO","msg":"stream: started","id":"a3tjsqmt"}
+{"time":"2025-04-18T11:46:47.279303379Z","level":"INFO","msg":"writer: Do: started","stream_id":"a3tjsqmt"}
+{"time":"2025-04-18T11:46:47.279303546Z","level":"INFO","msg":"handler: started","stream_id":"a3tjsqmt"}
+{"time":"2025-04-18T11:46:47.279363276Z","level":"INFO","msg":"sender: started","stream_id":"a3tjsqmt"}
+{"time":"2025-04-18T11:46:47.570018278Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-18T15:35:54.856322771Z","level":"INFO","msg":"stream: closing","id":"a3tjsqmt"}
+{"time":"2025-04-18T15:35:54.856344113Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-18T15:35:54.856875374Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-18T15:35:55.803921365Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}

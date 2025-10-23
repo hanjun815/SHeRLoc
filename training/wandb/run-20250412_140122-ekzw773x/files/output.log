@@ -1,0 +1,84 @@
+  0%|                                                    | 0/80 [00:00<?, ?it/s]
+0 25113 0.6512974500656128
+1 25113 0.8657575249671936
+2 25113 0.7237997055053711
+3 25113 0.8079501390457153
+4 25113 0.6271379590034485
+5 25113 0.6253451704978943
+6 25113 0.6773679256439209
+7 25113 0.7648056745529175
+8 25113 0.7477758526802063
+9 25113 0.6065956950187683
+10 25113 0.7429681420326233
+11 25113 0.5949996113777161
+12 25113 0.6408613920211792
+13 25113 0.6255443692207336
+14 25113 0.7325292229652405
+15 25113 0.7528171539306641
+16 25113 0.5679305791854858
+17 25113 0.6716858148574829
+18 25113 0.6856926083564758
+19 25113 0.723226010799408
+20 25113 0.6331186890602112
+21 25113 0.7859250903129578
+22 25113 0.7620707154273987
+23 25113 0.814984917640686
+24 25113 0.5295478701591492
+25 25113 0.8417563438415527
+26 25113 0.8190878033638
+27 25113 0.8365693092346191
+28 25113 0.5949225425720215
+29 25113 0.5991563200950623
+30 25113 0.710858166217804
+31 25113 0.5836400389671326
+32 25113 0.4632948637008667
+33 25113 0.6356057524681091
+34 25113 0.5196418762207031
+35 25113 0.5491760969161987
+36 25113 0.5388076901435852
+37 25113 0.4717920124530792
+38 25113 0.5984342098236084
+39 25113 0.6042576432228088
+40 25113 0.703180730342865
+41 25113 0.5333883762359619
+42 25113 0.5960665345191956
+43 25113 0.5131215453147888
+44 25113 0.6117008328437805
+45 25113 0.684943437576294
+46 25113 0.6947176456451416
+47 25113 0.7227368950843811
+48 25113 0.6378945112228394
+49 25113 0.604080080986023
+50 25113 0.6456047892570496
+51 25113 nan
+52 25113 nan
+53 25113 nan
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.9/threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/_utils/pin_memory.py", line 28, in _pin_memory_loop
+    r = in_queue.get(timeout=MP_STATUS_CHECK_INTERVAL)
+  File "/usr/local/lib/python3.9/multiprocessing/queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "/usr/local/lib/python3.9/site-packages/torch/multiprocessing/reductions.py", line 297, in rebuild_storage_fd
+    fd = df.detach()
+  File "/usr/local/lib/python3.9/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/usr/local/lib/python3.9/multiprocessing/resource_sharer.py", line 86, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/usr/local/lib/python3.9/multiprocessing/connection.py", line 507, in Client
+    c = SocketClient(address)
+  File "/usr/local/lib/python3.9/multiprocessing/connection.py", line 635, in SocketClient
+    s.connect(address)
+ConnectionRefusedError: [Errno 111] Connection refused
+  0%|                                                    | 0/80 [01:37<?, ?it/s]
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 410, in do_train
+    torch.cuda.empty_cache()
+  File "/usr/local/lib/python3.9/site-packages/torch/cuda/memory.py", line 121, in empty_cache
+    torch._C._cuda_emptyCache()
+KeyboardInterrupt

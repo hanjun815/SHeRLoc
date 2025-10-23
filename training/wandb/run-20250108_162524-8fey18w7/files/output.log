@@ -1,0 +1,257 @@
+  6%|██▏                                  | 7/120 [1:08:17<18:22:54, 585.61s/it]
+train - Global loss: 0.211209    Embedding norm: 245.1901   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/124.2352/328.7547   Neg dist (min/mean/max): 110.2050/232.9101/330.7860
+val - Global loss: 0.200169    Embedding norm: 354.6365   Triplets (all/active): 145.9/145.9
+Pos dist (min/mean/max): 0.0000/201.7494/539.7071   Neg dist (min/mean/max): 50.8272/331.2612/539.7067
+train - Global loss: 0.200090    Embedding norm: 552.5280   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/280.9658/887.0756   Neg dist (min/mean/max): 124.6980/499.4692/892.1113
+val - Global loss: 0.201623    Embedding norm: 774.7914   Triplets (all/active): 145.6/145.6
+Pos dist (min/mean/max): 0.0000/440.4048/1955.2976   Neg dist (min/mean/max): 50.3763/677.0823/1957.1207
+train - Global loss: 0.200058    Embedding norm: 1529.4271   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/777.1630/2575.8569   Neg dist (min/mean/max): 187.3854/1363.6302/2589.2708
+val - Global loss: 0.202288    Embedding norm: 1912.2968   Triplets (all/active): 145.4/145.4
+Pos dist (min/mean/max): 0.0000/1085.2734/4190.5612   Neg dist (min/mean/max): 60.9899/1665.1919/4193.5265
+train - Global loss: 0.200022    Embedding norm: 2907.5352   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/1478.8946/4889.1180   Neg dist (min/mean/max): 496.7246/2669.6595/4960.6224
+val - Global loss: 0.200005    Embedding norm: 4045.3310   Triplets (all/active): 145.6/145.6
+Pos dist (min/mean/max): 0.0000/2301.3122/10217.1428   Neg dist (min/mean/max): 141.6504/3836.0469/10257.4765
+train - Global loss: 0.200024    Embedding norm: 5291.5203   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/2693.3621/9527.5550   Neg dist (min/mean/max): 754.6603/4953.8475/9834.5053
+val - Global loss: 0.200203    Embedding norm: 5811.0401   Triplets (all/active): 145.3/145.3
+Pos dist (min/mean/max): 0.0000/3301.6491/11349.6569   Neg dist (min/mean/max): 354.4258/5547.8099/11627.8832
+train - Global loss: 0.200009    Embedding norm: 7114.2532   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/3624.4694/12282.9731   Neg dist (min/mean/max): 1864.7356/6791.6499/12796.5969
+val - Global loss: 0.200080    Embedding norm: 8636.4624   Triplets (all/active): 145.2/145.2
+Pos dist (min/mean/max): 0.0000/4902.0727/15976.9692   Neg dist (min/mean/max): 992.3658/8385.2268/16286.5059
+train - Global loss: 0.200009    Embedding norm: 8346.8268   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/4255.4978/12372.6676   Neg dist (min/mean/max): 3287.1714/8086.1220/12701.0362
+val - Global loss: 0.200143    Embedding norm: 6472.7879   Triplets (all/active): 145.6/145.6
+Pos dist (min/mean/max): 0.0000/3684.0498/9566.7884   Neg dist (min/mean/max): 2197.4531/6258.4037/9783.7007
+train - Global loss: 0.200005    Embedding norm: 5526.7322   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/2818.6923/6851.1246   Neg dist (min/mean/max): 3192.2020/5395.6198/6917.0835
+val - Global loss: 0.200145    Embedding norm: 4872.7711   Triplets (all/active): 145.2/145.2
+Pos dist (min/mean/max): 0.0000/2767.6995/5993.4527   Neg dist (min/mean/max): 2318.1744/4809.2786/6142.0519
+train - Global loss: 0.200006    Embedding norm: 4055.9610   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/2070.3348/4631.6233   Neg dist (min/mean/max): 3018.8384/4042.1846/4698.4824
+val - Global loss: 0.200063    Embedding norm: 3048.3282   Triplets (all/active): 145.0/145.0
+Pos dist (min/mean/max): 0.0000/1729.7466/3694.4891   Neg dist (min/mean/max): 1817.4951/3023.9607/3733.3350
+train - Global loss: 0.200004    Embedding norm: 3040.5013   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/1548.8517/3498.2876   Neg dist (min/mean/max): 2288.3759/3014.9644/3544.4306
+val - Global loss: 0.200016    Embedding norm: 2783.5871   Triplets (all/active): 145.6/145.6
+Pos dist (min/mean/max): 0.0000/1585.8621/3246.2300   Neg dist (min/mean/max): 1837.0039/2756.2323/3296.8679
+train - Global loss: 0.200004    Embedding norm: 2476.6902   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/1261.5986/2770.1064   Neg dist (min/mean/max): 2058.9816/2462.9165/2799.7142
+val - Global loss: 0.200032    Embedding norm: 2517.8589   Triplets (all/active): 145.3/145.3
+Pos dist (min/mean/max): 0.0000/1431.3873/3420.6732   Neg dist (min/mean/max): 1551.8561/2467.3266/3425.0470
+train - Global loss: 0.200003    Embedding norm: 2054.3637   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/1047.0524/2308.0921   Neg dist (min/mean/max): 1716.5922/2038.4481/2326.5134
+val - Global loss: 0.200016    Embedding norm: 1889.9911   Triplets (all/active): 145.8/145.8
+Pos dist (min/mean/max): 0.0000/1076.2182/2352.7784   Neg dist (min/mean/max): 1420.8632/1873.0850/2355.1428
+train - Global loss: 0.200002    Embedding norm: 1928.6834   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/981.6166/2189.8512   Neg dist (min/mean/max): 1525.6852/1906.4233/2203.2706
+val - Global loss: 0.200028    Embedding norm: 1836.4273   Triplets (all/active): 145.3/145.3
+Pos dist (min/mean/max): 0.0000/1043.7643/2454.8059   Neg dist (min/mean/max): 1199.1922/1810.0345/2458.0029
+train - Global loss: 0.200001    Embedding norm: 1887.9609   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/961.6826/2133.3710   Neg dist (min/mean/max): 1489.8008/1874.3683/2150.9653
+val - Global loss: 0.200028    Embedding norm: 1682.2423   Triplets (all/active): 145.2/145.2
+Pos dist (min/mean/max): 0.0000/955.6787/2254.2390   Neg dist (min/mean/max): 1055.8771/1654.1973/2265.4693
+train - Global loss: 0.200002    Embedding norm: 1443.7158   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/736.1901/1693.5019   Neg dist (min/mean/max): 1070.0578/1425.2237/1709.1991
+val - Global loss: 0.200021    Embedding norm: 1156.4967   Triplets (all/active): 145.2/145.2
+Pos dist (min/mean/max): 0.0000/656.3503/1570.0154   Neg dist (min/mean/max): 705.3029/1134.7831/1572.9880
+train - Global loss: 0.200002    Embedding norm: 1137.7660   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/579.0441/1435.1902   Neg dist (min/mean/max): 745.4692/1108.5670/1446.5147
+val - Global loss: 0.200011    Embedding norm: 922.9033   Triplets (all/active): 145.5/145.5
+Pos dist (min/mean/max): 0.0000/525.1766/1370.5826   Neg dist (min/mean/max): 554.7011/901.9696/1371.9263
+train - Global loss: 0.200001    Embedding norm: 1028.7377   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/523.6982/1372.5347   Neg dist (min/mean/max): 595.1017/994.0008/1384.0122
+val - Global loss: 0.200015    Embedding norm: 975.2890   Triplets (all/active): 145.8/145.8
+Pos dist (min/mean/max): 0.0000/556.1180/1465.5585   Neg dist (min/mean/max): 486.6842/948.9425/1469.0535
+train - Global loss: 0.200001    Embedding norm: 1122.1828   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/571.3637/1426.1087   Neg dist (min/mean/max): 678.4656/1090.7646/1433.8635
+val - Global loss: 0.200007    Embedding norm: 977.7924   Triplets (all/active): 145.3/145.3
+Pos dist (min/mean/max): 0.0000/555.8055/1337.8905   Neg dist (min/mean/max): 521.8653/962.8034/1337.8904
+train - Global loss: 0.200001    Embedding norm: 921.2383   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/469.5279/1166.0608   Neg dist (min/mean/max): 573.9787/896.8186/1173.6525
+val - Global loss: 0.200004    Embedding norm: 733.6758   Triplets (all/active): 145.3/145.3
+Pos dist (min/mean/max): 0.0000/417.0393/970.5705   Neg dist (min/mean/max): 490.0068/725.7114/970.8734
+train - Global loss: 0.200000    Embedding norm: 732.9661   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/373.3056/853.2804   Neg dist (min/mean/max): 567.2524/723.0723/860.0586
+val - Global loss: 0.200005    Embedding norm: 826.2042   Triplets (all/active): 145.8/145.8
+Pos dist (min/mean/max): 0.0000/471.2342/1179.3605   Neg dist (min/mean/max): 546.2920/812.5892/1180.0206
+train - Global loss: 0.200001    Embedding norm: 1264.9985   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/643.6449/1570.6541   Neg dist (min/mean/max): 902.3255/1238.2037/1584.6944
+val - Global loss: 0.200015    Embedding norm: 1672.8669   Triplets (all/active): 145.5/145.5
+Pos dist (min/mean/max): 0.0000/951.3421/2213.0845   Neg dist (min/mean/max): 1194.6988/1650.1291/2224.8248
+train - Global loss: 0.200000    Embedding norm: 2373.9446   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/1207.8539/2639.3303   Neg dist (min/mean/max): 2013.0352/2369.6551/2676.6256
+val - Global loss: 0.200016    Embedding norm: 2725.8134   Triplets (all/active): 145.5/145.5
+Pos dist (min/mean/max): 0.0000/1552.7246/3261.8072   Neg dist (min/mean/max): 2211.7249/2715.1248/3281.0926
+train - Global loss: 0.200000    Embedding norm: 3171.9234   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/1614.2320/3519.6863   Neg dist (min/mean/max): 2664.1564/3170.8597/3572.7616
+val - Global loss: 0.200095    Embedding norm: 3826.3331   Triplets (all/active): 145.1/145.1
+Pos dist (min/mean/max): 0.0000/2171.9278/4716.3266   Neg dist (min/mean/max): 2457.0229/3783.6127/4798.1643
+train - Global loss: 0.199999    Embedding norm: 4023.2780   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/2047.2688/4477.0745   Neg dist (min/mean/max): 3305.1499/4023.0197/4544.4042
+val - Global loss: 0.200061    Embedding norm: 4228.8779   Triplets (all/active): 145.4/145.4
+Pos dist (min/mean/max): 0.0000/2406.1065/4737.5244   Neg dist (min/mean/max): 3401.0843/4228.2435/4747.9639
+train - Global loss: 0.200000    Embedding norm: 4279.2474   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/2179.6202/4657.2420   Neg dist (min/mean/max): 3732.1264/4289.2766/4714.2329
+val - Global loss: 0.200021    Embedding norm: 4189.7289   Triplets (all/active): 145.7/145.7
+Pos dist (min/mean/max): 0.0000/2388.9686/4728.4278   Neg dist (min/mean/max): 3531.8198/4213.3794/4769.6587
+train - Global loss: 0.200000    Embedding norm: 4580.3113   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/2332.1147/4986.8860   Neg dist (min/mean/max): 4003.4990/4583.5392/5045.2440
+val - Global loss: 0.200026    Embedding norm: 5493.6739   Triplets (all/active): 145.5/145.5
+Pos dist (min/mean/max): 0.0000/3127.3281/6135.9279   Neg dist (min/mean/max): 4139.1172/5505.4137/6167.6923
+train - Global loss: 0.200001    Embedding norm: 5536.3590   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/2818.2808/6030.1330   Neg dist (min/mean/max): 4824.9066/5554.7098/6130.0775
+val - Global loss: 0.200035    Embedding norm: 5729.4716   Triplets (all/active): 145.9/145.9
+Pos dist (min/mean/max): 0.0000/3269.8793/6431.4842   Neg dist (min/mean/max): 4141.7220/5778.0936/6498.7898
+train - Global loss: 0.200001    Embedding norm: 5807.7889   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/2958.0640/6405.8002   Neg dist (min/mean/max): 4982.3355/5841.0058/6543.9405
+val - Global loss: 0.200105    Embedding norm: 6390.7067   Triplets (all/active): 145.5/145.5
+Pos dist (min/mean/max): 0.0000/3638.8859/7451.2360   Neg dist (min/mean/max): 4966.4938/6452.8736/7534.1406
+train - Global loss: 0.199999    Embedding norm: 7907.7039   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/4026.9336/8837.8061   Neg dist (min/mean/max): 6757.5478/7947.2963/9023.4804
+val - Global loss: 0.200052    Embedding norm: 8028.7175   Triplets (all/active): 145.5/145.5
+Pos dist (min/mean/max): 0.0000/4570.3274/9280.9209   Neg dist (min/mean/max): 6691.4954/8084.6398/9376.3009
+train - Global loss: 0.199999    Embedding norm: 8181.5728   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/4164.2900/8910.0326   Neg dist (min/mean/max): 7068.1521/8206.0207/9049.2345
+val - Global loss: 0.200080    Embedding norm: 8667.2736   Triplets (all/active): 145.6/145.6
+Pos dist (min/mean/max): 0.0000/4930.0766/9668.2263   Neg dist (min/mean/max): 6324.6726/8692.7770/9676.0565
+train - Global loss: 0.199998    Embedding norm: 8202.1268   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/4176.1925/8857.4320   Neg dist (min/mean/max): 7107.1551/8202.3495/8949.5444
+val - Global loss: 0.200062    Embedding norm: 8102.2794   Triplets (all/active): 146.0/146.0
+Pos dist (min/mean/max): 0.0000/4626.8572/9010.5458   Neg dist (min/mean/max): 7073.0800/8116.5512/9071.6488
+train - Global loss: 0.200000    Embedding norm: 8361.6376   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/4255.7703/8984.7359   Neg dist (min/mean/max): 7585.2667/8374.2955/9085.7434
+val - Global loss: 0.200135    Embedding norm: 8796.4282   Triplets (all/active): 145.6/145.6
+Pos dist (min/mean/max): 0.0000/5006.6988/9691.7582   Neg dist (min/mean/max): 7821.8246/8786.9389/9728.2545
+train - Global loss: 0.200001    Embedding norm: 9109.7611   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/4640.0258/9738.7090   Neg dist (min/mean/max): 8423.5023/9133.2681/9844.3699
+val - Global loss: 0.200066    Embedding norm: 9783.0671   Triplets (all/active): 145.7/145.7
+Pos dist (min/mean/max): 0.0000/5577.7316/10962.9319   Neg dist (min/mean/max): 8242.1170/9797.1939/11097.7889
+train - Global loss: 0.200001    Embedding norm: 8823.1750   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/4493.5185/9792.0433   Neg dist (min/mean/max): 7411.5969/8869.1970/9967.2836
+val - Global loss: 0.200097    Embedding norm: 8837.9483   Triplets (all/active): 145.1/145.1
+Pos dist (min/mean/max): 0.0000/5019.5715/9795.4361   Neg dist (min/mean/max): 7205.8004/8875.6579/9888.5982
+train - Global loss: 0.200000    Embedding norm: 8491.9056   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/4324.3272/9089.5065   Neg dist (min/mean/max): 7668.4606/8534.9582/9222.1415
+val - Global loss: 0.200081    Embedding norm: 9678.7936   Triplets (all/active): 146.1/146.1
+Pos dist (min/mean/max): 0.0000/5529.7202/10643.8576   Neg dist (min/mean/max): 7941.0865/9702.6794/10735.1646
+train - Global loss: 0.200003    Embedding norm: 10839.6960   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/5521.7985/11580.4122   Neg dist (min/mean/max): 9853.4962/10908.7935/11765.8599
+val - Global loss: 0.200156    Embedding norm: 11443.7559   Triplets (all/active): 145.5/145.5
+Pos dist (min/mean/max): 0.0000/6517.7705/12715.4155   Neg dist (min/mean/max): 9398.7834/11531.6921/12845.5181
+train - Global loss: 0.200002    Embedding norm: 13287.4597   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/6761.9638/13978.2231   Neg dist (min/mean/max): 12390.7809/13290.8150/14101.9248
+val - Global loss: 0.200097    Embedding norm: 16704.6625   Triplets (all/active): 145.4/145.4
+Pos dist (min/mean/max): 0.0000/9503.6853/17637.2249   Neg dist (min/mean/max): 15162.4035/16617.1752/17646.9235
+train - Global loss: 0.200000    Embedding norm: 17882.4833   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/9095.0242/18518.5115   Neg dist (min/mean/max): 16854.0560/17817.4653/18606.2635
+val - Global loss: 0.200284    Embedding norm: 23516.5298   Triplets (all/active): 145.9/145.9
+Pos dist (min/mean/max): 0.0000/13404.3505/24481.6465   Neg dist (min/mean/max): 20401.9323/23350.4245/24526.7585
+train - Global loss: 0.200005    Embedding norm: 23508.0079   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/11958.9308/24240.4726   Neg dist (min/mean/max): 21807.7218/23395.9171/24324.5942
+val - Global loss: 0.200503    Embedding norm: 27748.4262   Triplets (all/active): 145.6/145.6
+Pos dist (min/mean/max): 0.0000/15811.5092/29573.6304   Neg dist (min/mean/max): 22856.8104/27386.6025/29575.0198
+train - Global loss: 0.200002    Embedding norm: 32257.5376   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/16429.5069/33413.4400   Neg dist (min/mean/max): 30046.0998/32003.0862/33485.1735
+val - Global loss: 0.200781    Embedding norm: 34455.9952   Triplets (all/active): 145.5/145.5
+Pos dist (min/mean/max): 0.0000/19630.2824/34984.0011   Neg dist (min/mean/max): 32974.8218/34405.1858/35026.3412
+train - Global loss: 0.200020    Embedding norm: 41753.5942   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/21240.3598/46460.8233   Neg dist (min/mean/max): 33950.3326/40418.7559/46586.4342
+val - Global loss: 0.200431    Embedding norm: 45988.8235   Triplets (all/active): 145.7/145.7
+Pos dist (min/mean/max): 0.0000/26210.9776/53262.0094   Neg dist (min/mean/max): 31948.8949/44437.4501/53262.2823
+train - Global loss: 0.200000    Embedding norm: 46391.5060   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/23612.2922/48783.5433   Neg dist (min/mean/max): 41953.1628/45748.1426/48859.3034
+val - Global loss: 0.200149    Embedding norm: 46469.7594   Triplets (all/active): 145.2/145.2
+Pos dist (min/mean/max): 0.0000/26408.7397/48147.0598   Neg dist (min/mean/max): 42963.1987/46127.9300/48147.1697
+train - Global loss: 0.199999    Embedding norm: 46139.2866   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/23476.3593/49225.0083   Neg dist (min/mean/max): 40038.9318/45217.6881/49304.5448
+val - Global loss: 0.200617    Embedding norm: 44070.0309   Triplets (all/active): 145.6/145.6
+Pos dist (min/mean/max): 0.0000/25100.6418/47637.5925   Neg dist (min/mean/max): 35119.2660/43282.4564/47637.8522
+train - Global loss: 0.200007    Embedding norm: 28330.0560   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/14458.7140/31593.7673   Neg dist (min/mean/max): 22825.3265/27750.8418/31794.3459
+val - Global loss: 0.200183    Embedding norm: 18934.3853   Triplets (all/active): 145.2/145.2
+Pos dist (min/mean/max): 0.0000/10763.9084/24139.1349   Neg dist (min/mean/max): 10662.2192/18827.7931/24308.1428
+train - Global loss: 0.200001    Embedding norm: 25632.6671   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/13043.8515/28530.4591   Neg dist (min/mean/max): 20948.3289/25229.6931/28757.4329
+val - Global loss: 0.200174    Embedding norm: 28314.2625   Triplets (all/active): 145.0/145.0
+Pos dist (min/mean/max): 0.0000/16052.7316/35353.9529   Neg dist (min/mean/max): 19092.2144/27109.5226/35353.9510
+train - Global loss: 0.199994    Embedding norm: 32014.5497   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/16291.3779/34821.9773   Neg dist (min/mean/max): 26650.4623/31304.1097/34899.5152
+val - Global loss: 0.200493    Embedding norm: 31362.7149   Triplets (all/active): 145.4/145.4
+Pos dist (min/mean/max): 0.0000/17837.6113/35237.3820   Neg dist (min/mean/max): 22934.5101/30601.7669/35237.3808
+train - Global loss: 0.199989    Embedding norm: 32487.9143   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/16548.2547/33785.6783   Neg dist (min/mean/max): 30034.6433/32237.3950/33865.6675
+val - Global loss: 0.200243    Embedding norm: 32739.2077   Triplets (all/active): 145.0/145.0
+Pos dist (min/mean/max): 0.0000/18576.4104/33531.2958   Neg dist (min/mean/max): 31538.6268/32731.3062/33607.7857
+train - Global loss: 0.200007    Embedding norm: 36428.7777   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/18557.9007/37361.7019   Neg dist (min/mean/max): 34872.5570/36358.9974/37526.4865
+val - Global loss: 0.200201    Embedding norm: 36809.3596   Triplets (all/active): 146.0/146.0
+Pos dist (min/mean/max): 0.0000/21025.9056/37522.9953   Neg dist (min/mean/max): 35093.1575/36759.4720/37549.1283
+train - Global loss: 0.200013    Embedding norm: 43056.7509   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/21901.6140/46269.6686   Neg dist (min/mean/max): 37391.9432/42195.2387/46363.2825
+val - Global loss: 0.200470    Embedding norm: 44596.0626   Triplets (all/active): 145.7/145.7
+Pos dist (min/mean/max): 0.0000/25388.7280/48107.3302   Neg dist (min/mean/max): 36545.7023/43887.3796/48107.5898
+train - Global loss: 0.200002    Embedding norm: 45946.4634   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/23395.5387/49274.1734   Neg dist (min/mean/max): 39637.6496/45024.1374/49369.3745
+val - Global loss: 0.200440    Embedding norm: 45315.0616   Triplets (all/active): 145.5/145.5
+Pos dist (min/mean/max): 0.0000/25763.1074/46966.5622   Neg dist (min/mean/max): 40563.8820/44964.2353/46966.6153
+train - Global loss: 0.200010    Embedding norm: 45477.5350   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/23165.4343/46956.4940   Neg dist (min/mean/max): 42689.0428/45099.9396/47011.5567
+val - Global loss: 0.200418    Embedding norm: 33069.4462   Triplets (all/active): 145.4/145.4
+Pos dist (min/mean/max): 0.0000/18778.7682/34903.9863   Neg dist (min/mean/max): 31001.7049/33168.2445/35091.8391
+train - Global loss: 0.200012    Embedding norm: 33033.3859   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/16806.9476/34004.7260   Neg dist (min/mean/max): 31886.1192/32987.2373/34132.9168
+val - Global loss: 0.200361    Embedding norm: 33978.3851   Triplets (all/active): 145.5/145.5
+Pos dist (min/mean/max): 0.0000/19348.2949/35166.2253   Neg dist (min/mean/max): 32843.5691/34047.7500/35288.5457
+train - Global loss: 0.200028    Embedding norm: 35543.7699   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/18102.9714/39662.4307   Neg dist (min/mean/max): 30827.1849/34752.2124/39830.0159
+val - Global loss: 0.200508    Embedding norm: 28593.2926   Triplets (all/active): 145.4/145.4
+Pos dist (min/mean/max): 0.0000/16261.1477/37847.9496   Neg dist (min/mean/max): 22320.8066/27800.1015/37848.3176
+train - Global loss: 0.200007    Embedding norm: 36880.1932   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/18765.0886/40005.6003   Neg dist (min/mean/max): 32951.0027/36238.2933/40076.7627
+val - Global loss: 0.200445    Embedding norm: 43931.3826   Triplets (all/active): 145.2/145.2
+Pos dist (min/mean/max): 0.0000/24966.4898/45235.8984   Neg dist (min/mean/max): 42384.0167/43992.9178/45441.8461
+train - Global loss: 0.200049    Embedding norm: 50285.9790   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/25603.3835/51632.2265   Neg dist (min/mean/max): 47897.2977/50052.8102/51783.5075
+val - Global loss: 0.200434    Embedding norm: 46111.1236   Triplets (all/active): 145.7/145.7
+Pos dist (min/mean/max): 0.0000/26280.0452/48389.7752   Neg dist (min/mean/max): 44598.8241/46267.4527/48831.9654
+train - Global loss: 0.199998    Embedding norm: 40483.3850   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/20635.8914/45047.5305   Neg dist (min/mean/max): 34139.0652/40871.7757/46141.9456
+val - Global loss: 0.200064    Embedding norm: 33983.4103   Triplets (all/active): 145.3/145.3
+Pos dist (min/mean/max): 0.0000/19326.0670/47069.6335   Neg dist (min/mean/max): 7703.1713/33834.6341/47139.8751
+train - Global loss: 0.200003    Embedding norm: 22523.0134   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/11477.5856/29590.0390   Neg dist (min/mean/max): 11378.3299/22380.7468/30143.3422
+val - Global loss: 0.200153    Embedding norm: 17118.6296   Triplets (all/active): 145.5/145.5
+Pos dist (min/mean/max): 0.0000/9742.1320/24176.0269   Neg dist (min/mean/max): 8646.5723/16937.4956/24219.8539
+train - Global loss: 0.200000    Embedding norm: 15741.7122   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/8024.7393/20903.3526   Neg dist (min/mean/max): 8996.3392/15315.3450/21135.8802
+val - Global loss: 0.199996    Embedding norm: 14965.9437   Triplets (all/active): 145.6/145.6
+Pos dist (min/mean/max): 0.0000/8523.2823/21750.4022   Neg dist (min/mean/max): 8658.3462/14618.2092/21830.1250
+train - Global loss: 0.200006    Embedding norm: 10051.9766   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/5123.8472/13058.2578   Neg dist (min/mean/max): 6540.5385/9768.8042/13213.1155
+val - Global loss: 0.200018    Embedding norm: 7249.4632   Triplets (all/active): 145.4/145.4
+Pos dist (min/mean/max): 0.0000/4120.2628/10909.1504   Neg dist (min/mean/max): 3975.2915/7011.2553/10965.9379
+train - Global loss: 0.200004    Embedding norm: 6279.3773   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/3198.2448/8424.3712   Neg dist (min/mean/max): 3706.8208/6046.2640/8533.2063
+val - Global loss: 0.200013    Embedding norm: 5010.7821   Triplets (all/active): 145.4/145.4
+Pos dist (min/mean/max): 0.0000/2844.1956/7634.5673   Neg dist (min/mean/max): 2513.6740/4819.9276/7687.3658
+train - Global loss: 0.200002    Embedding norm: 5048.9294   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/2572.4250/6831.6796   Neg dist (min/mean/max): 2982.0145/4835.2621/6932.3542
+val - Global loss: 0.200007    Embedding norm: 4115.6132   Triplets (all/active): 145.2/145.2
+Pos dist (min/mean/max): 0.0000/2336.5672/6203.4461   Neg dist (min/mean/max): 2466.6487/3953.3520/6247.9210
+train - Global loss: 0.200001    Embedding norm: 3689.2176   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/1878.5872/5102.0856   Neg dist (min/mean/max): 2066.3362/3507.6966/5174.2813
+val - Global loss: 0.200008    Embedding norm: 3261.0976   Triplets (all/active): 144.9/144.9
+Pos dist (min/mean/max): 0.0000/1847.6786/5146.2924   Neg dist (min/mean/max): 1714.0564/3117.0254/5172.3083
+train - Global loss: 0.200000    Embedding norm: 3596.5690   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/1832.4350/4973.2129   Neg dist (min/mean/max): 2045.2655/3417.3881/5035.4669
+val - Global loss: 0.199993    Embedding norm: 3204.1011   Triplets (all/active): 145.6/145.6
+Pos dist (min/mean/max): 0.0000/1823.1830/4901.7789   Neg dist (min/mean/max): 1801.6049/3070.6050/4920.8508
+train - Global loss: 0.200000    Embedding norm: 3740.1402   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/1905.1789/4997.2750   Neg dist (min/mean/max): 2354.8930/3569.0557/5050.0755
+val - Global loss: 0.199991    Embedding norm: 4449.9878   Triplets (all/active): 145.5/145.5
+Pos dist (min/mean/max): 0.0000/2528.9422/6271.1767   Neg dist (min/mean/max): 2879.8444/4290.8870/6296.9400

@@ -1,0 +1,16 @@
+{"time":"2025-01-03T02:57:55.957738061Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-03T02:57:55.957768123Z","level":"INFO","msg":"created symlink","path":"/code/RadarLoc/training/wandb/run-20250103_025755-uz30idep/logs/debug-core.log"}
+{"time":"2025-01-03T02:57:56.181565614Z","level":"INFO","msg":"created new stream","id":"uz30idep"}
+{"time":"2025-01-03T02:57:56.181628293Z","level":"INFO","msg":"stream: started","id":"uz30idep"}
+{"time":"2025-01-03T02:57:56.181672461Z","level":"INFO","msg":"writer: Do: started","stream_id":"uz30idep"}
+{"time":"2025-01-03T02:57:56.18187605Z","level":"INFO","msg":"handler: started","stream_id":"uz30idep"}
+{"time":"2025-01-03T02:57:56.181897762Z","level":"INFO","msg":"sender: started","stream_id":"uz30idep"}
+{"time":"2025-01-03T02:57:56.552566896Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-03T02:58:04.564678975Z","level":"INFO","msg":"stream: closing","id":"uz30idep"}
+{"time":"2025-01-03T02:58:04.564730392Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-03T02:58:04.565945895Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-03T02:58:05.440829496Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-03T02:58:05.700927426Z","level":"INFO","msg":"handler: closed","stream_id":"uz30idep"}
+{"time":"2025-01-03T02:58:05.700974499Z","level":"INFO","msg":"writer: Close: closed","stream_id":"uz30idep"}
+{"time":"2025-01-03T02:58:05.701051669Z","level":"INFO","msg":"sender: closed","stream_id":"uz30idep"}
+{"time":"2025-01-03T02:58:05.701061793Z","level":"INFO","msg":"stream: closed","id":"uz30idep"}

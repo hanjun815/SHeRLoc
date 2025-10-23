@@ -1,0 +1,23 @@
+2025-05-06 13:59:31,029 INFO    MainThread:17129 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-05-06 13:59:31,029 INFO    MainThread:17129 [wandb_setup.py:_flush():68] Configure stats pid to 17129
+2025-05-06 13:59:31,029 INFO    MainThread:17129 [wandb_setup.py:_flush():68] Loading settings from /root/.config/wandb/settings
+2025-05-06 13:59:31,029 INFO    MainThread:17129 [wandb_setup.py:_flush():68] Loading settings from /code/RLoc/training/wandb/settings
+2025-05-06 13:59:31,030 INFO    MainThread:17129 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-05-06 13:59:31,030 INFO    MainThread:17129 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /code/RLoc/training/wandb/run-20250506_135931-cs3s3bad/logs/debug.log
+2025-05-06 13:59:31,030 INFO    MainThread:17129 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /code/RLoc/training/wandb/run-20250506_135931-cs3s3bad/logs/debug-internal.log
+2025-05-06 13:59:31,030 INFO    MainThread:17129 [wandb_init.py:init():743] calling init triggers
+2025-05-06 13:59:31,030 INFO    MainThread:17129 [wandb_init.py:init():748] wandb.init called with sweep_config: {}
+config: {'params_path': '../config/config_radarloc.txt', 'model_params_path': '../models/radarloc.txt', 'dataset': 'mulran', 'dataset_folder': '/code/SHeRLoc/src/dataset/HeRCULES', 'num_workers': 1, 'batch_size': 220, 'batch_expansion_th': 0.3, 'batch_size_limit': 256, 'batch_expansion_rate': 1.4, 'lr': 0.001, 'scheduler_milestones': [80], 'epochs': 20, 'weight_decay': 0.001, 'loss': 'BatchHardTripletMarginLoss', 'margin': 1.0, 'aug_mode': 2, 'train_file': '/code/SHeRLoc/src/dataset/HeRCULES/train_R/Library_Day_Library_Night_5_50_polar_nav.pickle', 'val_file': '/code/SHeRLoc/src/dataset/HeRCULES/val_R/Library_Day_Library_Night_5_50_polar_nav.pickle', 'test_file': '/code/SHeRLoc/src/dataset/HeRCULES/test_R_Day_384.pickle', 'model_params.model_params_path': '../models/radarloc.txt', 'model_params.output_dim': 256, 'model_params.lidar_model': None, 'model_params.radar_model': 'radarloc'}
+2025-05-06 13:59:31,030 INFO    MainThread:17129 [wandb_init.py:init():776] starting backend
+2025-05-06 13:59:31,307 INFO    MainThread:17129 [wandb_init.py:init():780] sending inform_init request
+2025-05-06 13:59:31,382 INFO    MainThread:17129 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-05-06 13:59:31,383 INFO    MainThread:17129 [wandb_init.py:init():795] backend started and connected
+2025-05-06 13:59:31,385 INFO    MainThread:17129 [wandb_init.py:init():888] updated telemetry
+2025-05-06 13:59:31,460 INFO    MainThread:17129 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-05-06 13:59:31,954 INFO    MainThread:17129 [wandb_init.py:init():967] starting run threads in backend
+2025-05-06 13:59:31,998 INFO    MainThread:17129 [wandb_run.py:_console_start():2409] atexit reg
+2025-05-06 13:59:31,999 INFO    MainThread:17129 [wandb_run.py:_redirect():2259] redirect: wrap_raw
+2025-05-06 13:59:31,999 INFO    MainThread:17129 [wandb_run.py:_redirect():2324] Wrapping output streams.
+2025-05-06 13:59:31,999 INFO    MainThread:17129 [wandb_run.py:_redirect():2349] Redirects installed.
+2025-05-06 13:59:32,000 INFO    MainThread:17129 [wandb_init.py:init():1009] run started, returning control to user process
+2025-05-06 17:42:33,187 WARNING MsgRouterThr:17129 [router.py:message_loop():75] message_loop has been closed

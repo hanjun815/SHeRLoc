@@ -1,0 +1,93 @@
+2025-10-23 07:05:43,034 INFO    MainThread:2411 [wandb_setup.py:_flush():81] Current SDK version is 0.22.2
+2025-10-23 07:05:43,034 INFO    MainThread:2411 [wandb_setup.py:_flush():81] Configure stats pid to 2411
+2025-10-23 07:05:43,034 INFO    MainThread:2411 [wandb_setup.py:_flush():81] Loading settings from /root/.config/wandb/settings
+2025-10-23 07:05:43,034 INFO    MainThread:2411 [wandb_setup.py:_flush():81] Loading settings from /code/SHeRLoc_pr/training/wandb/settings
+2025-10-23 07:05:43,034 INFO    MainThread:2411 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-10-23 07:05:43,034 INFO    MainThread:2411 [wandb_init.py:setup_run_log_directory():705] Logging user logs to /code/SHeRLoc_pr/training/wandb/run-20251023_070543-okf9or83/logs/debug.log
+2025-10-23 07:05:43,034 INFO    MainThread:2411 [wandb_init.py:setup_run_log_directory():706] Logging internal logs to /code/SHeRLoc_pr/training/wandb/run-20251023_070543-okf9or83/logs/debug-internal.log
+2025-10-23 07:05:43,035 INFO    MainThread:2411 [wandb_init.py:init():832] calling init triggers
+2025-10-23 07:05:43,035 INFO    MainThread:2411 [wandb_init.py:init():837] wandb.init called with sweep_config: {}
+config: {'params_path': '../config/config.txt', 'model_params_path': '../models/Hetero_SHeRLoc.txt', 'dataset': 'hercules', 'dataset_folder': '/code/SHeRLoc/src/dataset/HeRCULES', 'num_workers': 0, 'batch_size': 20, 'lr': 0.001, 'epochs': 20, 'weight_decay': 0.001, 'loss': 'BatchHardTripletMarginLoss', 'margin': 1.0, 'train_dataset': '/code/SHeRLoc/src/dataset/HeRCULES', 'val_dataset': '/code/SHeRLoc/src/dataset/HeRCULES', 'test_dataset': '/code/SHeRLoc/src/dataset/HeRCULES', 'model_params.model_params_path': '../models/Hetero_SHeRLoc.txt', 'model_params.task': 'Hetero', 'model_params.radar_model': 'SHeRLoc', '_wandb': {}}
+2025-10-23 07:05:43,035 INFO    MainThread:2411 [wandb_init.py:init():880] starting backend
+2025-10-23 07:05:43,423 INFO    MainThread:2411 [wandb_init.py:init():883] sending inform_init request
+2025-10-23 07:05:43,569 INFO    MainThread:2411 [wandb_init.py:init():891] backend started and connected
+2025-10-23 07:05:43,574 INFO    MainThread:2411 [wandb_init.py:init():961] updated telemetry
+2025-10-23 07:05:43,576 INFO    MainThread:2411 [wandb_init.py:init():985] communicating run to backend with 90.0 second timeout
+2025-10-23 07:05:44,238 INFO    MainThread:2411 [wandb_init.py:init():1036] starting run threads in backend
+2025-10-23 07:05:44,299 INFO    MainThread:2411 [wandb_run.py:_console_start():2509] atexit reg
+2025-10-23 07:05:44,299 INFO    MainThread:2411 [wandb_run.py:_redirect():2357] redirect: wrap_raw
+2025-10-23 07:05:44,300 INFO    MainThread:2411 [wandb_run.py:_redirect():2426] Wrapping output streams.
+2025-10-23 07:05:44,300 INFO    MainThread:2411 [wandb_run.py:_redirect():2449] Redirects installed.
+2025-10-23 07:05:44,305 INFO    MainThread:2411 [wandb_init.py:init():1076] run started, returning control to user process
+2025-10-23 07:06:08,641 INFO    wandb-AsyncioManager-main:2411 [service_client.py:_forward_responses():80] Reached EOF.
+2025-10-23 07:06:08,642 INFO    wandb-AsyncioManager-main:2411 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.
+2025-10-23 07:06:09,000 ERROR   MainThread:2411 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 2436, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 1595, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/interface/interface.py", line 802, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 37, in _publish_output_raw
+    self._publish(rec)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/interface/interface_sock.py", line 43, in _publish
+    self._asyncer.run(lambda: self._client.publish(request))
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/lib/asyncio_manager.py", line 136, in run
+    return future.result()
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/lib/asyncio_manager.py", line 219, in _wrap
+    return await fn()
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/local/lib/python3.9/asyncio/streams.py", line 387, in drain
+    await self._protocol._drain_helper()
+  File "/usr/local/lib/python3.9/asyncio/streams.py", line 190, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-10-23 07:06:09,017 ERROR   MainThread:2411 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/lib/redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 2436, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 1595, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/interface/interface.py", line 802, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 37, in _publish_output_raw
+    self._publish(rec)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/interface/interface_sock.py", line 43, in _publish
+    self._asyncer.run(lambda: self._client.publish(request))
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/lib/asyncio_manager.py", line 136, in run
+    return future.result()
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/lib/asyncio_manager.py", line 219, in _wrap
+    return await fn()
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/local/lib/python3.9/asyncio/streams.py", line 387, in drain
+    await self._protocol._drain_helper()
+  File "/usr/local/lib/python3.9/asyncio/streams.py", line 190, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost

@@ -1,0 +1,52 @@
+  3%|█▋                                                | 4/120 [12:35<6:05:10, 188.88s/it]Exception in thread Thread-12:
+train - Global loss: 0.370507    Embedding norm: 8.5333   Triplets (all/active): 16.3/265.6
+Pos dist (min/mean/max): 1.1283/1.3249/1.6463   Neg dist (min/mean/max): 0.0143/1.1545/1.3825
+val - Global loss: 0.298598    Embedding norm: 6.3138   Triplets (all/active): 145.8/21370.4
+Pos dist (min/mean/max): 0.8129/0.9903/1.2709   Neg dist (min/mean/max): 0.0000/0.8917/1.0486
+train - Global loss: 0.283553    Embedding norm: 4.6265   Triplets (all/active): 16.3/266.0
+Pos dist (min/mean/max): 0.6851/0.7828/0.9021   Neg dist (min/mean/max): 0.0063/0.6992/0.8051
+val - Global loss: 0.255831    Embedding norm: 3.1133   Triplets (all/active): 144.8/21110.4
+Pos dist (min/mean/max): 0.4949/0.6019/0.7797   Neg dist (min/mean/max): 0.0000/0.5461/0.6582
+train - Global loss: 0.249505    Embedding norm: 1.9666   Triplets (all/active): 16.3/265.4
+Pos dist (min/mean/max): 0.4095/0.4693/0.5450   Neg dist (min/mean/max): 0.0034/0.4198/0.4888
+val - Global loss: 0.228844    Embedding norm: 0.9998   Triplets (all/active): 145.7/21373.7
+Pos dist (min/mean/max): 0.2615/0.3209/0.4074   Neg dist (min/mean/max): 0.0000/0.2921/0.3573
+train - Global loss: 0.215480    Embedding norm: 0.2767   Triplets (all/active): 16.3/265.9
+Pos dist (min/mean/max): 0.1130/0.1349/0.1609   Neg dist (min/mean/max): 0.0008/0.1194/0.1428
+val - Global loss: 0.200004    Embedding norm: 0.0000   Triplets (all/active): 145.2/21191.8
+Pos dist (min/mean/max): 0.0000/0.0000/0.0005   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.9/threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/_utils/pin_memory.py", line 28, in _pin_memory_loop
+    r = in_queue.get(timeout=MP_STATUS_CHECK_INTERVAL)
+  File "/usr/local/lib/python3.9/multiprocessing/queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "/usr/local/lib/python3.9/site-packages/torch/multiprocessing/reductions.py", line 297, in rebuild_storage_fd
+    fd = df.detach()
+  File "/usr/local/lib/python3.9/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/usr/local/lib/python3.9/multiprocessing/resource_sharer.py", line 86, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/usr/local/lib/python3.9/multiprocessing/connection.py", line 514, in Client
+    deliver_challenge(c, authkey)
+  File "/usr/local/lib/python3.9/multiprocessing/connection.py", line 745, in deliver_challenge
+    response = connection.recv_bytes(256)        # reject large message
+  File "/usr/local/lib/python3.9/multiprocessing/connection.py", line 221, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/usr/local/lib/python3.9/multiprocessing/connection.py", line 419, in _recv_bytes
+    buf = self._recv(4)
+  File "/usr/local/lib/python3.9/multiprocessing/connection.py", line 384, in _recv
+    chunk = read(handle, remaining)
+ConnectionResetError: [Errno 104] Connection reset by peer
+  3%|█▋                                                | 4/120 [13:42<6:37:19, 205.51s/it]
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 380, in do_train
+    optimizer_query.zero_grad()
+  File "/usr/local/lib/python3.9/site-packages/torch/optim/optimizer.py", line 249, in zero_grad
+    p.grad.zero_()
+KeyboardInterrupt

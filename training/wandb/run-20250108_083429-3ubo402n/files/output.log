@@ -1,0 +1,81 @@
+  6%|█████▎                                                                                      | 7/120 [58:21<15:41:41, 500.02s/it]
+train - Global loss: 1.015267    Embedding norm: 168.3727   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/84.9472/219.3862   Neg dist (min/mean/max): 74.4876/153.7897/219.9834
+val - Global loss: 1.000243    Embedding norm: 258.2586   Triplets (all/active): 145.5/145.5
+Pos dist (min/mean/max): 0.0000/146.5633/398.7856   Neg dist (min/mean/max): 73.8208/244.4431/398.9650
+train - Global loss: 1.000115    Embedding norm: 365.8409   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/185.9241/491.9716   Neg dist (min/mean/max): 156.6381/336.0641/493.8302
+val - Global loss: 0.999854    Embedding norm: 652.9418   Triplets (all/active): 145.6/145.6
+Pos dist (min/mean/max): 0.0000/370.9600/1117.4407   Neg dist (min/mean/max): 103.0421/603.6808/1117.9816
+train - Global loss: 1.000044    Embedding norm: 639.8667   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/325.4132/911.3172   Neg dist (min/mean/max): 223.1992/581.1982/916.0716
+val - Global loss: 1.000057    Embedding norm: 775.2153   Triplets (all/active): 145.5/145.5
+Pos dist (min/mean/max): 0.0000/440.2249/1253.1143   Neg dist (min/mean/max): 247.0801/748.3389/1255.6432
+train - Global loss: 1.000018    Embedding norm: 1057.9995   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/538.4813/1476.3215   Neg dist (min/mean/max): 450.0038/977.7061/1489.9425
+val - Global loss: 1.000023    Embedding norm: 1496.4184   Triplets (all/active): 145.7/145.7
+Pos dist (min/mean/max): 0.0000/850.8846/2601.9636   Neg dist (min/mean/max): 373.5550/1423.8825/2608.5260
+train - Global loss: 1.000012    Embedding norm: 1935.3831   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/984.5988/2789.8854   Neg dist (min/mean/max): 748.6887/1774.6419/2816.1070
+val - Global loss: 1.000026    Embedding norm: 2360.4846   Triplets (all/active): 145.6/145.6
+Pos dist (min/mean/max): 0.0000/1341.8726/5389.3871   Neg dist (min/mean/max): 710.5369/2285.4762/5727.6007
+train - Global loss: 1.000011    Embedding norm: 3468.2240   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/1764.6395/5203.4597   Neg dist (min/mean/max): 1654.9670/3298.7935/5395.1579
+val - Global loss: 1.000039    Embedding norm: 3626.0935   Triplets (all/active): 146.2/146.2
+Pos dist (min/mean/max): 0.0000/2069.9107/6404.0477   Neg dist (min/mean/max): 1348.0568/3511.8176/6637.9711
+train - Global loss: 1.000007    Embedding norm: 5346.3761   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/2723.0113/8476.5614   Neg dist (min/mean/max): 2204.0068/5082.2728/8859.0421
+val - Global loss: 1.000058    Embedding norm: 6131.0516   Triplets (all/active): 145.4/145.4
+Pos dist (min/mean/max): 0.0000/3485.8189/11551.5507   Neg dist (min/mean/max): 1652.7070/5810.7981/11777.6694
+train - Global loss: 1.000008    Embedding norm: 7733.8839   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/3941.3063/13183.3620   Neg dist (min/mean/max): 3008.1013/7329.2169/13884.0876
+val - Global loss: 1.000040    Embedding norm: 8299.1911   Triplets (all/active): 145.9/145.9
+Pos dist (min/mean/max): 0.0000/4727.5002/14270.2916   Neg dist (min/mean/max): 2155.9078/7926.6975/14616.2499
+train - Global loss: 1.000005    Embedding norm: 9574.4424   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/4879.0331/13157.0121   Neg dist (min/mean/max): 4921.7170/9140.9725/13411.1524
+val - Global loss: 1.000072    Embedding norm: 10191.4962   Triplets (all/active): 146.0/146.0
+Pos dist (min/mean/max): 0.0000/5808.1403/16588.7518   Neg dist (min/mean/max): 4129.2860/9884.2206/17189.8629
+train - Global loss: 1.000005    Embedding norm: 11372.1929   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/5793.5767/17011.5907   Neg dist (min/mean/max): 5655.4611/10952.5134/17652.3034
+val - Global loss: 1.000050    Embedding norm: 12596.2152   Triplets (all/active): 145.7/145.7
+Pos dist (min/mean/max): 0.0000/7167.7107/24806.5017   Neg dist (min/mean/max): 3951.0022/11967.8287/26004.9864
+train - Global loss: 1.000003    Embedding norm: 14560.1320   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/7414.9096/21581.1175   Neg dist (min/mean/max): 7248.7495/14068.6089/22555.6701
+val - Global loss: 1.000081    Embedding norm: 16765.6259   Triplets (all/active): 145.6/145.6
+Pos dist (min/mean/max): 0.0000/9531.5504/27676.5234   Neg dist (min/mean/max): 6814.4624/16175.9258/28271.0402
+train - Global loss: 1.000008    Embedding norm: 17183.7595   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/8746.7953/23730.2312   Neg dist (min/mean/max): 9820.1941/16576.3134/24480.1286
+val - Global loss: 1.000108    Embedding norm: 18740.8423   Triplets (all/active): 145.6/145.6
+Pos dist (min/mean/max): 0.0000/10654.0965/30478.1413   Neg dist (min/mean/max): 8290.4722/18302.7508/30968.5616
+train - Global loss: 1.000011    Embedding norm: 17391.4661   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/8865.4869/23208.3892   Neg dist (min/mean/max): 9379.6825/16646.7387/23577.1519
+val - Global loss: 1.000111    Embedding norm: 16540.6988   Triplets (all/active): 145.8/145.8
+Pos dist (min/mean/max): 0.0000/9421.6162/24001.3273   Neg dist (min/mean/max): 7690.8968/16228.7554/24034.9532
+train - Global loss: 1.000016    Embedding norm: 17309.2223   Triplets (all/active): 16.3/16.3
+Pos dist (min/mean/max): 0.0000/8812.2107/23735.8148   Neg dist (min/mean/max): 7562.9959/16285.2726/23980.0311
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 358, in do_train
+    for batch in dataloaders[phase]:
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 681, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1376, in _next_data
+    return self._process_data(data)
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1402, in _process_data
+    data.reraise()
+  File "/usr/local/lib/python3.9/site-packages/torch/_utils.py", line 461, in reraise
+    raise exception
+FileNotFoundError: Caught FileNotFoundError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/_utils/worker.py", line 302, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/code/RLoc/datasets/base_datasets.py", line 86, in __getitem__
+    reading = Image.open(file_pathname)
+  File "/usr/local/lib/python3.9/site-packages/PIL/Image.py", line 3227, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/code/SHeRLoc/src/dataset/HeRCULES/Bridge/Day/polar_continental/1724659694486759968.png'

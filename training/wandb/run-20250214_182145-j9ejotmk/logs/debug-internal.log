@@ -1,0 +1,17 @@
+{"time":"2025-02-14T18:21:46.235691294Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250214_182145-j9ejotmk/logs/debug-core.log"}
+{"time":"2025-02-14T18:21:46.339899725Z","level":"INFO","msg":"created new stream","id":"j9ejotmk"}
+{"time":"2025-02-14T18:21:46.339924126Z","level":"INFO","msg":"stream: started","id":"j9ejotmk"}
+{"time":"2025-02-14T18:21:46.339938246Z","level":"INFO","msg":"writer: Do: started","stream_id":"j9ejotmk"}
+{"time":"2025-02-14T18:21:46.340001417Z","level":"INFO","msg":"sender: started","stream_id":"j9ejotmk"}
+{"time":"2025-02-14T18:21:46.34004167Z","level":"INFO","msg":"handler: started","stream_id":"j9ejotmk"}
+{"time":"2025-02-14T18:21:46.610453145Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-14T21:10:15.088719313Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-02-15T03:58:47.789636178Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/hanjun815-seoul-national-university/RadarLoc/j9ejotmk/file_stream\": dial tcp: lookup api.wandb.ai on 127.0.0.53:53: server misbehaving"}
+{"time":"2025-02-15T07:33:31.467561331Z","level":"INFO","msg":"stream: closing","id":"j9ejotmk"}
+{"time":"2025-02-15T07:33:31.467577514Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-15T07:33:31.467976653Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-15T07:33:32.473671658Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-15T07:33:32.71135159Z","level":"INFO","msg":"handler: closed","stream_id":"j9ejotmk"}
+{"time":"2025-02-15T07:33:32.711411011Z","level":"INFO","msg":"sender: closed","stream_id":"j9ejotmk"}
+{"time":"2025-02-15T07:33:32.711406995Z","level":"INFO","msg":"writer: Close: closed","stream_id":"j9ejotmk"}
+{"time":"2025-02-15T07:33:32.711574388Z","level":"INFO","msg":"stream: closed","id":"j9ejotmk"}

@@ -1,0 +1,12 @@
+  0%|                                                   | 0/20 [00:19<?, ?it/s]
+0 45360 0.3660508096218109
+1 45360 0.40098655223846436
+2 45360 0.4371979534626007
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 413, in do_train
+    torch.cuda.empty_cache()
+  File "/usr/local/lib/python3.9/site-packages/torch/cuda/memory.py", line 121, in empty_cache
+    torch._C._cuda_emptyCache()
+KeyboardInterrupt

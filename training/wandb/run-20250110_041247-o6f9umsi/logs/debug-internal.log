@@ -1,0 +1,8 @@
+{"time":"2025-01-10T04:12:47.390085043Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-10T04:12:47.390093266Z","level":"INFO","msg":"created symlink","path":"/code/RLoc/training/wandb/run-20250110_041247-o6f9umsi/logs/debug-core.log"}
+{"time":"2025-01-10T04:12:47.492821772Z","level":"INFO","msg":"created new stream","id":"o6f9umsi"}
+{"time":"2025-01-10T04:12:47.492870928Z","level":"INFO","msg":"stream: started","id":"o6f9umsi"}
+{"time":"2025-01-10T04:12:47.492987226Z","level":"INFO","msg":"writer: Do: started","stream_id":"o6f9umsi"}
+{"time":"2025-01-10T04:12:47.493059917Z","level":"INFO","msg":"handler: started","stream_id":"o6f9umsi"}
+{"time":"2025-01-10T04:12:47.49311619Z","level":"INFO","msg":"sender: started","stream_id":"o6f9umsi"}
+{"time":"2025-01-10T04:12:47.850014523Z","level":"INFO","msg":"Starting system monitor"}

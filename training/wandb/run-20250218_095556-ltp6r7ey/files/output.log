@@ -1,0 +1,23 @@
+  0%|                                                           | 0/80 [00:22<?, ?it/s]
+0 25113 0.36309388279914856
+1 25113 0.32809001207351685
+2 25113 0.320527046918869
+3 25113 0.3227396011352539
+4 25113 0.3246704936027527
+5 25113 0.3183556795120239
+6 25113 0.32021862268447876
+7 25113 0.32255125045776367
+8 25113 0.317822128534317
+9 25113 0.3150395154953003
+10 25113 0.3138044774532318
+11 25113 0.31791412830352783
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 405, in do_train
+    loss.backward()
+  File "/usr/local/lib/python3.9/site-packages/torch/_tensor.py", line 396, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/usr/local/lib/python3.9/site-packages/torch/autograd/__init__.py", line 173, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

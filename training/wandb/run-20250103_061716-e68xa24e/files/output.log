@@ -1,0 +1,28 @@
+  3%|██▊                                                                                 | 4/120 [09:38<4:39:31, 144.58s/it]
+train - Global loss: 0.227494    Embedding norm: 6.3951   Triplets (all/active): 32.0/26.1
+Pos dist (min/mean/max): 0.6089/0.8506/1.2253   Neg dist (min/mean/max): 0.7406/0.8941/1.1065
+val - Global loss: 0.244122    Embedding norm: 3.7332   Triplets (all/active): 254.6/208.0
+Pos dist (min/mean/max): 0.3003/0.6225/1.3195   Neg dist (min/mean/max): 0.4088/0.6454/0.8941
+train - Global loss: 0.186851    Embedding norm: 3.1201   Triplets (all/active): 32.0/22.1
+Pos dist (min/mean/max): 0.4041/0.6320/0.9909   Neg dist (min/mean/max): 0.6041/0.7463/0.9241
+val - Global loss: 0.223637    Embedding norm: 2.8687   Triplets (all/active): 254.5/204.3
+Pos dist (min/mean/max): 0.2731/0.5723/1.2167   Neg dist (min/mean/max): 0.4003/0.6180/0.8434
+=> Batch size increased from: 32 to 44
+train - Global loss: 0.180955    Embedding norm: 2.7354   Triplets (all/active): 44.0/29.4
+Pos dist (min/mean/max): 0.3864/0.6241/1.0037   Neg dist (min/mean/max): 0.5902/0.7472/0.9234
+val - Global loss: 0.221879    Embedding norm: 2.8782   Triplets (all/active): 254.6/187.5
+Pos dist (min/mean/max): 0.2946/0.6177/1.2566   Neg dist (min/mean/max): 0.4488/0.6871/0.9106
+=> Batch size increased from: 44 to 61
+train - Global loss: 0.181016    Embedding norm: 2.7377   Triplets (all/active): 62.0/41.0
+Pos dist (min/mean/max): 0.3876/0.6425/1.0667   Neg dist (min/mean/max): 0.5905/0.7667/0.9419
+val - Global loss: 0.213452    Embedding norm: 2.8163   Triplets (all/active): 254.7/178.6
+Pos dist (min/mean/max): 0.3038/0.6166/1.2087   Neg dist (min/mean/max): 0.4414/0.7025/0.9041
+=> Batch size increased from: 61 to 85
+Traceback (most recent call last):
+  File "/code/hanjun/RadarLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/hanjun/RadarLoc/training/trainer.py", line 152, in do_train
+    torch.cuda.empty_cache()  # Prevent excessive GPU memory consumption by SparseTensors
+  File "/usr/local/lib/python3.9/site-packages/torch/cuda/memory.py", line 121, in empty_cache
+    torch._C._cuda_emptyCache()
+KeyboardInterrupt

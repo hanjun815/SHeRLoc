@@ -1,0 +1,15 @@
+  1%|▊                                                                                           | 1/120 [04:22<8:39:42, 262.04s/it]
+train - Global loss: 0.226570    Embedding norm: 0.6853   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0137/0.0403   Neg dist (min/mean/max): 0.0000/0.0002/0.0039
+val - Global loss: 0.200000    Embedding norm: 0.0000   Triplets (all/active): 136.2/136.2
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RadarLoc/training/trainer.py", line 156, in do_train
+    loss.backward()
+  File "/usr/local/lib/python3.9/site-packages/torch/_tensor.py", line 396, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/usr/local/lib/python3.9/site-packages/torch/autograd/__init__.py", line 173, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

@@ -1,0 +1,15 @@
+{"time":"2025-02-14T07:07:48.715661564Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250214_070748-ripbuyyo/logs/debug-core.log"}
+{"time":"2025-02-14T07:07:48.819572886Z","level":"INFO","msg":"created new stream","id":"ripbuyyo"}
+{"time":"2025-02-14T07:07:48.819596848Z","level":"INFO","msg":"stream: started","id":"ripbuyyo"}
+{"time":"2025-02-14T07:07:48.819665281Z","level":"INFO","msg":"writer: Do: started","stream_id":"ripbuyyo"}
+{"time":"2025-02-14T07:07:48.819668598Z","level":"INFO","msg":"sender: started","stream_id":"ripbuyyo"}
+{"time":"2025-02-14T07:07:48.819675674Z","level":"INFO","msg":"handler: started","stream_id":"ripbuyyo"}
+{"time":"2025-02-14T07:07:49.096147052Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-14T07:07:55.76793944Z","level":"INFO","msg":"stream: closing","id":"ripbuyyo"}
+{"time":"2025-02-14T07:07:55.767958171Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-14T07:07:55.76840639Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-14T07:07:56.493580152Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-14T07:07:56.746746415Z","level":"INFO","msg":"handler: closed","stream_id":"ripbuyyo"}
+{"time":"2025-02-14T07:07:56.746769394Z","level":"INFO","msg":"writer: Close: closed","stream_id":"ripbuyyo"}
+{"time":"2025-02-14T07:07:56.746805134Z","level":"INFO","msg":"sender: closed","stream_id":"ripbuyyo"}
+{"time":"2025-02-14T07:07:56.746834288Z","level":"INFO","msg":"stream: closed","id":"ripbuyyo"}

@@ -1,0 +1,34 @@
+  0%|                                                    | 0/20 [00:44<?, ?it/s]
+0 26475 0.25383031368255615
+1 26475 0.3893088698387146
+2 26475 0.31885457038879395
+3 26475 0.43394288420677185
+4 26475 0.4076820909976959
+5 26475 0.4205056428909302
+6 26475 0.32187384366989136
+7 26475 0.2993261218070984
+8 26475 0.19435490667819977
+9 26475 0.2939344644546509
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 375, in do_train
+    for index, (query, positives, negatives, sim_p, sim_n) in enumerate(dataloaders[phase]):
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 681, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1359, in _next_data
+    idx, data = self._get_data()
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1315, in _get_data
+    success, data = self._try_get_data()
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1163, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/usr/local/lib/python3.9/queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+  File "/usr/local/lib/python3.9/threading.py", line 316, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/threading.py", line 1073, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+KeyboardInterrupt

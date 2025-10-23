@@ -1,0 +1,42 @@
+  0%|                                                           | 0/80 [01:00<?, ?it/s]
+0 25113 4.279656887054443
+1 25113 2.8294570446014404
+2 25113 2.877941846847534
+3 25113 2.404794692993164
+4 25113 2.159273147583008
+5 25113 2.517502546310425
+6 25113 1.8612489700317383
+7 25113 2.0487287044525146
+8 25113 1.964566707611084
+9 25113 1.812170147895813
+10 25113 1.8472661972045898
+11 25113 2.0020811557769775
+12 25113 1.5700950622558594
+13 25113 1.7443830966949463
+14 25113 1.6711664199829102
+15 25113 1.6820465326309204
+16 25113 1.7671657800674438
+17 25113 1.787129282951355
+18 25113 1.7601817846298218
+19 25113 1.7036902904510498
+20 25113 1.7041125297546387
+21 25113 1.636497139930725
+22 25113 1.6328030824661255
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 406, in do_train
+    optimizer.step()
+  File "/usr/local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py", line 65, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/optim/optimizer.py", line 113, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/optim/adamw.py", line 161, in step
+    adamw(params_with_grad,
+  File "/usr/local/lib/python3.9/site-packages/torch/optim/adamw.py", line 218, in adamw
+    func(params,
+  File "/usr/local/lib/python3.9/site-packages/torch/optim/adamw.py", line 266, in _single_tensor_adamw
+    exp_avg.mul_(beta1).add_(grad, alpha=1 - beta1)
+KeyboardInterrupt

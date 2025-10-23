@@ -1,0 +1,11 @@
+{"time":"2025-02-15T08:10:09.782177398Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250215_081009-xwvho6oy/logs/debug-core.log"}
+{"time":"2025-02-15T08:10:09.885845824Z","level":"INFO","msg":"created new stream","id":"xwvho6oy"}
+{"time":"2025-02-15T08:10:09.885868041Z","level":"INFO","msg":"stream: started","id":"xwvho6oy"}
+{"time":"2025-02-15T08:10:09.885921892Z","level":"INFO","msg":"handler: started","stream_id":"xwvho6oy"}
+{"time":"2025-02-15T08:10:09.88593478Z","level":"INFO","msg":"writer: Do: started","stream_id":"xwvho6oy"}
+{"time":"2025-02-15T08:10:09.885949352Z","level":"INFO","msg":"sender: started","stream_id":"xwvho6oy"}
+{"time":"2025-02-15T08:10:10.18644361Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-15T10:37:40.735975077Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/hanjun815-seoul-national-university/RadarLoc/xwvho6oy/file_stream\": dial tcp: lookup api.wandb.ai on 127.0.0.53:53: server misbehaving"}
+{"time":"2025-02-15T11:03:33.823788236Z","level":"INFO","msg":"stream: closing","id":"xwvho6oy"}
+{"time":"2025-02-15T11:03:33.823804282Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-15T11:03:33.824232103Z","level":"INFO","msg":"Stopped system monitor"}

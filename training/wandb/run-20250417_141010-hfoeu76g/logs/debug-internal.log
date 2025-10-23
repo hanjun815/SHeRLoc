@@ -1,0 +1,11 @@
+{"time":"2025-04-17T14:10:10.46319088Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250417_141010-hfoeu76g/logs/debug-core.log"}
+{"time":"2025-04-17T14:10:10.567490917Z","level":"INFO","msg":"created new stream","id":"hfoeu76g"}
+{"time":"2025-04-17T14:10:10.567516003Z","level":"INFO","msg":"stream: started","id":"hfoeu76g"}
+{"time":"2025-04-17T14:10:10.567581731Z","level":"INFO","msg":"writer: Do: started","stream_id":"hfoeu76g"}
+{"time":"2025-04-17T14:10:10.567620032Z","level":"INFO","msg":"sender: started","stream_id":"hfoeu76g"}
+{"time":"2025-04-17T14:10:10.567581397Z","level":"INFO","msg":"handler: started","stream_id":"hfoeu76g"}
+{"time":"2025-04-17T14:10:10.886773217Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-17T20:32:56.648630669Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/hanjun815-seoul-national-university/RadarLoc/hfoeu76g/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-04-18T00:32:33.311291232Z","level":"INFO","msg":"stream: closing","id":"hfoeu76g"}
+{"time":"2025-04-18T00:32:33.311316586Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-18T00:32:33.311822078Z","level":"INFO","msg":"Stopped system monitor"}

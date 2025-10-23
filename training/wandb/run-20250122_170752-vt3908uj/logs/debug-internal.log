@@ -1,0 +1,17 @@
+{"time":"2025-01-22T17:07:52.824900998Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250122_170752-vt3908uj/logs/debug-core.log"}
+{"time":"2025-01-22T17:07:52.929426864Z","level":"INFO","msg":"created new stream","id":"vt3908uj"}
+{"time":"2025-01-22T17:07:52.929455535Z","level":"INFO","msg":"stream: started","id":"vt3908uj"}
+{"time":"2025-01-22T17:07:52.929514903Z","level":"INFO","msg":"handler: started","stream_id":"vt3908uj"}
+{"time":"2025-01-22T17:07:52.929526102Z","level":"INFO","msg":"writer: Do: started","stream_id":"vt3908uj"}
+{"time":"2025-01-22T17:07:52.929553047Z","level":"INFO","msg":"sender: started","stream_id":"vt3908uj"}
+{"time":"2025-01-22T17:07:53.548351534Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-22T20:45:50.62000776Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-01-23T08:10:53.407907686Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/hanjun815-seoul-national-university/RadarLoc/vt3908uj/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-01-23T09:36:02.397746755Z","level":"INFO","msg":"stream: closing","id":"vt3908uj"}
+{"time":"2025-01-23T09:36:02.397765712Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-23T09:36:02.398254803Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-23T09:36:03.537714078Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-23T09:36:03.780366472Z","level":"INFO","msg":"handler: closed","stream_id":"vt3908uj"}
+{"time":"2025-01-23T09:36:03.780393004Z","level":"INFO","msg":"writer: Close: closed","stream_id":"vt3908uj"}
+{"time":"2025-01-23T09:36:03.780403382Z","level":"INFO","msg":"sender: closed","stream_id":"vt3908uj"}
+{"time":"2025-01-23T09:36:03.780438104Z","level":"INFO","msg":"stream: closed","id":"vt3908uj"}

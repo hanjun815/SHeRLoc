@@ -1,0 +1,15 @@
+  0%|                                                                                              | 0/120 [00:01<?, ?it/s]
+torch.Size([512, 1, 384, 160])
+torch.Size([32, 256]) torch.Size([96, 256]) torch.Size([384, 256])
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 373, in do_train
+    loss, temp_stats, _ = loss_fn(vladQ, vladP, vladN)
+  File "/code/RLoc/models/loss.py", line 186, in __call__
+    pos_distances = self.distance(vladQ_expanded, vladP).squeeze(1)  # [B, n_pos]
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pytorch_metric_learning/distances/base_distance.py", line 31, in forward
+    assert mat.size() == torch.Size((query_emb.size(0), ref_emb.size(0)))
+AssertionError

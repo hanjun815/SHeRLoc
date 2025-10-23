@@ -1,0 +1,10 @@
+{"time":"2025-04-01T12:19:27.05111013Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250401_121926-daku25yn/logs/debug-core.log"}
+{"time":"2025-04-01T12:19:27.15561489Z","level":"INFO","msg":"created new stream","id":"daku25yn"}
+{"time":"2025-04-01T12:19:27.155639046Z","level":"INFO","msg":"stream: started","id":"daku25yn"}
+{"time":"2025-04-01T12:19:27.155714097Z","level":"INFO","msg":"writer: Do: started","stream_id":"daku25yn"}
+{"time":"2025-04-01T12:19:27.155786063Z","level":"INFO","msg":"handler: started","stream_id":"daku25yn"}
+{"time":"2025-04-01T12:19:27.155821061Z","level":"INFO","msg":"sender: started","stream_id":"daku25yn"}
+{"time":"2025-04-01T12:19:27.510365653Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-01T12:20:07.041359003Z","level":"INFO","msg":"stream: closing","id":"daku25yn"}
+{"time":"2025-04-01T12:20:07.041377Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-01T12:20:07.04178801Z","level":"INFO","msg":"Stopped system monitor"}

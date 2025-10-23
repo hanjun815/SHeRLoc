@@ -1,0 +1,16 @@
+{"time":"2025-05-02T17:20:46.663218928Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250502_172046-tyrufsdg/logs/debug-core.log"}
+{"time":"2025-05-02T17:20:46.766842783Z","level":"INFO","msg":"created new stream","id":"tyrufsdg"}
+{"time":"2025-05-02T17:20:46.76686782Z","level":"INFO","msg":"stream: started","id":"tyrufsdg"}
+{"time":"2025-05-02T17:20:46.766886762Z","level":"INFO","msg":"handler: started","stream_id":"tyrufsdg"}
+{"time":"2025-05-02T17:20:46.766896397Z","level":"INFO","msg":"sender: started","stream_id":"tyrufsdg"}
+{"time":"2025-05-02T17:20:46.766927165Z","level":"INFO","msg":"writer: Do: started","stream_id":"tyrufsdg"}
+{"time":"2025-05-02T17:20:47.400905552Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-02T17:57:03.336337757Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/hanjun815-seoul-national-university/RadarLoc/tyrufsdg/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-05-03T00:43:01.046083321Z","level":"INFO","msg":"stream: closing","id":"tyrufsdg"}
+{"time":"2025-05-03T00:43:01.046105098Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-03T00:43:01.046669133Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-03T00:43:02.073879566Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-03T00:43:02.625642224Z","level":"INFO","msg":"handler: closed","stream_id":"tyrufsdg"}
+{"time":"2025-05-03T00:43:02.625711385Z","level":"INFO","msg":"writer: Close: closed","stream_id":"tyrufsdg"}
+{"time":"2025-05-03T00:43:02.625735748Z","level":"INFO","msg":"sender: closed","stream_id":"tyrufsdg"}
+{"time":"2025-05-03T00:43:02.625836921Z","level":"INFO","msg":"stream: closed","id":"tyrufsdg"}

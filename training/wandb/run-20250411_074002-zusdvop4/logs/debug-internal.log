@@ -1,0 +1,10 @@
+{"time":"2025-04-11T07:40:02.776805561Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250411_074002-zusdvop4/logs/debug-core.log"}
+{"time":"2025-04-11T07:40:02.881374249Z","level":"INFO","msg":"created new stream","id":"zusdvop4"}
+{"time":"2025-04-11T07:40:02.881402796Z","level":"INFO","msg":"stream: started","id":"zusdvop4"}
+{"time":"2025-04-11T07:40:02.881470944Z","level":"INFO","msg":"handler: started","stream_id":"zusdvop4"}
+{"time":"2025-04-11T07:40:02.88149954Z","level":"INFO","msg":"writer: Do: started","stream_id":"zusdvop4"}
+{"time":"2025-04-11T07:40:02.881518374Z","level":"INFO","msg":"sender: started","stream_id":"zusdvop4"}
+{"time":"2025-04-11T07:40:03.271986511Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-11T09:32:33.702503459Z","level":"INFO","msg":"stream: closing","id":"zusdvop4"}
+{"time":"2025-04-11T09:32:33.702521631Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-11T09:32:33.702959402Z","level":"INFO","msg":"Stopped system monitor"}

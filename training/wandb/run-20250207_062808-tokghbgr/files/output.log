@@ -1,0 +1,35 @@
+  0%|                                                    | 0/80 [00:24<?, ?it/s]
+0 110547 3.257753372192383
+1 110547 2.236954689025879
+2 110547 3.691683292388916
+3 110547 2.983717203140259
+4 110547 2.3536312580108643
+5 110547 1.9629374742507935
+6 110547 1.208612322807312
+7 110547 1.534059762954712
+8 110547 1.1873693466186523
+9 110547 1.76858651638031
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 386, in do_train
+    outputs = model(inputs, n_pos, n_neg)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 158, in forward
+    inputs, kwargs = self.scatter(inputs, kwargs, self.device_ids)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 175, in scatter
+    return scatter_kwargs(inputs, kwargs, device_ids, dim=self.dim)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/scatter_gather.py", line 44, in scatter_kwargs
+    inputs = scatter(inputs, target_gpus, dim) if inputs else []
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/scatter_gather.py", line 36, in scatter
+    res = scatter_map(inputs)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/scatter_gather.py", line 23, in scatter_map
+    return list(zip(*map(scatter_map, obj)))
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/scatter_gather.py", line 19, in scatter_map
+    return Scatter.apply(target_gpus, None, dim, obj)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/_functions.py", line 96, in forward
+    outputs = comm.scatter(input, target_gpus, chunk_sizes, ctx.dim, streams)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/comm.py", line 189, in scatter
+    return tuple(torch._C._scatter(tensor, devices, chunk_sizes, dim, streams))
+KeyboardInterrupt

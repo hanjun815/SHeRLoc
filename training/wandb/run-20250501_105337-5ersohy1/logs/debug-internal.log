@@ -1,0 +1,18 @@
+{"time":"2025-05-01T10:53:38.265457296Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250501_105337-5ersohy1/logs/debug-core.log"}
+{"time":"2025-05-01T10:53:38.382430843Z","level":"INFO","msg":"created new stream","id":"5ersohy1"}
+{"time":"2025-05-01T10:53:38.382458118Z","level":"INFO","msg":"stream: started","id":"5ersohy1"}
+{"time":"2025-05-01T10:53:38.383725013Z","level":"INFO","msg":"handler: started","stream_id":"5ersohy1"}
+{"time":"2025-05-01T10:53:38.383760648Z","level":"INFO","msg":"writer: Do: started","stream_id":"5ersohy1"}
+{"time":"2025-05-01T10:53:38.383931693Z","level":"INFO","msg":"sender: started","stream_id":"5ersohy1"}
+{"time":"2025-05-01T10:53:38.966527573Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-01T15:36:07.64682536Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-05-01T15:36:39.982190043Z","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/hanjun815-seoul-national-university/RadarLoc/5ersohy1/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-05-01T16:14:49.112276341Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-05-01T17:47:41.338774337Z","level":"INFO","msg":"stream: closing","id":"5ersohy1"}
+{"time":"2025-05-01T17:47:41.338790272Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-01T17:47:41.339154121Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-01T17:47:42.427045726Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-01T17:47:42.860773331Z","level":"INFO","msg":"handler: closed","stream_id":"5ersohy1"}
+{"time":"2025-05-01T17:47:42.860805602Z","level":"INFO","msg":"writer: Close: closed","stream_id":"5ersohy1"}
+{"time":"2025-05-01T17:47:42.860817065Z","level":"INFO","msg":"sender: closed","stream_id":"5ersohy1"}
+{"time":"2025-05-01T17:47:42.860856797Z","level":"INFO","msg":"stream: closed","id":"5ersohy1"}

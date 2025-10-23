@@ -1,0 +1,16 @@
+{"time":"2025-01-03T03:44:54.24532182Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-03T03:44:54.245358494Z","level":"INFO","msg":"created symlink","path":"/code/hanjun/RadarLoc/training/wandb/run-20250103_034454-r8mgt959/logs/debug-core.log"}
+{"time":"2025-01-03T03:44:54.357467859Z","level":"INFO","msg":"created new stream","id":"r8mgt959"}
+{"time":"2025-01-03T03:44:54.357571597Z","level":"INFO","msg":"stream: started","id":"r8mgt959"}
+{"time":"2025-01-03T03:44:54.357602405Z","level":"INFO","msg":"writer: Do: started","stream_id":"r8mgt959"}
+{"time":"2025-01-03T03:44:54.357730903Z","level":"INFO","msg":"handler: started","stream_id":"r8mgt959"}
+{"time":"2025-01-03T03:44:54.357878677Z","level":"INFO","msg":"sender: started","stream_id":"r8mgt959"}
+{"time":"2025-01-03T03:44:54.70160797Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-03T04:24:14.041579714Z","level":"INFO","msg":"stream: closing","id":"r8mgt959"}
+{"time":"2025-01-03T04:24:14.041633103Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-03T04:24:14.04253045Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-03T04:24:14.904640375Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-03T04:24:15.154180677Z","level":"INFO","msg":"handler: closed","stream_id":"r8mgt959"}
+{"time":"2025-01-03T04:24:15.15427006Z","level":"INFO","msg":"sender: closed","stream_id":"r8mgt959"}
+{"time":"2025-01-03T04:24:15.154265117Z","level":"INFO","msg":"writer: Close: closed","stream_id":"r8mgt959"}
+{"time":"2025-01-03T04:24:15.154437294Z","level":"INFO","msg":"stream: closed","id":"r8mgt959"}

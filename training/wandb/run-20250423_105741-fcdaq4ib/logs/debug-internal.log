@@ -1,0 +1,15 @@
+{"time":"2025-04-23T10:57:41.656008692Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250423_105741-fcdaq4ib/logs/debug-core.log"}
+{"time":"2025-04-23T10:57:41.760234975Z","level":"INFO","msg":"created new stream","id":"fcdaq4ib"}
+{"time":"2025-04-23T10:57:41.760259794Z","level":"INFO","msg":"stream: started","id":"fcdaq4ib"}
+{"time":"2025-04-23T10:57:41.760324952Z","level":"INFO","msg":"handler: started","stream_id":"fcdaq4ib"}
+{"time":"2025-04-23T10:57:41.760329711Z","level":"INFO","msg":"writer: Do: started","stream_id":"fcdaq4ib"}
+{"time":"2025-04-23T10:57:41.760363533Z","level":"INFO","msg":"sender: started","stream_id":"fcdaq4ib"}
+{"time":"2025-04-23T10:57:42.087467208Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-23T10:57:53.748025373Z","level":"INFO","msg":"stream: closing","id":"fcdaq4ib"}
+{"time":"2025-04-23T10:57:53.748075886Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-23T10:57:53.748564178Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-23T10:57:54.503005158Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-23T10:57:54.765637917Z","level":"INFO","msg":"handler: closed","stream_id":"fcdaq4ib"}
+{"time":"2025-04-23T10:57:54.765717846Z","level":"INFO","msg":"writer: Close: closed","stream_id":"fcdaq4ib"}
+{"time":"2025-04-23T10:57:54.765747008Z","level":"INFO","msg":"sender: closed","stream_id":"fcdaq4ib"}
+{"time":"2025-04-23T10:57:54.765846262Z","level":"INFO","msg":"stream: closed","id":"fcdaq4ib"}

@@ -1,0 +1,15 @@
+{"time":"2025-04-06T05:09:31.258691971Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250406_050930-xi2atiei/logs/debug-core.log"}
+{"time":"2025-04-06T05:09:31.363909896Z","level":"INFO","msg":"created new stream","id":"xi2atiei"}
+{"time":"2025-04-06T05:09:31.363946705Z","level":"INFO","msg":"stream: started","id":"xi2atiei"}
+{"time":"2025-04-06T05:09:31.363970791Z","level":"INFO","msg":"writer: Do: started","stream_id":"xi2atiei"}
+{"time":"2025-04-06T05:09:31.364050808Z","level":"INFO","msg":"handler: started","stream_id":"xi2atiei"}
+{"time":"2025-04-06T05:09:31.364100129Z","level":"INFO","msg":"sender: started","stream_id":"xi2atiei"}
+{"time":"2025-04-06T05:09:31.737213999Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-06T05:09:36.997114155Z","level":"INFO","msg":"stream: closing","id":"xi2atiei"}
+{"time":"2025-04-06T05:09:36.997130736Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-06T05:09:36.997548579Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-06T05:09:37.783219316Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-04-06T05:09:38.028694932Z","level":"INFO","msg":"handler: closed","stream_id":"xi2atiei"}
+{"time":"2025-04-06T05:09:38.028735565Z","level":"INFO","msg":"sender: closed","stream_id":"xi2atiei"}
+{"time":"2025-04-06T05:09:38.028723502Z","level":"INFO","msg":"writer: Close: closed","stream_id":"xi2atiei"}
+{"time":"2025-04-06T05:09:38.028822477Z","level":"INFO","msg":"stream: closed","id":"xi2atiei"}

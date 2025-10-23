@@ -1,0 +1,45 @@
+  0%|                                                    | 0/80 [00:00<?, ?it/s]
+0 25113 0.6227896213531494
+1 25113 0.9581781029701233
+2 25113 0.824385941028595
+3 25113 0.7174065113067627
+4 25113 0.8796043395996094
+5 25113 0.6834194660186768
+6 25113 0.7894628047943115
+7 25113 0.7201529145240784
+8 25113 0.7281213998794556
+9 25113 0.6005856394767761
+10 25113 0.7075200080871582
+11 25113 0.561848521232605
+12 25113 0.7403290867805481
+13 25113 0.5990656614303589
+14 25113 0.5680360198020935
+15 25113 0.5964871048927307
+16 25113 0.5476123690605164
+17 25113 0.615866482257843
+18 25113 0.6572961807250977
+19 25113 0.6282108426094055
+20 25113 0.6816703677177429
+21 25113 0.7215719819068909
+22 25113 0.7485153079032898
+23 25113 0.6800811886787415
+24 25113 0.48746931552886963
+25 25113 0.752246081829071
+26 25113 0.7601320743560791
+27 25113 nan
+28 25113 nan
+29 25113 nan
+30 25113 nan
+31 25113 nan
+32 25113 nan
+33 25113 nan
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 407, in do_train
+    loss.backward()
+  File "/usr/local/lib/python3.9/site-packages/torch/_tensor.py", line 396, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/usr/local/lib/python3.9/site-packages/torch/autograd/__init__.py", line 173, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

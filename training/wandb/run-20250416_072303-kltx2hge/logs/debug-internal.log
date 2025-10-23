@@ -1,0 +1,11 @@
+{"time":"2025-04-16T07:23:04.23598217Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250416_072303-kltx2hge/logs/debug-core.log"}
+{"time":"2025-04-16T07:23:04.339926694Z","level":"INFO","msg":"created new stream","id":"kltx2hge"}
+{"time":"2025-04-16T07:23:04.339951517Z","level":"INFO","msg":"stream: started","id":"kltx2hge"}
+{"time":"2025-04-16T07:23:04.340021531Z","level":"INFO","msg":"writer: Do: started","stream_id":"kltx2hge"}
+{"time":"2025-04-16T07:23:04.340096693Z","level":"INFO","msg":"sender: started","stream_id":"kltx2hge"}
+{"time":"2025-04-16T07:23:04.340120071Z","level":"INFO","msg":"handler: started","stream_id":"kltx2hge"}
+{"time":"2025-04-16T07:23:04.653765703Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-16T07:23:29.737980133Z","level":"INFO","msg":"stream: closing","id":"kltx2hge"}
+{"time":"2025-04-16T07:23:29.737994367Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-16T07:23:29.738406689Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-16T07:23:30.500252194Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}

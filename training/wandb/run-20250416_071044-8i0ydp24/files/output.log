@@ -1,0 +1,16 @@
+  0%|                                                    | 0/80 [00:23<?, ?it/s]
+0 25113 0.5603464841842651
+1 25113 1.2954685688018799
+2 25113 1.150614857673645
+3 25113 0.9838159680366516
+4 25113 nan
+5 25113 nan
+6 25113 nan
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 410, in do_train
+    torch.cuda.empty_cache()
+  File "/usr/local/lib/python3.9/site-packages/torch/cuda/memory.py", line 121, in empty_cache
+    torch._C._cuda_emptyCache()
+KeyboardInterrupt

@@ -1,0 +1,11 @@
+{"time":"2025-04-10T05:59:27.327903922Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250410_055927-q9xu9jyf/logs/debug-core.log"}
+{"time":"2025-04-10T05:59:27.432773914Z","level":"INFO","msg":"created new stream","id":"q9xu9jyf"}
+{"time":"2025-04-10T05:59:27.432798228Z","level":"INFO","msg":"stream: started","id":"q9xu9jyf"}
+{"time":"2025-04-10T05:59:27.432872522Z","level":"INFO","msg":"writer: Do: started","stream_id":"q9xu9jyf"}
+{"time":"2025-04-10T05:59:27.432949632Z","level":"INFO","msg":"sender: started","stream_id":"q9xu9jyf"}
+{"time":"2025-04-10T05:59:27.432973415Z","level":"INFO","msg":"handler: started","stream_id":"q9xu9jyf"}
+{"time":"2025-04-10T05:59:27.924852024Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-10T09:03:53.337587344Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-04-10T11:46:35.631217827Z","level":"INFO","msg":"stream: closing","id":"q9xu9jyf"}
+{"time":"2025-04-10T11:46:35.631241162Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-10T11:46:35.631697978Z","level":"INFO","msg":"Stopped system monitor"}

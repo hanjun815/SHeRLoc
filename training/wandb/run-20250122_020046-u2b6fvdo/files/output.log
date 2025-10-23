@@ -1,0 +1,22 @@
+  0%|                                                                             | 0/120 [00:11<?, ?it/s]
+0 81028 0.3312617540359497
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 367, in do_train
+    for index, (query, positives, negatives) in enumerate(dataloaders[phase]):
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 681, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 721, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/code/RLoc/training/dataset.py", line 646, in __getitem__
+    pos_timestamps = [int(os.path.splitext(os.path.basename(p))[0]) for p in seq_data['pos_images']]
+  File "/code/RLoc/training/dataset.py", line 646, in <listcomp>
+    pos_timestamps = [int(os.path.splitext(os.path.basename(p))[0]) for p in seq_data['pos_images']]
+  File "/usr/local/lib/python3.9/posixpath.py", line 143, in basename
+    sep = _get_sep(p)
+KeyboardInterrupt

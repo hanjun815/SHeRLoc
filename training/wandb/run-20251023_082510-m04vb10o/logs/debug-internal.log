@@ -1,0 +1,11 @@
+{"time":"2025-10-23T08:25:11.113198185Z","level":"INFO","msg":"stream: starting","core version":"0.22.2"}
+{"time":"2025-10-23T08:25:11.432448013Z","level":"INFO","msg":"stream: created new stream","id":"m04vb10o"}
+{"time":"2025-10-23T08:25:11.432508503Z","level":"INFO","msg":"handler: started","stream_id":"m04vb10o"}
+{"time":"2025-10-23T08:25:11.432594793Z","level":"INFO","msg":"stream: started","id":"m04vb10o"}
+{"time":"2025-10-23T08:25:11.432608719Z","level":"INFO","msg":"writer: started","stream_id":"m04vb10o"}
+{"time":"2025-10-23T08:25:11.432621048Z","level":"INFO","msg":"sender: started","stream_id":"m04vb10o"}
+{"time":"2025-10-23T08:25:17.602399103Z","level":"INFO","msg":"stream: closing","id":"m04vb10o"}
+{"time":"2025-10-23T08:25:18.119924128Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-23T08:25:18.392547401Z","level":"INFO","msg":"handler: closed","stream_id":"m04vb10o"}
+{"time":"2025-10-23T08:25:18.392659506Z","level":"INFO","msg":"sender: closed","stream_id":"m04vb10o"}
+{"time":"2025-10-23T08:25:18.392668366Z","level":"INFO","msg":"stream: closed","id":"m04vb10o"}

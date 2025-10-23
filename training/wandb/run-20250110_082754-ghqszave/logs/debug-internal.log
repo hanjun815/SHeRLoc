@@ -1,0 +1,16 @@
+{"time":"2025-01-10T08:27:54.336007986Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-10T08:27:54.336043802Z","level":"INFO","msg":"created symlink","path":"/code/RLoc/training/wandb/run-20250110_082754-ghqszave/logs/debug-core.log"}
+{"time":"2025-01-10T08:27:54.44801156Z","level":"INFO","msg":"created new stream","id":"ghqszave"}
+{"time":"2025-01-10T08:27:54.448082783Z","level":"INFO","msg":"stream: started","id":"ghqszave"}
+{"time":"2025-01-10T08:27:54.448137688Z","level":"INFO","msg":"writer: Do: started","stream_id":"ghqszave"}
+{"time":"2025-01-10T08:27:54.448224673Z","level":"INFO","msg":"handler: started","stream_id":"ghqszave"}
+{"time":"2025-01-10T08:27:54.448333731Z","level":"INFO","msg":"sender: started","stream_id":"ghqszave"}
+{"time":"2025-01-10T08:27:54.961934422Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-10T10:04:42.154165733Z","level":"INFO","msg":"stream: closing","id":"ghqszave"}
+{"time":"2025-01-10T10:04:42.154205642Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-10T10:04:42.155123254Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-10T10:04:42.943059897Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-10T10:04:43.187274296Z","level":"INFO","msg":"handler: closed","stream_id":"ghqszave"}
+{"time":"2025-01-10T10:04:43.187331436Z","level":"INFO","msg":"writer: Close: closed","stream_id":"ghqszave"}
+{"time":"2025-01-10T10:04:43.187344362Z","level":"INFO","msg":"sender: closed","stream_id":"ghqszave"}
+{"time":"2025-01-10T10:04:43.187474165Z","level":"INFO","msg":"stream: closed","id":"ghqszave"}

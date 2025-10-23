@@ -1,0 +1,16 @@
+{"time":"2025-01-10T07:34:34.120048571Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-10T07:34:34.12009537Z","level":"INFO","msg":"created symlink","path":"/code/RLoc/training/wandb/run-20250110_073434-hdodyksb/logs/debug-core.log"}
+{"time":"2025-01-10T07:34:34.232470936Z","level":"INFO","msg":"created new stream","id":"hdodyksb"}
+{"time":"2025-01-10T07:34:34.232547679Z","level":"INFO","msg":"stream: started","id":"hdodyksb"}
+{"time":"2025-01-10T07:34:34.232591433Z","level":"INFO","msg":"writer: Do: started","stream_id":"hdodyksb"}
+{"time":"2025-01-10T07:34:34.232597979Z","level":"INFO","msg":"handler: started","stream_id":"hdodyksb"}
+{"time":"2025-01-10T07:34:34.232640725Z","level":"INFO","msg":"sender: started","stream_id":"hdodyksb"}
+{"time":"2025-01-10T07:34:34.558350571Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-10T07:34:40.738107005Z","level":"INFO","msg":"stream: closing","id":"hdodyksb"}
+{"time":"2025-01-10T07:34:40.73816452Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-10T07:34:40.739555517Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-10T07:34:41.647916549Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-10T07:34:41.917878268Z","level":"INFO","msg":"handler: closed","stream_id":"hdodyksb"}
+{"time":"2025-01-10T07:34:41.917943315Z","level":"INFO","msg":"sender: closed","stream_id":"hdodyksb"}
+{"time":"2025-01-10T07:34:41.917938352Z","level":"INFO","msg":"writer: Close: closed","stream_id":"hdodyksb"}
+{"time":"2025-01-10T07:34:41.918074149Z","level":"INFO","msg":"stream: closed","id":"hdodyksb"}

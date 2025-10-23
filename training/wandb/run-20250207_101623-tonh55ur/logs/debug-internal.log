@@ -1,0 +1,15 @@
+{"time":"2025-02-07T10:16:23.556363669Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250207_101623-tonh55ur/logs/debug-core.log"}
+{"time":"2025-02-07T10:16:23.660208171Z","level":"INFO","msg":"created new stream","id":"tonh55ur"}
+{"time":"2025-02-07T10:16:23.660230885Z","level":"INFO","msg":"stream: started","id":"tonh55ur"}
+{"time":"2025-02-07T10:16:23.660303451Z","level":"INFO","msg":"writer: Do: started","stream_id":"tonh55ur"}
+{"time":"2025-02-07T10:16:23.660383273Z","level":"INFO","msg":"sender: started","stream_id":"tonh55ur"}
+{"time":"2025-02-07T10:16:23.660417208Z","level":"INFO","msg":"handler: started","stream_id":"tonh55ur"}
+{"time":"2025-02-07T10:16:23.951539328Z","level":"INFO","msg":"stream: closing","id":"tonh55ur"}
+{"time":"2025-02-07T10:16:24.031831001Z","level":"ERROR","msg":"sender: upsertConfig: RunRecord is nil"}
+{"time":"2025-02-07T10:16:24.268327992Z","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-02-07T10:16:24.268376363Z","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404 Not Found: {\"errors\":[{\"message\":\"project /RadarLoc not found during createRunFiles\",\"path\":[\"createRunFiles\"]}],\"data\":{\"createRunFiles\":null}}"}
+{"time":"2025-02-07T10:16:24.268736751Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-07T10:16:24.268770131Z","level":"INFO","msg":"handler: closed","stream_id":"tonh55ur"}
+{"time":"2025-02-07T10:16:24.268787682Z","level":"INFO","msg":"writer: Close: closed","stream_id":"tonh55ur"}
+{"time":"2025-02-07T10:16:24.268852114Z","level":"INFO","msg":"sender: closed","stream_id":"tonh55ur"}
+{"time":"2025-02-07T10:16:24.268889028Z","level":"INFO","msg":"stream: closed","id":"tonh55ur"}

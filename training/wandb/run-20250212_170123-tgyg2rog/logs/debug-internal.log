@@ -1,0 +1,15 @@
+{"time":"2025-02-12T17:01:24.028326104Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250212_170123-tgyg2rog/logs/debug-core.log"}
+{"time":"2025-02-12T17:01:24.132441951Z","level":"INFO","msg":"created new stream","id":"tgyg2rog"}
+{"time":"2025-02-12T17:01:24.132464575Z","level":"INFO","msg":"stream: started","id":"tgyg2rog"}
+{"time":"2025-02-12T17:01:24.132537799Z","level":"INFO","msg":"handler: started","stream_id":"tgyg2rog"}
+{"time":"2025-02-12T17:01:24.132540752Z","level":"INFO","msg":"writer: Do: started","stream_id":"tgyg2rog"}
+{"time":"2025-02-12T17:01:24.132577707Z","level":"INFO","msg":"sender: started","stream_id":"tgyg2rog"}
+{"time":"2025-02-12T17:01:24.427621874Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-12T17:01:35.56059904Z","level":"INFO","msg":"stream: closing","id":"tgyg2rog"}
+{"time":"2025-02-12T17:01:35.560616518Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-12T17:01:35.561014934Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-12T17:01:36.295977553Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-12T17:01:36.548282965Z","level":"INFO","msg":"handler: closed","stream_id":"tgyg2rog"}
+{"time":"2025-02-12T17:01:36.548346033Z","level":"INFO","msg":"writer: Close: closed","stream_id":"tgyg2rog"}
+{"time":"2025-02-12T17:01:36.54837469Z","level":"INFO","msg":"sender: closed","stream_id":"tgyg2rog"}
+{"time":"2025-02-12T17:01:36.548430986Z","level":"INFO","msg":"stream: closed","id":"tgyg2rog"}

@@ -1,0 +1,10 @@
+{"time":"2025-03-31T12:31:32.314725888Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250331_123131-28sge5ry/logs/debug-core.log"}
+{"time":"2025-03-31T12:31:32.419499936Z","level":"INFO","msg":"created new stream","id":"28sge5ry"}
+{"time":"2025-03-31T12:31:32.419523083Z","level":"INFO","msg":"stream: started","id":"28sge5ry"}
+{"time":"2025-03-31T12:31:32.419530254Z","level":"INFO","msg":"handler: started","stream_id":"28sge5ry"}
+{"time":"2025-03-31T12:31:32.41958834Z","level":"INFO","msg":"writer: Do: started","stream_id":"28sge5ry"}
+{"time":"2025-03-31T12:31:32.419605054Z","level":"INFO","msg":"sender: started","stream_id":"28sge5ry"}
+{"time":"2025-03-31T12:31:32.726374207Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-31T12:54:49.020020604Z","level":"INFO","msg":"stream: closing","id":"28sge5ry"}
+{"time":"2025-03-31T12:54:49.020040263Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-31T12:54:49.0204749Z","level":"INFO","msg":"Stopped system monitor"}

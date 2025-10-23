@@ -1,0 +1,7 @@
+  0%|                                                    | 0/80 [00:05<?, ?it/s]
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 372, in do_train
+    for index, (query, positives, negatives) in enumerate(dataloaders[phase]):
+ValueError: too many values to unpack (expected 3)

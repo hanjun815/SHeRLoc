@@ -1,0 +1,12 @@
+{"time":"2025-01-13T13:54:12.19891381Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-13T13:54:12.198948354Z","level":"INFO","msg":"created symlink","path":"/code/RLoc/training/wandb/run-20250113_135412-bl5mwvs7/logs/debug-core.log"}
+{"time":"2025-01-13T13:54:12.311628638Z","level":"INFO","msg":"created new stream","id":"bl5mwvs7"}
+{"time":"2025-01-13T13:54:12.311698504Z","level":"INFO","msg":"stream: started","id":"bl5mwvs7"}
+{"time":"2025-01-13T13:54:12.31181051Z","level":"INFO","msg":"writer: Do: started","stream_id":"bl5mwvs7"}
+{"time":"2025-01-13T13:54:12.311828777Z","level":"INFO","msg":"handler: started","stream_id":"bl5mwvs7"}
+{"time":"2025-01-13T13:54:12.311978854Z","level":"INFO","msg":"sender: started","stream_id":"bl5mwvs7"}
+{"time":"2025-01-13T13:54:12.827372311Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-13T16:27:57.005152299Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-01-14T13:03:45.456983026Z","level":"INFO","msg":"stream: closing","id":"bl5mwvs7"}
+{"time":"2025-01-14T13:03:45.457039696Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-14T13:03:45.458531653Z","level":"INFO","msg":"Stopped system monitor"}

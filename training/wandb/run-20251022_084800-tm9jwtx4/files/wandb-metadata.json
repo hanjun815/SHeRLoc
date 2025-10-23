@@ -1,0 +1,19 @@
+{
+  "os": "Linux-6.8.0-40-generic-x86_64-with-glibc2.31",
+  "python": "CPython 3.9.12",
+  "startedAt": "2025-10-22T08:48:00.769180Z",
+  "args": [
+    "--config",
+    "../config/config.txt",
+    "--model_config",
+    "../models/Hetero_SHeRLoc.txt"
+  ],
+  "program": "/code/SHeRLoc_pr/training/train.py",
+  "codePath": "train.py",
+  "codePathLocal": "train.py",
+  "email": "hanjun815@snu.ac.kr",
+  "root": "/code/SHeRLoc_pr/training",
+  "host": "oem-System-Product-Name",
+  "executable": "/usr/local/bin/python",
+  "writerId": "zemx1gdschnoivfxsjmghwf5nsoosyza"
+}

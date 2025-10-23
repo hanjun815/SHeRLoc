@@ -1,0 +1,38 @@
+  0%|                                                                   | 0/80 [00:39<?, ?it/s]
+0 25113 0.31761494278907776
+1 25113 0.31739187240600586
+2 25113 0.3008599281311035
+3 25113 0.2972116768360138
+4 25113 0.2893384099006653
+5 25113 0.2888793349266052
+6 25113 0.2925143241882324
+7 25113 0.2785475254058838
+8 25113 0.2776915729045868
+9 25113 0.2859035134315491
+10 25113 0.2629339396953583
+11 25113 0.21068903803825378
+12 25113 0.18731175363063812
+13 25113 0.2840985655784607
+14 25113 0.3617197871208191
+15 25113 0.275174617767334
+16 25113 0.23992253839969635
+17 25113 0.2979810833930969
+18 25113 0.4120393395423889
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 396, in do_train
+    loss, temp_stats, _ = loss_fn(vladQ, vladP, vladN)
+  File "/code/RLoc/models/loss.py", line 270, in __call__
+    neg_dist = self.distance(vladQ[b:b+1], vladN[b])  # [n_neg]
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pytorch_metric_learning/distances/base_distance.py", line 25, in forward
+    self.set_default_stats(
+  File "/usr/local/lib/python3.9/site-packages/pytorch_metric_learning/distances/base_distance.py", line 81, in set_default_stats
+    self.get_norm(ref_emb_normalized)
+  File "/usr/local/lib/python3.9/site-packages/pytorch_metric_learning/distances/base_distance.py", line 65, in get_norm
+    return torch.norm(embeddings, p=self.p, dim=dim, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/functional.py", line 1495, in norm
+    return _VF.norm(input, p, _dim, keepdim=keepdim)  # type: ignore[attr-defined]
+KeyboardInterrupt

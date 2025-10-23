@@ -1,0 +1,16 @@
+{"time":"2025-01-09T17:22:40.871247921Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-09T17:22:40.871257617Z","level":"INFO","msg":"created symlink","path":"/code/RLoc/training/wandb/run-20250109_172240-jbatzzs8/logs/debug-core.log"}
+{"time":"2025-01-09T17:22:40.9736354Z","level":"INFO","msg":"created new stream","id":"jbatzzs8"}
+{"time":"2025-01-09T17:22:40.973677462Z","level":"INFO","msg":"stream: started","id":"jbatzzs8"}
+{"time":"2025-01-09T17:22:40.973779001Z","level":"INFO","msg":"writer: Do: started","stream_id":"jbatzzs8"}
+{"time":"2025-01-09T17:22:40.973890249Z","level":"INFO","msg":"handler: started","stream_id":"jbatzzs8"}
+{"time":"2025-01-09T17:22:40.973912995Z","level":"INFO","msg":"sender: started","stream_id":"jbatzzs8"}
+{"time":"2025-01-09T17:22:41.330408458Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-09T17:22:42.886705051Z","level":"INFO","msg":"stream: closing","id":"jbatzzs8"}
+{"time":"2025-01-09T17:22:42.886723781Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-09T17:22:42.887067405Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-09T17:22:43.69412404Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-09T17:22:44.461362238Z","level":"INFO","msg":"handler: closed","stream_id":"jbatzzs8"}
+{"time":"2025-01-09T17:22:44.461431037Z","level":"INFO","msg":"writer: Close: closed","stream_id":"jbatzzs8"}
+{"time":"2025-01-09T17:22:44.461459192Z","level":"INFO","msg":"sender: closed","stream_id":"jbatzzs8"}
+{"time":"2025-01-09T17:22:44.46151344Z","level":"INFO","msg":"stream: closed","id":"jbatzzs8"}

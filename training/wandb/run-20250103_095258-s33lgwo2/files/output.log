@@ -1,0 +1,83 @@
+  6%|█████▎                                                                                      | 7/120 [27:46<7:27:10, 237.43s/it]
+train - Global loss: 0.228013    Embedding norm: 0.8103   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0143/0.0439   Neg dist (min/mean/max): 0.0000/0.0003/0.0059
+val - Global loss: 0.200001    Embedding norm: 0.0000   Triplets (all/active): 136.4/136.4
+Pos dist (min/mean/max): 0.0000/0.0000/0.0001   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+train - Global loss: 0.200001    Embedding norm: 0.0000   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+val - Global loss: 0.200000    Embedding norm: 0.0000   Triplets (all/active): 135.6/135.6
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+train - Global loss: 0.200000    Embedding norm: 0.0000   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+val - Global loss: 0.200000    Embedding norm: 0.0000   Triplets (all/active): 136.0/136.0
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+train - Global loss: 0.200000    Embedding norm: 0.0000   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+val - Global loss: 0.200000    Embedding norm: 0.0000   Triplets (all/active): 135.6/135.6
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+train - Global loss: 0.200000    Embedding norm: 0.0000   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+val - Global loss: 0.200000    Embedding norm: 0.0000   Triplets (all/active): 136.3/136.3
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+train - Global loss: 0.200000    Embedding norm: 0.0000   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+val - Global loss: 0.200000    Embedding norm: 0.0000   Triplets (all/active): 136.3/136.3
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+train - Global loss: 0.200000    Embedding norm: 0.0000   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+val - Global loss: 0.200000    Embedding norm: 0.0000   Triplets (all/active): 135.6/135.6
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+train - Global loss: 0.200000    Embedding norm: 0.0019   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+val - Global loss: 0.200000    Embedding norm: 0.0000   Triplets (all/active): 136.4/136.4
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+train - Global loss: 0.200000    Embedding norm: 0.0000   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+val - Global loss: 0.200000    Embedding norm: 0.0000   Triplets (all/active): 136.2/136.2
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+train - Global loss: 0.200000    Embedding norm: 0.0001   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+val - Global loss: 0.200000    Embedding norm: 0.0000   Triplets (all/active): 136.2/136.2
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+train - Global loss: 0.200000    Embedding norm: 0.0029   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+val - Global loss: 0.200000    Embedding norm: 0.0177   Triplets (all/active): 135.9/135.9
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+train - Global loss: 0.200000    Embedding norm: 0.0145   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+val - Global loss: 0.200000    Embedding norm: 0.0058   Triplets (all/active): 135.8/135.8
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+train - Global loss: 0.200000    Embedding norm: 0.0073   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+val - Global loss: 0.200000    Embedding norm: 0.0004   Triplets (all/active): 136.3/136.3
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+train - Global loss: 0.200000    Embedding norm: 0.0122   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+val - Global loss: 0.200000    Embedding norm: 0.0008   Triplets (all/active): 136.2/136.2
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+train - Global loss: 0.200000    Embedding norm: 0.0032   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+val - Global loss: 0.200000    Embedding norm: 0.0000   Triplets (all/active): 135.6/135.6
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+train - Global loss: 0.200000    Embedding norm: 0.0002   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+val - Global loss: 0.200000    Embedding norm: 0.0000   Triplets (all/active): 135.9/135.9
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RadarLoc/training/trainer.py", line 157, in do_train
+    optimizer.step()
+  File "/usr/local/lib/python3.9/site-packages/torch/optim/lr_scheduler.py", line 65, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/optim/optimizer.py", line 113, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/optim/adam.py", line 157, in step
+    adam(params_with_grad,
+  File "/usr/local/lib/python3.9/site-packages/torch/optim/adam.py", line 213, in adam
+    func(params,
+  File "/usr/local/lib/python3.9/site-packages/torch/optim/adam.py", line 295, in _single_tensor_adam
+    step_size = lr / bias_correction1
+KeyboardInterrupt

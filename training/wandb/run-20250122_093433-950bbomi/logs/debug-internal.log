@@ -1,0 +1,16 @@
+{"time":"2025-01-22T09:34:33.400656641Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250122_093433-950bbomi/logs/debug-core.log"}
+{"time":"2025-01-22T09:34:33.505797755Z","level":"INFO","msg":"created new stream","id":"950bbomi"}
+{"time":"2025-01-22T09:34:33.505820788Z","level":"INFO","msg":"stream: started","id":"950bbomi"}
+{"time":"2025-01-22T09:34:33.505888066Z","level":"INFO","msg":"writer: Do: started","stream_id":"950bbomi"}
+{"time":"2025-01-22T09:34:33.505978685Z","level":"INFO","msg":"sender: started","stream_id":"950bbomi"}
+{"time":"2025-01-22T09:34:33.506016228Z","level":"INFO","msg":"handler: started","stream_id":"950bbomi"}
+{"time":"2025-01-22T09:34:34.009715303Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-22T10:11:52.748537048Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 147.46.118.27:34002->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2025-01-22T16:01:34.498731311Z","level":"INFO","msg":"stream: closing","id":"950bbomi"}
+{"time":"2025-01-22T16:01:34.49875398Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-22T16:01:34.499212045Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-22T16:01:35.435766908Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-22T16:01:35.684992575Z","level":"INFO","msg":"handler: closed","stream_id":"950bbomi"}
+{"time":"2025-01-22T16:01:35.685026809Z","level":"INFO","msg":"writer: Close: closed","stream_id":"950bbomi"}
+{"time":"2025-01-22T16:01:35.685065252Z","level":"INFO","msg":"sender: closed","stream_id":"950bbomi"}
+{"time":"2025-01-22T16:01:35.685079925Z","level":"INFO","msg":"stream: closed","id":"950bbomi"}

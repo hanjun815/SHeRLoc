@@ -1,0 +1,15 @@
+  0%|                                                                                 | 0/120 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 367, in do_train
+    outputs = model(inputs, n_pos, n_neg)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/code/RLoc/models/model_factory.py", line 59, in forward
+    query_embedding = self.query_model(query)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/code/RLoc/models/radar/radar_net.py", line 15, in forward
+    x = x['radar_batch']
+IndexError: too many indices for tensor of dimension 4

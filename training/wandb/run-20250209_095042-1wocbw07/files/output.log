@@ -1,0 +1,17 @@
+  0%|                                                   | 0/80 [00:13<?, ?it/s]
+0 72782 1.7184312343597412
+1 72782 1.9461915493011475
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 391, in do_train
+    loss, temp_stats, _ = loss_fn(vladQ, vladP, vladN)
+  File "/code/RLoc/models/loss.py", line 269, in __call__
+    pos_dist = self.distance(vladQ[b:b+1], vladP[b])  # [n_pos]
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pytorch_metric_learning/distances/base_distance.py", line 25, in forward
+    self.set_default_stats(
+  File "/usr/local/lib/python3.9/site-packages/pytorch_metric_learning/distances/base_distance.py", line 77, in set_default_stats
+    "final_avg_query_norm": torch.mean(
+KeyboardInterrupt

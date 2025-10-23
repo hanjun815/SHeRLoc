@@ -1,0 +1,34 @@
+  0%|                                                                   | 0/80 [00:36<?, ?it/s]
+0 25113 0.3216627240180969
+1 25113 0.3113331198692322
+2 25113 0.3025965690612793
+3 25113 0.30030524730682373
+4 25113 0.29327958822250366
+5 25113 0.2914656400680542
+6 25113 0.2783564329147339
+7 25113 0.3084855079650879
+8 25113 0.27785125374794006
+9 25113 0.29381638765335083
+10 25113 0.23947446048259735
+11 25113 0.3253336548805237
+12 25113 0.32487818598747253
+13 25113 0.2928542494773865
+14 25113 0.27904996275901794
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 396, in do_train
+    loss, temp_stats, _ = loss_fn(vladQ, vladP, vladN)
+  File "/code/RLoc/models/loss.py", line 278, in __call__
+    dist_swap = self.distance(hardest_vladP.unsqueeze(0), hardest_vladN.unsqueeze(0))
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pytorch_metric_learning/distances/base_distance.py", line 28, in forward
+    mat = self.compute_mat(query_emb_normalized, ref_emb_normalized)
+  File "/usr/local/lib/python3.9/site-packages/pytorch_metric_learning/distances/lp_distance.py", line 24, in compute_mat
+    return torch.cdist(query_emb, ref_emb, p=self.p)
+  File "/usr/local/lib/python3.9/site-packages/torch/functional.py", line 1183, in cdist
+    return _VF.cdist(x1, x2, p, None)  # type: ignore[attr-defined]
+  File "/usr/local/lib/python3.9/site-packages/torch/_VF.py", line 25, in __getattr__
+    def __getattr__(self, attr):
+KeyboardInterrupt

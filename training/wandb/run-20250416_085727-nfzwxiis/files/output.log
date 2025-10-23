@@ -1,0 +1,35 @@
+  0%|                                                    | 0/80 [00:30<?, ?it/s]
+0 25113 0.5430527925491333
+1 25113 0.5962136387825012
+2 25113 0.6022251844406128
+3 25113 0.5055214762687683
+4 25113 0.46768805384635925
+5 25113 0.5979286432266235
+6 25113 0.52227783203125
+7 25113 0.4121955633163452
+8 25113 0.42807620763778687
+9 25113 0.5193911790847778
+10 25113 0.44033822417259216
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 393, in do_train
+    outputs = model(inputs, n_pos, n_neg)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 168, in forward
+    outputs = self.parallel_apply(replicas, inputs, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 178, in parallel_apply
+    return parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)])
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/parallel_apply.py", line 78, in parallel_apply
+    thread.join()
+  File "/usr/local/lib/python3.9/threading.py", line 1053, in join
+    self._wait_for_tstate_lock()
+  File "/usr/local/lib/python3.9/threading.py", line 1073, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+KeyboardInterrupt
+Exception ignored in: <module 'threading' from '/usr/local/lib/python3.9/threading.py'>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/threading.py", line 1470, in _shutdown
+    lock.acquire()
+KeyboardInterrupt:

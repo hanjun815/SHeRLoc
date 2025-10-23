@@ -1,0 +1,48 @@
+  0%|                                                    | 0/80 [00:00<?, ?it/s]Exception in thread Thread-4:
+0 111965 1.9792534112930298
+1 111965 2.2802071571350098
+2 111965 2.3848981857299805
+3 111965 1.7765414714813232
+4 111965 1.790544867515564
+5 111965 1.2457743883132935
+6 111965 0.9028322696685791
+7 111965 1.180780291557312
+8 111965 1.4942021369934082
+9 111965 1.1170122623443604
+10 111965 2.176555633544922
+11 111965 1.161059856414795
+12 111965 0.46893566846847534
+13 111965 0.7319361567497253
+14 111965 0.9150404334068298
+15 111965 1.0078943967819214
+16 111965 1.3657883405685425
+17 111965 0.5869318246841431
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.9/threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/_utils/pin_memory.py", line 28, in _pin_memory_loop
+    r = in_queue.get(timeout=MP_STATUS_CHECK_INTERVAL)
+  File "/usr/local/lib/python3.9/multiprocessing/queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "/usr/local/lib/python3.9/site-packages/torch/multiprocessing/reductions.py", line 297, in rebuild_storage_fd
+    fd = df.detach()
+  File "/usr/local/lib/python3.9/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/usr/local/lib/python3.9/multiprocessing/resource_sharer.py", line 86, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/usr/local/lib/python3.9/multiprocessing/connection.py", line 507, in Client
+    c = SocketClient(address)
+  File "/usr/local/lib/python3.9/multiprocessing/connection.py", line 635, in SocketClient
+    s.connect(address)
+ConnectionRefusedError: [Errno 111] Connection refused
+  0%|                                                    | 0/80 [00:28<?, ?it/s]
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 403, in do_train
+    torch.cuda.empty_cache()
+  File "/usr/local/lib/python3.9/site-packages/torch/cuda/memory.py", line 121, in empty_cache
+    torch._C._cuda_emptyCache()
+KeyboardInterrupt

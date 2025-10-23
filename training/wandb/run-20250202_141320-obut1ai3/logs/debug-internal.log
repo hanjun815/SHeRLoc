@@ -1,0 +1,10 @@
+{"time":"2025-02-02T14:13:20.322675177Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250202_141320-obut1ai3/logs/debug-core.log"}
+{"time":"2025-02-02T14:13:20.428724974Z","level":"INFO","msg":"created new stream","id":"obut1ai3"}
+{"time":"2025-02-02T14:13:20.428761939Z","level":"INFO","msg":"stream: started","id":"obut1ai3"}
+{"time":"2025-02-02T14:13:20.428859117Z","level":"INFO","msg":"writer: Do: started","stream_id":"obut1ai3"}
+{"time":"2025-02-02T14:13:20.428942939Z","level":"INFO","msg":"handler: started","stream_id":"obut1ai3"}
+{"time":"2025-02-02T14:13:20.428993859Z","level":"INFO","msg":"sender: started","stream_id":"obut1ai3"}
+{"time":"2025-02-02T14:13:20.84604196Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-02T14:13:23.178401241Z","level":"INFO","msg":"stream: closing","id":"obut1ai3"}
+{"time":"2025-02-02T14:13:23.178420989Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-02T14:13:23.178860122Z","level":"INFO","msg":"Stopped system monitor"}

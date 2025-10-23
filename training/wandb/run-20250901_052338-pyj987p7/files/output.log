@@ -1,0 +1,83 @@
+  0%|                                                    | 0/20 [00:00<?, ?it/s]
+0 45360 0.3361702859401703
+1 45360 0.35067835450172424
+2 45360 0.31331998109817505
+3 45360 0.38563358783721924
+4 45360 0.30966728925704956
+5 45360 0.3272310197353363
+6 45360 0.3759863078594208
+7 45360 0.24316105246543884
+8 45360 0.31644994020462036
+9 45360 0.39403069019317627
+10 45360 0.373450368642807
+11 45360 0.4238191246986389
+12 45360 0.3737771511077881
+13 45360 0.40089771151542664
+14 45360 0.3213898539543152
+15 45360 0.32697272300720215
+16 45360 0.3064899742603302
+17 45360 0.3147928714752197
+18 45360 0.33067455887794495
+19 45360 0.3204246759414673
+20 45360 0.372167706489563
+21 45360 0.3507055640220642
+22 45360 0.3771106004714966
+23 45360 0.40045660734176636
+24 45360 0.38782352209091187
+25 45360 0.40064340829849243
+26 45360 0.3461073338985443
+27 45360 0.38080161809921265
+28 45360 0.3484571576118469
+29 45360 0.35928112268447876
+30 45360 0.36830830574035645
+31 45360 0.33581024408340454
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 396, in do_train
+    outputs = model(inputs, n_pos, n_neg)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 168, in forward
+    outputs = self.parallel_apply(replicas, inputs, kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 178, in parallel_apply
+    return parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)])
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/parallel_apply.py", line 86, in parallel_apply
+    output.reraise()
+  File "/usr/local/lib/python3.9/site-packages/torch/_utils.py", line 461, in reraise
+    raise exception
+RuntimeError: Caught RuntimeError in replica 1 on device 1.
+Original Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/parallel_apply.py", line 61, in _worker
+    output = module(*input, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/code/RLoc/models/model_factory.py", line 214, in forward
+    negatives_embedding = self.common_model(negatives)  # Output: [B * n_neg, D]
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/code/RLoc/models/radar/baseline_nets.py", line 65, in forward
+    x = self.fe(x)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/code/RLoc/models/radar/my_vgg.py", line 275, in forward
+    return self.feature_extractor(x)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/code/RLoc/models/radar/my_vgg.py", line 100, in forward
+    out = self.bn2(out)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/batchnorm.py", line 168, in forward
+    return F.batch_norm(
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/functional.py", line 2438, in batch_norm
+    return torch.batch_norm(
+RuntimeError: CUDA out of memory. Tried to allocate 142.00 MiB (GPU 1; 23.68 GiB total capacity; 9.64 GiB already allocated; 62.94 MiB free; 9.85 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

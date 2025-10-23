@@ -1,0 +1,42 @@
+2025-01-03 02:51:40,024 INFO    MainThread:758 [wandb_setup.py:_flush():68] Current SDK version is 0.19.1
+2025-01-03 02:51:40,025 INFO    MainThread:758 [wandb_setup.py:_flush():68] Configure stats pid to 758
+2025-01-03 02:51:40,025 INFO    MainThread:758 [wandb_setup.py:_flush():68] Loading settings from /root/.config/wandb/settings
+2025-01-03 02:51:40,025 INFO    MainThread:758 [wandb_setup.py:_flush():68] Loading settings from /code/RadarLoc/training/wandb/settings
+2025-01-03 02:51:40,025 INFO    MainThread:758 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-03 02:51:40,025 INFO    MainThread:758 [wandb_init.py:_log_setup():528] Logging user logs to /code/RadarLoc/training/wandb/run-20250103_025140-2u41fcfp/logs/debug.log
+2025-01-03 02:51:40,025 INFO    MainThread:758 [wandb_init.py:_log_setup():529] Logging internal logs to /code/RadarLoc/training/wandb/run-20250103_025140-2u41fcfp/logs/debug-internal.log
+2025-01-03 02:51:40,026 INFO    MainThread:758 [wandb_init.py:init():644] calling init triggers
+2025-01-03 02:51:40,026 INFO    MainThread:758 [wandb_init.py:init():650] wandb.init called with sweep_config: {}
+config: {'params_path': '../config/config_radarloc.txt', 'model_params_path': '../models/radarloc.txt', 'dataset': 'mulran', 'dataset_folder': '/code/HeRCULES', 'num_workers': 4, 'batch_size': 32, 'batch_expansion_th': 0.7, 'batch_size_limit': 256, 'batch_expansion_rate': 1.4, 'lr': 0.001, 'scheduler_milestones': [80], 'epochs': 120, 'weight_decay': 0.001, 'loss': 'BatchHardTripletMarginLoss', 'margin': 0.2, 'aug_mode': 2, 'train_file': '/code/HeRCULES/train_R/Bridge_Day_Bridge_Night_5_20.pickle', 'val_file': '/code/HeRCULES/val_R/Bridge_Day_Bridge_Night_5_20.pickle', 'test_file': '/code/HeRCULES/test_R_Sports_Complex/Day_Sports_Complex/Night_384_128.pickle', 'model_params.model_params_path': '../models/radarloc.txt', 'model_params.output_dim': 256, 'model_params.lidar_model': None, 'model_params.radar_model': 'radarloc'}
+2025-01-03 02:51:40,026 INFO    MainThread:758 [wandb_init.py:init():680] starting backend
+2025-01-03 02:51:40,026 INFO    MainThread:758 [wandb_init.py:init():684] sending inform_init request
+2025-01-03 02:51:40,266 INFO    MainThread:758 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-03 02:51:40,267 INFO    MainThread:758 [wandb_init.py:init():697] backend started and connected
+2025-01-03 02:51:40,276 INFO    MainThread:758 [wandb_init.py:init():790] updated telemetry
+2025-01-03 02:51:40,381 WARNING MsgRouterThr:758 [router.py:message_loop():75] message_loop has been closed
+2025-01-03 02:51:40,534 INFO    MainThread:758 [wandb_init.py:init():822] communicating run to backend with 90.0 second timeout
+2025-01-03 02:51:40,536 ERROR   MainThread:758 [wandb_init.py:init():1308] error in wandb.init()
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 1298, in init
+    return wi.init()
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 824, in init
+    run_init_handle = backend.interface.deliver_run(run)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/interface/interface.py", line 873, in deliver_run
+    return self._deliver_run(run_record)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 460, in _deliver_run
+    return self._deliver_record(record)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/interface/interface_shared.py", line 455, in _deliver_record
+    handle = mailbox._deliver_record(record, interface=self)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/lib/mailbox.py", line 451, in _deliver_record
+    interface._publish(record)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/interface/interface_sock.py", line 51, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/lib/sock_client.py", line 222, in send_record_publish
+    self.send_server_request(server_req)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/usr/local/lib/python3.9/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe

@@ -1,0 +1,11 @@
+{"time":"2025-01-03T12:39:17.44116101Z","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-03T12:39:17.441199163Z","level":"INFO","msg":"created symlink","path":"/code/RLoc/training/wandb/run-20250103_123917-bx1kw2mz/logs/debug-core.log"}
+{"time":"2025-01-03T12:39:17.553494787Z","level":"INFO","msg":"created new stream","id":"bx1kw2mz"}
+{"time":"2025-01-03T12:39:17.55360752Z","level":"INFO","msg":"stream: started","id":"bx1kw2mz"}
+{"time":"2025-01-03T12:39:17.553686616Z","level":"INFO","msg":"writer: Do: started","stream_id":"bx1kw2mz"}
+{"time":"2025-01-03T12:39:17.55377828Z","level":"INFO","msg":"sender: started","stream_id":"bx1kw2mz"}
+{"time":"2025-01-03T12:39:17.553863473Z","level":"INFO","msg":"handler: started","stream_id":"bx1kw2mz"}
+{"time":"2025-01-03T12:39:17.869420183Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-03T12:48:46.534021681Z","level":"INFO","msg":"stream: closing","id":"bx1kw2mz"}
+{"time":"2025-01-03T12:48:46.53405921Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-03T12:48:46.534816245Z","level":"INFO","msg":"Stopped system monitor"}

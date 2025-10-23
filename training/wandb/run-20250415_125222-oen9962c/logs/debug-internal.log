@@ -1,0 +1,10 @@
+{"time":"2025-04-15T12:52:22.462294996Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250415_125222-oen9962c/logs/debug-core.log"}
+{"time":"2025-04-15T12:52:22.566328815Z","level":"INFO","msg":"created new stream","id":"oen9962c"}
+{"time":"2025-04-15T12:52:22.566351955Z","level":"INFO","msg":"stream: started","id":"oen9962c"}
+{"time":"2025-04-15T12:52:22.566420367Z","level":"INFO","msg":"writer: Do: started","stream_id":"oen9962c"}
+{"time":"2025-04-15T12:52:22.566493587Z","level":"INFO","msg":"handler: started","stream_id":"oen9962c"}
+{"time":"2025-04-15T12:52:22.566532224Z","level":"INFO","msg":"sender: started","stream_id":"oen9962c"}
+{"time":"2025-04-15T12:52:22.899133102Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-15T12:59:31.1883134Z","level":"INFO","msg":"stream: closing","id":"oen9962c"}
+{"time":"2025-04-15T12:59:31.188375746Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-15T12:59:31.189365107Z","level":"INFO","msg":"Stopped system monitor"}

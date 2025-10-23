@@ -1,0 +1,39 @@
+  4%|███▊                                                                                        | 5/120 [21:39<8:18:07, 259.89s/it]
+train - Global loss: 0.229708    Embedding norm: 0.7709   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0151/0.0461   Neg dist (min/mean/max): 0.0000/0.0002/0.0039
+val - Global loss: 0.200001    Embedding norm: 0.0000   Triplets (all/active): 136.2/136.2
+Pos dist (min/mean/max): 0.0000/0.0000/0.0001   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+train - Global loss: 0.200003    Embedding norm: 0.0082   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+val - Global loss: 0.200009    Embedding norm: 0.0252   Triplets (all/active): 136.0/136.0
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+train - Global loss: 0.200001    Embedding norm: 0.0086   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+val - Global loss: 0.200000    Embedding norm: 0.0009   Triplets (all/active): 136.1/136.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+train - Global loss: 0.200000    Embedding norm: 0.0006   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+val - Global loss: 0.200000    Embedding norm: 0.0000   Triplets (all/active): 136.1/136.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+train - Global loss: 0.200000    Embedding norm: 0.0000   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+val - Global loss: 0.200000    Embedding norm: 0.0000   Triplets (all/active): 135.7/135.7
+Pos dist (min/mean/max): 0.0000/0.0000/0.0000   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RadarLoc/training/trainer.py", line 145, in do_train
+    embeddings = model(batch)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 167, in forward
+    replicas = self.replicate(self.module, self.device_ids[:len(inputs)])
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 172, in replicate
+    return replicate(module, device_ids, not torch.is_grad_enabled())
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/replicate.py", line 135, in replicate
+    setattr(replica, key, module_copies[j][module_idx])
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1220, in __setattr__
+    if isinstance(value, Parameter):
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parameter.py", line 10, in __instancecheck__
+    return super().__instancecheck__(instance) or (
+KeyboardInterrupt

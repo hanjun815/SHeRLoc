@@ -1,0 +1,10 @@
+{"time":"2025-02-14T08:13:26.148226318Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250214_081325-vvid7fgm/logs/debug-core.log"}
+{"time":"2025-02-14T08:13:26.252037878Z","level":"INFO","msg":"created new stream","id":"vvid7fgm"}
+{"time":"2025-02-14T08:13:26.25206566Z","level":"INFO","msg":"stream: started","id":"vvid7fgm"}
+{"time":"2025-02-14T08:13:26.252132943Z","level":"INFO","msg":"writer: Do: started","stream_id":"vvid7fgm"}
+{"time":"2025-02-14T08:13:26.252146647Z","level":"INFO","msg":"sender: started","stream_id":"vvid7fgm"}
+{"time":"2025-02-14T08:13:26.252228749Z","level":"INFO","msg":"handler: started","stream_id":"vvid7fgm"}
+{"time":"2025-02-14T08:13:26.543911388Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-14T09:32:53.908444854Z","level":"INFO","msg":"stream: closing","id":"vvid7fgm"}
+{"time":"2025-02-14T09:32:53.908461863Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-14T09:32:53.908903901Z","level":"INFO","msg":"Stopped system monitor"}

@@ -1,0 +1,11 @@
+{"time":"2025-04-18T07:08:30.567987808Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250418_070830-jl6ujlts/logs/debug-core.log"}
+{"time":"2025-04-18T07:08:30.672516069Z","level":"INFO","msg":"created new stream","id":"jl6ujlts"}
+{"time":"2025-04-18T07:08:30.672541511Z","level":"INFO","msg":"stream: started","id":"jl6ujlts"}
+{"time":"2025-04-18T07:08:30.672613645Z","level":"INFO","msg":"sender: started","stream_id":"jl6ujlts"}
+{"time":"2025-04-18T07:08:30.672609862Z","level":"INFO","msg":"writer: Do: started","stream_id":"jl6ujlts"}
+{"time":"2025-04-18T07:08:30.672643142Z","level":"INFO","msg":"handler: started","stream_id":"jl6ujlts"}
+{"time":"2025-04-18T07:08:31.015161835Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-18T07:11:34.368993484Z","level":"INFO","msg":"stream: closing","id":"jl6ujlts"}
+{"time":"2025-04-18T07:11:34.369019455Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-18T07:11:34.369496285Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-18T07:11:35.39713435Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}

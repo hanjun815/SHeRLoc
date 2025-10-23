@@ -1,0 +1,10 @@
+{"time":"2025-04-15T10:25:21.656337163Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250415_102521-hp80pckf/logs/debug-core.log"}
+{"time":"2025-04-15T10:25:21.760932945Z","level":"INFO","msg":"created new stream","id":"hp80pckf"}
+{"time":"2025-04-15T10:25:21.76095868Z","level":"INFO","msg":"stream: started","id":"hp80pckf"}
+{"time":"2025-04-15T10:25:21.761027284Z","level":"INFO","msg":"writer: Do: started","stream_id":"hp80pckf"}
+{"time":"2025-04-15T10:25:21.761098942Z","level":"INFO","msg":"sender: started","stream_id":"hp80pckf"}
+{"time":"2025-04-15T10:25:21.761136102Z","level":"INFO","msg":"handler: started","stream_id":"hp80pckf"}
+{"time":"2025-04-15T10:25:22.036119882Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-15T12:49:37.973116442Z","level":"INFO","msg":"stream: closing","id":"hp80pckf"}
+{"time":"2025-04-15T12:49:37.973140565Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-15T12:49:37.973566102Z","level":"INFO","msg":"Stopped system monitor"}

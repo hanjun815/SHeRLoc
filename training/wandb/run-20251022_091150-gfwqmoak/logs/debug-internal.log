@@ -1,0 +1,11 @@
+{"time":"2025-10-22T09:11:51.095592862Z","level":"INFO","msg":"stream: starting","core version":"0.22.2"}
+{"time":"2025-10-22T09:11:51.445911619Z","level":"INFO","msg":"stream: created new stream","id":"gfwqmoak"}
+{"time":"2025-10-22T09:11:51.44598046Z","level":"INFO","msg":"handler: started","stream_id":"gfwqmoak"}
+{"time":"2025-10-22T09:11:51.446096677Z","level":"INFO","msg":"stream: started","id":"gfwqmoak"}
+{"time":"2025-10-22T09:11:51.446108035Z","level":"INFO","msg":"writer: started","stream_id":"gfwqmoak"}
+{"time":"2025-10-22T09:11:51.44612285Z","level":"INFO","msg":"sender: started","stream_id":"gfwqmoak"}
+{"time":"2025-10-22T09:11:51.848821839Z","level":"INFO","msg":"stream: closing","id":"gfwqmoak"}
+{"time":"2025-10-22T09:11:52.745239659Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-22T09:11:53.015870964Z","level":"INFO","msg":"handler: closed","stream_id":"gfwqmoak"}
+{"time":"2025-10-22T09:11:53.015982134Z","level":"INFO","msg":"sender: closed","stream_id":"gfwqmoak"}
+{"time":"2025-10-22T09:11:53.015996571Z","level":"INFO","msg":"stream: closed","id":"gfwqmoak"}

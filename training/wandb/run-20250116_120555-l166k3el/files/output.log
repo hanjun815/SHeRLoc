@@ -1,0 +1,33 @@
+  0%|                                                                           | 0/120 [00:00<?, ?it/s]Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x7f45c3901040>
+0 45909 2.4852397441864014
+1 45909 1.676084280014038
+2 45909 1.7018721103668213
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1510, in __del__
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1474, in _shutdown_workers
+    w.join(timeout=_utils.MP_STATUS_CHECK_INTERVAL)
+  File "/usr/local/lib/python3.9/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/local/lib/python3.9/multiprocessing/popen_fork.py", line 40, in wait
+    if not wait([self.sentinel], timeout):
+  File "/usr/local/lib/python3.9/multiprocessing/connection.py", line 936, in wait
+    ready = selector.select(timeout)
+  File "/usr/local/lib/python3.9/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt:
+  0%|                                                                           | 0/120 [00:15<?, ?it/s]
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 391, in do_train
+    loss, temp_stats, _ = loss_fn(vladQ, vladP, vladN)
+  File "/code/RLoc/models/loss.py", line 269, in __call__
+    pos_dist = self.distance(vladQ[b:b+1], vladP[b])  # [n_pos]
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pytorch_metric_learning/distances/base_distance.py", line 25, in forward
+    self.set_default_stats(
+  File "/usr/local/lib/python3.9/site-packages/pytorch_metric_learning/distances/base_distance.py", line 73, in set_default_stats
+    "initial_avg_query_norm": torch.mean(
+KeyboardInterrupt

@@ -1,0 +1,7 @@
+{"time":"2025-04-04T15:09:55.238065066Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250404_150954-mhfsl75x/logs/debug-core.log"}
+{"time":"2025-04-04T15:09:55.341703301Z","level":"INFO","msg":"created new stream","id":"mhfsl75x"}
+{"time":"2025-04-04T15:09:55.341727631Z","level":"INFO","msg":"stream: started","id":"mhfsl75x"}
+{"time":"2025-04-04T15:09:55.341797173Z","level":"INFO","msg":"writer: Do: started","stream_id":"mhfsl75x"}
+{"time":"2025-04-04T15:09:55.341867773Z","level":"INFO","msg":"handler: started","stream_id":"mhfsl75x"}
+{"time":"2025-04-04T15:09:55.341917711Z","level":"INFO","msg":"sender: started","stream_id":"mhfsl75x"}
+{"time":"2025-04-04T15:09:55.646810918Z","level":"INFO","msg":"Starting system monitor"}

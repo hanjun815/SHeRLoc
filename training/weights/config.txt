@@ -1,0 +1,17 @@
+[DEFAULT]
+dataset=HeRCULES
+dataset_folder = /code/SHeRLoc/datasets/HeRCULES
+
+[TRAIN]
+num_workers = 1
+batch_size = 20
+
+lr = 1e-3
+epochs = 20
+weight_decay = 1e-3
+loss = BatchHardTripletMarginLoss
+margin = 1.0 
+
+train_dataset = /code/SHeRLoc/datasets/HeRCULES
+val_dataset = /code/SHeRLoc/datasets/HeRCULES
+test_dataset = /code/SHeRLoc/datasets/HeRCULES

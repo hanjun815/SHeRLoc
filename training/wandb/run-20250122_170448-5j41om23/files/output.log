@@ -1,0 +1,27 @@
+  0%|                                                                             | 0/120 [00:24<?, ?it/s]
+0 81028 1.379432201385498
+1 81028 0.8828245997428894
+2 81028 0.8252554535865784
+3 81028 0.765758216381073
+4 81028 1.22738516330719
+5 81028 0.9004308581352234
+6 81028 1.055517315864563
+7 81028 1.2229405641555786
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 367, in do_train
+    for index, (query, positives, negatives) in enumerate(dataloaders[phase]):
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 681, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1359, in _next_data
+    idx, data = self._get_data()
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1315, in _get_data
+    success, data = self._try_get_data()
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1163, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/usr/local/lib/python3.9/queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+  File "/usr/local/lib/python3.9/threading.py", line 316, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

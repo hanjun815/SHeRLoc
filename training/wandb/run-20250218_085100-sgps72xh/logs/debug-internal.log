@@ -1,0 +1,15 @@
+{"time":"2025-02-18T08:51:00.942131888Z","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/code/RLoc/training/wandb/run-20250218_085100-sgps72xh/logs/debug-core.log"}
+{"time":"2025-02-18T08:51:01.046133905Z","level":"INFO","msg":"created new stream","id":"sgps72xh"}
+{"time":"2025-02-18T08:51:01.046160881Z","level":"INFO","msg":"stream: started","id":"sgps72xh"}
+{"time":"2025-02-18T08:51:01.046179545Z","level":"INFO","msg":"writer: Do: started","stream_id":"sgps72xh"}
+{"time":"2025-02-18T08:51:01.046204974Z","level":"INFO","msg":"sender: started","stream_id":"sgps72xh"}
+{"time":"2025-02-18T08:51:01.046179493Z","level":"INFO","msg":"handler: started","stream_id":"sgps72xh"}
+{"time":"2025-02-18T08:51:01.565312279Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-18T08:57:28.636307495Z","level":"INFO","msg":"stream: closing","id":"sgps72xh"}
+{"time":"2025-02-18T08:57:28.636327881Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-18T08:57:28.637026497Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-18T08:57:29.525942416Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-18T08:57:29.796639796Z","level":"INFO","msg":"handler: closed","stream_id":"sgps72xh"}
+{"time":"2025-02-18T08:57:29.796668353Z","level":"INFO","msg":"writer: Close: closed","stream_id":"sgps72xh"}
+{"time":"2025-02-18T08:57:29.796692012Z","level":"INFO","msg":"sender: closed","stream_id":"sgps72xh"}
+{"time":"2025-02-18T08:57:29.796718217Z","level":"INFO","msg":"stream: closed","id":"sgps72xh"}

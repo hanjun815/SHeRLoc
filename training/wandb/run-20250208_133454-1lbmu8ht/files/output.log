@@ -1,0 +1,28 @@
+  0%|                                                   | 0/80 [00:14<?, ?it/s]
+0 82941 3.299661159515381
+1 82941 2.7877349853515625
+2 82941 2.3778793811798096
+3 82941 2.0233709812164307
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/linecache.py", line 46, in getlines
+    return updatecache(filename, module_globals)
+  File "/usr/local/lib/python3.9/linecache.py", line 136, in updatecache
+    with tokenize.open(fullname) as fp:
+  File "/usr/local/lib/python3.9/tokenize.py", line 394, in open
+    encoding, lines = detect_encoding(buffer.readline)
+  File "/usr/local/lib/python3.9/tokenize.py", line 371, in detect_encoding
+    encoding = find_cookie(first)
+  File "/usr/local/lib/python3.9/tokenize.py", line 337, in find_cookie
+    match = cookie_re.match(line_string)
+KeyboardInterrupt
+
+Original exception was:
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 403, in do_train
+    torch.cuda.empty_cache()
+  File "/usr/local/lib/python3.9/site-packages/torch/cuda/memory.py", line 121, in empty_cache
+    torch._C._cuda_emptyCache()
+KeyboardInterrupt

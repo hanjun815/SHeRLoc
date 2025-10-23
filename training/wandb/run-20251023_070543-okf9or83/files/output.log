@@ -1,0 +1,71 @@
+  0%|                                                    | 0/20 [00:00<?, ?it/s]
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+[WARN] No valid batches in phase=train. Skipping epoch aggregation.
+Traceback (most recent call last):
+  File "/code/SHeRLoc_pr/training/train.py", line 31, in <module>
+    do_train(model_params, params, debug=args.debug, device=device)
+  File "/code/SHeRLoc_pr/training/trainer.py", line 121, in do_train
+    for index, (query, positives, negatives, sim_p, sim_n) in enumerate(dataloaders[phase]):
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 681, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 721, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/usr/local/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/code/SHeRLoc_pr/training/dataset.py", line 266, in __getitem__
+    neg = np.array(Image.open(neg_image_path)).astype(np.float32)
+  File "/usr/local/lib/python3.9/site-packages/PIL/Image.py", line 3268, in open
+    im = _open_core(fp, filename, prefix, formats)
+  File "/usr/local/lib/python3.9/site-packages/PIL/Image.py", line 3254, in _open_core
+    im = factory(fp, filename)
+  File "/usr/local/lib/python3.9/site-packages/PIL/ImageFile.py", line 117, in __init__
+    self._open()
+  File "/usr/local/lib/python3.9/site-packages/PIL/PngImagePlugin.py", line 747, in _open
+    cid, pos, length = self.png.read()
+  File "/usr/local/lib/python3.9/site-packages/PIL/PngImagePlugin.py", line 178, in read
+    pos = self.fp.tell()
+KeyboardInterrupt

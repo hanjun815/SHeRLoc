@@ -1,0 +1,25 @@
+  0%|                                                    | 0/80 [00:18<?, ?it/s]
+0 25113 0.5531045794487
+1 25113 1.0683773756027222
+2 25113 nan
+3 25113 nan
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RLoc/training/trainer.py", line 393, in do_train
+    outputs = model(inputs, n_pos, n_neg)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 167, in forward
+    replicas = self.replicate(self.module, self.device_ids[:len(inputs)])
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 172, in replicate
+    return replicate(module, device_ids, not torch.is_grad_enabled())
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/replicate.py", line 91, in replicate
+    param_copies = _broadcast_coalesced_reshape(params, devices, detach)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/replicate.py", line 71, in _broadcast_coalesced_reshape
+    tensor_copies = Broadcast.apply(devices, *tensors)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/_functions.py", line 23, in forward
+    outputs = comm.broadcast_coalesced(inputs, ctx.target_gpus)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/comm.py", line 58, in broadcast_coalesced
+    return torch._C._broadcast_coalesced(tensors, devices, buffer_size)
+KeyboardInterrupt

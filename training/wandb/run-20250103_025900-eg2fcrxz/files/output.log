@@ -1,0 +1,27 @@
+  0%|                                                                                                         | 0/120 [02:36<?, ?it/s]
+train - Global loss: 0.304814    Embedding norm: 12.2358   Triplets (all/active): 8.0/2.8
+Pos dist (min/mean/max): 1.3465/1.7112/2.1700   Neg dist (min/mean/max): 1.8362/2.1818/2.7593
+Traceback (most recent call last):
+  File "/code/RadarLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RadarLoc/training/trainer.py", line 138, in do_train
+    embeddings = model(batch)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/code/RadarLoc/models/radar/radar_net.py", line 16, in forward
+    x = self.fe_net(x)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/code/RadarLoc/models/radar/cylindrical_resnet_FPN.py", line 82, in forward
+    x = self.conv0(x)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 457, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 453, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: CUDA out of memory. Tried to allocate 480.00 MiB (GPU 0; 23.65 GiB total capacity; 146.41 MiB already allocated; 12.75 MiB free; 174.00 MiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

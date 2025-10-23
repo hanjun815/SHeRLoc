@@ -1,0 +1,31 @@
+  2%|█▌                                                                                         | 2/120 [11:51<11:39:10, 355.51s/it]
+train - Global loss: 0.399036    Embedding norm: 6.7655   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.1015/0.2987   Neg dist (min/mean/max): 0.0000/0.0017/0.0270
+val - Global loss: 0.216151    Embedding norm: 0.4165   Triplets (all/active): 136.2/136.2
+Pos dist (min/mean/max): 0.0000/0.0086/0.0384   Neg dist (min/mean/max): 0.0000/0.0001/0.0074
+train - Global loss: 0.200912    Embedding norm: 0.0113   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0004/0.0032   Neg dist (min/mean/max): 0.0000/0.0000/0.0001
+val - Global loss: 0.200069    Embedding norm: 0.0000   Triplets (all/active): 136.2/136.2
+Pos dist (min/mean/max): 0.0000/0.0000/0.0040   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+train - Global loss: 0.200093    Embedding norm: 0.0001   Triplets (all/active): 16.1/16.1
+Pos dist (min/mean/max): 0.0000/0.0000/0.0009   Neg dist (min/mean/max): 0.0000/0.0000/0.0000
+Traceback (most recent call last):
+  File "/code/RLoc/training/train.py", line 31, in <module>
+    do_train(params, debug=args.debug, device=device)
+  File "/code/RadarLoc/training/trainer.py", line 145, in do_train
+    embeddings = model(batch)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 169, in forward
+    return self.gather(outputs, self.output_device)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 181, in gather
+    return gather(outputs, output_device, dim=self.dim)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/scatter_gather.py", line 78, in gather
+    res = gather_map(outputs)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/scatter_gather.py", line 63, in gather_map
+    return Gather.apply(target_device, dim, *outputs)
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/_functions.py", line 56, in forward
+    assert all(i.device.type != 'cpu' for i in inputs), (
+  File "/usr/local/lib/python3.9/site-packages/torch/nn/parallel/_functions.py", line 56, in <genexpr>
+    assert all(i.device.type != 'cpu' for i in inputs), (
+KeyboardInterrupt

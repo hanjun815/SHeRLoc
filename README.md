@@ -58,6 +58,12 @@ export PYTHONPATH=$PYTHONPATH:/code/SHeRLoc
 
 [**[Download HeRCULES Dataset]**](https://drive.google.com/drive/folders/1lrJg7MMfBzEEEyTwor3j6JysxaGwnR5i)
 
+Move the downloaded `tar.gz` to each sequence directory inside `SHeRLoc/datasets/HeRCULES`, then extract it.
+```
+# example
+cd SHeRLoc/datasets/HeRCULES/Bridge/01
+tar -zxvf Continental.tar.gz
+```
 ## 3. How to Execute
 **3-0 Preprocessing**
 

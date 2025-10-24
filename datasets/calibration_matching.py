@@ -198,8 +198,8 @@ def process_images_joint_all(nav_folder, polar_folder, lambda_reg=0.1, lr=1.0, m
 
 if __name__ == "__main__":
     current_dir = os.getcwd()
-    navtech_folder = os.path.join(current_dir, "HeRCULES/Mountaon/01/Navtech_before_calibration")
-    continental_folder = os.path.join(current_dir, "HeRCULES/Mountaon/01/Continental_before_calibration")
+    navtech_folder = os.path.join(current_dir, "HeRCULES/Mountain/01/Navtech_before_calibration")
+    continental_folder = os.path.join(current_dir, "HeRCULES/Mountain/01/Continental_before_calibration")
     overall_mean_ind, k_values_ind = process_images_individual_all(navtech_folder, continental_folder)
     overall_mean_joint, k_vector_joint = process_images_joint_all(navtech_folder, continental_folder,lambda_reg=0.1,max_iter=100)
     print("\nFinal Returned Average k:")

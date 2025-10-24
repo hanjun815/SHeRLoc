@@ -63,6 +63,9 @@ Move the downloaded `tar.gz` to each sequence directory inside `SHeRLoc/datasets
 # example
 cd SHeRLoc/datasets/HeRCULES/Bridge/01
 tar -zxvf Continental.tar.gz
+tar -zxvf Navtech.tar.gz
+tar -zxvf Navtech_576.tar.gz
+tar -zxvf Aeva.tar.gz
 ```
 ## 3. How to Execute
 **3-0 Preprocessing**

@@ -9,7 +9,7 @@ from datasets.raw import read_poses
 
 class HeRCULES(Dataset):
     def __init__(self, model_params: ModelParams, root="/code/SHeRLoc/datasets/HeRCULES", phase="train",
-                 min_displacement=0.3, pos_threshold=5.0, neg_threshold=25.0, pose_time_tolerance=1.0, n_views=6):
+                 min_displacement=0.3, pos_threshold=5.0, neg_threshold=25.0, pose_time_tolerance=1.0, n_views=36):
         super().__init__()
         self.task = model_params.task
         self.root = root
@@ -27,7 +27,6 @@ class HeRCULES(Dataset):
             ]
         elif self.phase == "val":
             self.sequences = ['Parking_Lot/01', 'Parking_Lot/02']
-            # self.sequences = ['Parking_Lot/01']
 
         else:
             raise ValueError(f"Invalid phase: {self.phase}. Must be 'train' or 'val'.")
@@ -37,20 +36,18 @@ class HeRCULES(Dataset):
         if self.task == "Hetero":
             for seq in self.sequences:
                 seq_path = os.path.join(self.root, seq)
-
                 query_timestamps, query_poses = read_poses(
                     poses_filepath=os.path.join(seq_path, "Continental_gt.txt"),
                     readings_filepath=os.path.join(seq_path, "Continental"),
-                    sensor_code="R",
+                    sensor_code="png",
                     pose_time_tolerance=self.pose_time_tolerance
                 )
                 pos_timestamps, pos_poses = read_poses(
                     poses_filepath=os.path.join(seq_path, "Navtech_gt.txt"),
                     readings_filepath=os.path.join(seq_path, "Navtech/0"),
-                    sensor_code="R",
+                    sensor_code="png",
                     pose_time_tolerance=self.pose_time_tolerance
                 )
-
                 query_images = sorted([os.path.join(seq_path, "Continental", f"{ts}.png") for ts in query_timestamps])
                 pos_images = sorted([os.path.join(seq_path, "Navtech/0", f"{ts}.png") for ts in pos_timestamps])
                 query_coords = query_poses[:, :2, 3]
@@ -60,11 +57,9 @@ class HeRCULES(Dataset):
                     displacement = np.linalg.norm(query_coords[i] - query_coords[filtered_indices[-1]])
                     if displacement >= self.min_displacement:
                         filtered_indices.append(i)
-
                 query_timestamps = np.array(query_timestamps)[filtered_indices]
                 query_images = np.array(query_images)[filtered_indices]
                 query_coords = np.array(query_coords)[filtered_indices]
-
                 self.data.append({
                     'query_images': query_images,
                     'pos_images': pos_images,
@@ -75,20 +70,18 @@ class HeRCULES(Dataset):
         elif self.task == "4D":
             for seq in self.sequences:
                 seq_path = os.path.join(self.root, seq)
-
                 query_timestamps, query_poses = read_poses(
                     poses_filepath=os.path.join(seq_path, "Continental_gt.txt"),
                     readings_filepath=os.path.join(seq_path, "Continental"),
-                    sensor_code="R",
+                    sensor_code="png",
                     pose_time_tolerance=self.pose_time_tolerance
                 )
                 pos_timestamps, pos_poses = read_poses(
                     poses_filepath=os.path.join(seq_path, "Continental_gt.txt"),
                     readings_filepath=os.path.join(seq_path, "Continental"),
-                    sensor_code="R",
+                    sensor_code="png",
                     pose_time_tolerance=self.pose_time_tolerance
                 )
-
                 query_images = sorted([os.path.join(seq_path, "Continental", f"{ts}.png") for ts in query_timestamps])
                 pos_images = sorted([os.path.join(seq_path, "Continental", f"{ts}.png") for ts in pos_timestamps])
                 query_coords = query_poses[:, :2, 3]
@@ -98,11 +91,9 @@ class HeRCULES(Dataset):
                     displacement = np.linalg.norm(query_coords[i] - query_coords[filtered_indices[-1]])
                     if displacement >= self.min_displacement:
                         filtered_indices.append(i)
-
                 query_timestamps = np.array(query_timestamps)[filtered_indices]
                 query_images = np.array(query_images)[filtered_indices]
                 query_coords = np.array(query_coords)[filtered_indices]
-
                 self.data.append({
                     'query_images': query_images,
                     'pos_images': pos_images,
@@ -113,20 +104,18 @@ class HeRCULES(Dataset):
         elif self.task == "Spinning":
             for seq in self.sequences:
                 seq_path = os.path.join(self.root, seq)
-
                 query_timestamps, query_poses = read_poses(
                     poses_filepath=os.path.join(seq_path, "Navtech_gt.txt"),
                     readings_filepath=os.path.join(seq_path, "Navtech_576"),
-                    sensor_code="R",
+                    sensor_code="png",
                     pose_time_tolerance=self.pose_time_tolerance
                 )
                 pos_timestamps, pos_poses = read_poses(
                     poses_filepath=os.path.join(seq_path, "Navtech_gt.txt"),
                     readings_filepath=os.path.join(seq_path, "Navtech_576"),
-                    sensor_code="R",
+                    sensor_code="png",
                     pose_time_tolerance=self.pose_time_tolerance
                 )
-
                 query_images = sorted([os.path.join(seq_path, "Navtech_576", f"{ts}.png") for ts in query_timestamps])
                 pos_images = sorted([os.path.join(seq_path, "Navtech_576", f"{ts}.png") for ts in pos_timestamps])
                 query_coords = query_poses[:, :2, 3]
@@ -136,11 +125,9 @@ class HeRCULES(Dataset):
                     displacement = np.linalg.norm(query_coords[i] - query_coords[filtered_indices[-1]])
                     if displacement >= self.min_displacement:
                         filtered_indices.append(i)
-
                 query_timestamps = np.array(query_timestamps)[filtered_indices]
                 query_images = np.array(query_images)[filtered_indices]
                 query_coords = np.array(query_coords)[filtered_indices]
-
                 self.data.append({
                     'query_images': query_images,
                     'pos_images': pos_images,
@@ -155,16 +142,15 @@ class HeRCULES(Dataset):
                 query_timestamps, query_poses = read_poses(
                     poses_filepath=os.path.join(seq_path, "Aeva_gt.txt"),
                     readings_filepath=os.path.join(seq_path, "Aeva"),
-                    sensor_code="R",
+                    sensor_code="png",
                     pose_time_tolerance=self.pose_time_tolerance
                 )
                 pos_timestamps, pos_poses = read_poses(
                     poses_filepath=os.path.join(seq_path, "Navtech_gt.txt"),
                     readings_filepath=os.path.join(seq_path, "Navtech/0"),
-                    sensor_code="R",
+                    sensor_code="png",
                     pose_time_tolerance=self.pose_time_tolerance
                 )
-
                 query_images = sorted([os.path.join(seq_path, "Aeva", f"{ts}.png") for ts in query_timestamps])
                 pos_images = sorted([os.path.join(seq_path, "Navtech/0", f"{ts}.png") for ts in pos_timestamps])
                 query_coords = query_poses[:, :2, 3]
@@ -174,7 +160,6 @@ class HeRCULES(Dataset):
                     displacement = np.linalg.norm(query_coords[i] - query_coords[filtered_indices[-1]])
                     if displacement >= self.min_displacement:
                         filtered_indices.append(i)
-
                 query_timestamps = np.array(query_timestamps)[filtered_indices]
                 query_images = np.array(query_images)[filtered_indices]
                 query_coords = np.array(query_coords)[filtered_indices]
@@ -214,7 +199,6 @@ class HeRCULES(Dataset):
             if index < len(seq_data['query_images']):
                 break
             index -= len(seq_data['query_images'])
-
         query_image_path = seq_data['query_images'][index]
         query_coords = seq_data['query_coords']
         pos_coords = seq_data['pos_coords']
@@ -256,8 +240,7 @@ class HeRCULES(Dataset):
 
 
 class HeRCULES_test(Dataset):
-    def __init__(self, model_params: ModelParams, root="/code/SHeRLoc/datasets/HeRCULES", phase="test", pose_time_tolerance=1.0, min_distance=5.0, min_query_distance=0.3):
-    # def __init__(self, root="/code/SHeRLoc/src/dataset/HeRCULES", phase="test", pose_time_tolerance=1.0, min_distance=5.0, min_query_distance=0.5):
+    def __init__(self, model_params: ModelParams, root="/code/SHeRLoc/datasets/HeRCULES", map_seq='Sports_Complex/01', query_seq='Sports_Complex/01', phase="test", pose_time_tolerance=1.0, min_distance=5.0, min_query_distance=0.3):
         super().__init__()
         self.task = model_params.task
         self.root = root
@@ -265,7 +248,6 @@ class HeRCULES_test(Dataset):
         self.pose_time_tolerance = pose_time_tolerance
         self.min_distance = min_distance
         self.min_query_distance = min_query_distance
-        
         self.query_images = []
         self.map_images = []
         self.query_coords = []
@@ -273,222 +255,176 @@ class HeRCULES_test(Dataset):
         self.query_timestamps = []
         self.map_timestamps = []
 
-        # sequences = [('Sports_Complex/01', 'Sports_Complex/01')]
-        sequences = [('Sports_Complex/02', 'Sports_Complex/02')]
-        # sequences = [('Sports_Complex/03', 'Sports_Complex/03')]
-        # sequences = [('Library/01', 'Library/01')]
-        # sequences = [('Library/02', 'Library/02')]
-        # sequences = [('Library/03', 'Library/03')]
-        # sequences = [('River_Island/01', 'River_Island/01')]
-        # sequences = [('River_Island/02', 'River_Island/02')]
-        # sequences = [('River_Island/03', 'River_Island/03')]
-
-        # sequences = [('Sports_Complex/01', 'Sports_Complex/02')]
-        # sequences = [('Sports_Complex/01', 'Sports_Complex/03')]
-        # sequences = [('Library/01', 'Library/02')]
-        # sequences = [('Library/01', 'Library/03')]
-        # sequences = [('River_Island/01', 'River_Island/02')]
-        # sequences = [('River_Island/01', 'River_Island/03')]
-
-
         def filter_queries(query_coords, query_image_paths, min_query_distance):
             filtered_query_coords = []
             filtered_query_images = []
-            
             prev_coord = None
             for i, coord in enumerate(query_coords):
                 if prev_coord is None or np.linalg.norm(coord - prev_coord) > min_query_distance:
                     filtered_query_coords.append(coord)
                     filtered_query_images.append(query_image_paths[i])
                     prev_coord = coord
-            
             return np.array(filtered_query_coords), filtered_query_images
 
+
         if self.task == "Hetero":
-            for map_seq, query_seq in sequences:
-                map_path = os.path.join(self.root, map_seq)
-                query_path = os.path.join(self.root, query_seq) 
-
-
-                query_timestamps, query_poses = read_poses(
-                    poses_filepath=os.path.join(query_path, "Continental_gt.txt"),
-                    readings_filepath=os.path.join(query_path, "Continental"),
-                    sensor_code="R",
-                    pose_time_tolerance=self.pose_time_tolerance
-                )
-                
-                map_timestamps, map_poses = read_poses(
-                    poses_filepath=os.path.join(map_path, "Navtech_gt.txt"),
-                    readings_filepath=os.path.join(map_path, "Navtech/0"),
-                    sensor_code="R",
-                    pose_time_tolerance=self.pose_time_tolerance
-                )
-
-                query_image_paths = [os.path.join(query_path, "Continental", f"{ts}.png") for ts in query_timestamps]
-                num_views = 36 
-                all_view_map_paths = []
-                for view_idx in range(num_views):
-                    view_folder = os.path.join(map_path, "Navtech", str(view_idx))
-                    if os.path.exists(view_folder):
-                        view_images = [os.path.join(view_folder, f"{ts}.png") for ts in map_timestamps]
-                        all_view_map_paths.append(view_images)
-                    else:
-                        all_view_map_paths.append([])  
-                query_coords = query_poses[:, :2, 3]
-                map_coords_base = map_poses[:, :2, 3]  
-                query_coords, query_image_paths = filter_queries(query_coords, query_image_paths, self.min_query_distance)
-
-
-                for i, (query_coord, query_path) in enumerate(zip(query_coords, query_image_paths)):
+            map_path = os.path.join(self.root, map_seq)
+            query_path = os.path.join(self.root, query_seq) 
+            query_timestamps, query_poses = read_poses(
+                poses_filepath=os.path.join(query_path, "Continental_gt.txt"),
+                readings_filepath=os.path.join(query_path, "Continental"),
+                sensor_code="png",
+                pose_time_tolerance=self.pose_time_tolerance
+            )
+            map_timestamps, map_poses = read_poses(
+                poses_filepath=os.path.join(map_path, "Navtech_gt.txt"),
+                readings_filepath=os.path.join(map_path, "Navtech/0"),
+                sensor_code="png",
+                pose_time_tolerance=self.pose_time_tolerance
+            )
+            query_image_paths = [os.path.join(query_path, "Continental", f"{ts}.png") for ts in query_timestamps]
+            num_views = 36 
+            all_view_map_paths = []
+            for view_idx in range(num_views):
+                view_folder = os.path.join(map_path, "Navtech", str(view_idx))
+                if os.path.exists(view_folder):
+                    view_images = [os.path.join(view_folder, f"{ts}.png") for ts in map_timestamps]
+                    all_view_map_paths.append(view_images)
+                else:
+                    all_view_map_paths.append([])  
+            query_coords = query_poses[:, :2, 3]
+            map_coords_base = map_poses[:, :2, 3]  
+            query_coords, query_image_paths = filter_queries(query_coords, query_image_paths, self.min_query_distance)
+            for i, (query_coord, query_path) in enumerate(zip(query_coords, query_image_paths)):
+                distances = np.linalg.norm(map_coords_base - query_coord, axis=1)
+                if (distances <= self.min_distance).any():
                     distances = np.linalg.norm(map_coords_base - query_coord, axis=1)
-                    if (distances <= self.min_distance).any():
-                        distances = np.linalg.norm(map_coords_base - query_coord, axis=1)
-                        nearest_map_idx = np.argmin(distances)
-                        selected_map_images = []
-                        selected_map_coords = []
-                        for view_idx in range(num_views):
-                            if all_view_map_paths[view_idx]:  
-                                selected_map_images.append(all_view_map_paths[view_idx][nearest_map_idx])
-                                selected_map_coords.append(map_coords_base[nearest_map_idx])
-                            else:
-                                selected_map_images.append(None)  
-                                selected_map_coords.append(None)
-                        self.query_images.append(query_path)
-                        self.query_coords.append(query_coord)
-                        self.map_images.append(selected_map_images)  
-                        self.map_coords.append(selected_map_coords) 
-
+                    nearest_map_idx = np.argmin(distances)
+                    selected_map_images = []
+                    selected_map_coords = []
+                    for view_idx in range(num_views):
+                        if all_view_map_paths[view_idx]:  
+                            selected_map_images.append(all_view_map_paths[view_idx][nearest_map_idx])
+                            selected_map_coords.append(map_coords_base[nearest_map_idx])
+                        else:
+                            selected_map_images.append(None)  
+                            selected_map_coords.append(None)
+                    self.query_images.append(query_path)
+                    self.query_coords.append(query_coord)
+                    self.map_images.append(selected_map_images)  
+                    self.map_coords.append(selected_map_coords) 
             self.query_coords = np.array(self.query_coords)
             self.map_coords = np.array(self.map_coords)
 
 
         elif self.task == "4D":
-            for map_seq, query_seq in sequences:
-                map_path = os.path.join(self.root, map_seq)
-                query_path = os.path.join(self.root, query_seq) 
-
-                query_timestamps, query_poses = read_poses(
-                    poses_filepath=os.path.join(query_path, "Continental_gt.txt"),
-                    readings_filepath=os.path.join(query_path, "Continental"),
-                    sensor_code="R",
-                    pose_time_tolerance=self.pose_time_tolerance
-                )
-                map_timestamps, map_poses = read_poses(
-                    poses_filepath=os.path.join(map_path, "Continental_gt.txt"),
-                    readings_filepath=os.path.join(map_path, "Continental"),
-                    sensor_code="R",
-                    pose_time_tolerance=self.pose_time_tolerance
-                )
-
-                query_image_paths = [os.path.join(query_path, "Continental", f"{ts}.png") for ts in query_timestamps]
-                map_image_paths = [os.path.join(map_path, "Continental", f"{ts}.png") for ts in map_timestamps]
-                query_coords = query_poses[:, :2, 3]
-                map_coords = map_poses[:, :2, 3]
-                for i, query_coord in enumerate(query_coords):
-                    distances = np.linalg.norm(map_coords - query_coord, axis=1)
-                    if (distances <= self.min_distance).any():
-                        self.query_images.append(query_image_paths[i])
-                        self.query_coords.append(query_coord)
-                        self.map_images = map_image_paths  
-                        self.map_coords = map_coords
-
+            map_path = os.path.join(self.root, map_seq)
+            query_path = os.path.join(self.root, query_seq) 
+            query_timestamps, query_poses = read_poses(
+                poses_filepath=os.path.join(query_path, "Continental_gt.txt"),
+                readings_filepath=os.path.join(query_path, "Continental"),
+                sensor_code="png",
+                pose_time_tolerance=self.pose_time_tolerance
+            )
+            map_timestamps, map_poses = read_poses(
+                poses_filepath=os.path.join(map_path, "Continental_gt.txt"),
+                readings_filepath=os.path.join(map_path, "Continental"),
+                sensor_code="png",
+                pose_time_tolerance=self.pose_time_tolerance
+            )
+            query_image_paths = [os.path.join(query_path, "Continental", f"{ts}.png") for ts in query_timestamps]
+            map_image_paths = [os.path.join(map_path, "Continental", f"{ts}.png") for ts in map_timestamps]
+            query_coords = query_poses[:, :2, 3]
+            map_coords = map_poses[:, :2, 3]
+            for i, query_coord in enumerate(query_coords):
+                distances = np.linalg.norm(map_coords - query_coord, axis=1)
+                if (distances <= self.min_distance).any():
+                    self.query_images.append(query_image_paths[i])
+                    self.query_coords.append(query_coord)
+                    self.map_images = map_image_paths  
+                    self.map_coords = map_coords
             self.query_coords = np.array(self.query_coords)
             self.map_coords = np.array(self.map_coords)
-
 
 
         elif self.task == "Spinning":
-            for map_seq, query_seq in sequences:
-                map_path = os.path.join(self.root, map_seq)
-                query_path = os.path.join(self.root, query_seq) 
-
-                query_timestamps, query_poses = read_poses(
-                    poses_filepath=os.path.join(query_path, "Navtech_gt.txt"),
-                    readings_filepath=os.path.join(query_path, "Navtech_576"),
-                    sensor_code="R",
-                    pose_time_tolerance=self.pose_time_tolerance
-                )
-                map_timestamps, map_poses = read_poses(
-                    poses_filepath=os.path.join(map_path, "Navtech_gt.txt"),
-                    readings_filepath=os.path.join(map_path, "Navtech_576"),
-                    sensor_code="R",
-                    pose_time_tolerance=self.pose_time_tolerance
-                )
-
-                query_image_paths = [os.path.join(query_path, "Navtech_576", f"{ts}.png") for ts in query_timestamps]
-                map_image_paths = [os.path.join(map_path, "Navtech_576", f"{ts}.png") for ts in map_timestamps]
-                query_coords = query_poses[:, :2, 3]
-                map_coords = map_poses[:, :2, 3]
-                for i, query_coord in enumerate(query_coords):
-                    distances = np.linalg.norm(map_coords - query_coord, axis=1)
-                    if (distances <= self.min_distance).any():
-                        self.query_images.append(query_image_paths[i])
-                        self.query_coords.append(query_coord)
-                        self.map_images = map_image_paths  
-                        self.map_coords = map_coords
-
+            map_path = os.path.join(self.root, map_seq)
+            query_path = os.path.join(self.root, query_seq) 
+            query_timestamps, query_poses = read_poses(
+                poses_filepath=os.path.join(query_path, "Navtech_gt.txt"),
+                readings_filepath=os.path.join(query_path, "Navtech_576"),
+                sensor_code="png",
+                pose_time_tolerance=self.pose_time_tolerance
+            )
+            map_timestamps, map_poses = read_poses(
+                poses_filepath=os.path.join(map_path, "Navtech_gt.txt"),
+                readings_filepath=os.path.join(map_path, "Navtech_576"),
+                sensor_code="png",
+                pose_time_tolerance=self.pose_time_tolerance
+            )
+            query_image_paths = [os.path.join(query_path, "Navtech_576", f"{ts}.png") for ts in query_timestamps]
+            map_image_paths = [os.path.join(map_path, "Navtech_576", f"{ts}.png") for ts in map_timestamps]
+            query_coords = query_poses[:, :2, 3]
+            map_coords = map_poses[:, :2, 3]
+            for i, query_coord in enumerate(query_coords):
+                distances = np.linalg.norm(map_coords - query_coord, axis=1)
+                if (distances <= self.min_distance).any():
+                    self.query_images.append(query_image_paths[i])
+                    self.query_coords.append(query_coord)
+                    self.map_images = map_image_paths  
+                    self.map_coords = map_coords
             self.query_coords = np.array(self.query_coords)
             self.map_coords = np.array(self.map_coords)
 
 
-
         elif self.task == "LiDAR":
-            for map_seq, query_seq in sequences:
-                map_path = os.path.join(self.root, map_seq)
-                query_path = os.path.join(self.root, query_seq) 
-
-                query_timestamps, query_poses = read_poses(
-                    poses_filepath=os.path.join(query_path, "Aeva_gt.txt"),
-                    readings_filepath=os.path.join(query_path, "Aeva"),
-                    sensor_code="R",
-                    pose_time_tolerance=self.pose_time_tolerance
-                )
-                
-                map_timestamps, map_poses = read_poses(
-                    poses_filepath=os.path.join(map_path, "Navtech_gt.txt"),
-                    readings_filepath=os.path.join(map_path, "Navtech/0"),
-                    sensor_code="R",
-                    pose_time_tolerance=self.pose_time_tolerance
-                )
-
-                query_image_paths = [os.path.join(query_path, "Aeva", f"{ts}.png") for ts in query_timestamps]
-                num_views = 36 
-                all_view_map_paths = []
-                for view_idx in range(num_views):
-                    view_folder = os.path.join(map_path, "Navtech", str(view_idx))
-                    if os.path.exists(view_folder):
-                        view_images = [os.path.join(view_folder, f"{ts}.png") for ts in map_timestamps]
-                        all_view_map_paths.append(view_images)
-                    else:
-                        all_view_map_paths.append([])  
-                query_coords = query_poses[:, :2, 3]
-                map_coords_base = map_poses[:, :2, 3]  
-                query_coords, query_image_paths = filter_queries(query_coords, query_image_paths, self.min_query_distance)
-
-
-                for i, (query_coord, query_path) in enumerate(zip(query_coords, query_image_paths)):
+            map_path = os.path.join(self.root, map_seq)
+            query_path = os.path.join(self.root, query_seq) 
+            query_timestamps, query_poses = read_poses(
+                poses_filepath=os.path.join(query_path, "Aeva_gt.txt"),
+                readings_filepath=os.path.join(query_path, "Aeva"),
+                sensor_code="png",
+                pose_time_tolerance=self.pose_time_tolerance
+            )
+            map_timestamps, map_poses = read_poses(
+                poses_filepath=os.path.join(map_path, "Navtech_gt.txt"),
+                readings_filepath=os.path.join(map_path, "Navtech/0"),
+                sensor_code="png",
+                pose_time_tolerance=self.pose_time_tolerance
+            )
+            query_image_paths = [os.path.join(query_path, "Aeva", f"{ts}.png") for ts in query_timestamps]
+            num_views = 36 
+            all_view_map_paths = []
+            for view_idx in range(num_views):
+                view_folder = os.path.join(map_path, "Navtech", str(view_idx))
+                if os.path.exists(view_folder):
+                    view_images = [os.path.join(view_folder, f"{ts}.png") for ts in map_timestamps]
+                    all_view_map_paths.append(view_images)
+                else:
+                    all_view_map_paths.append([])  
+            query_coords = query_poses[:, :2, 3]
+            map_coords_base = map_poses[:, :2, 3]  
+            query_coords, query_image_paths = filter_queries(query_coords, query_image_paths, self.min_query_distance)
+            for i, (query_coord, query_path) in enumerate(zip(query_coords, query_image_paths)):
+                distances = np.linalg.norm(map_coords_base - query_coord, axis=1)
+                if (distances <= self.min_distance).any():
+                    query_timestamp = int(os.path.splitext(os.path.basename(query_path))[0])
+                    map_timestamps_array = np.array(map_timestamps)
                     distances = np.linalg.norm(map_coords_base - query_coord, axis=1)
-                    if (distances <= self.min_distance).any():
-                        query_timestamp = int(os.path.splitext(os.path.basename(query_path))[0])
-                        map_timestamps_array = np.array(map_timestamps)
-                        # timestamp_differences = np.abs(map_timestamps_array - query_timestamp)
-                        distances = np.linalg.norm(map_coords_base - query_coord, axis=1)
-                        # nearest_map_idx = np.argmin(timestamp_differences)
-                        nearest_map_idx = np.argmin(distances)
-                        selected_map_images = []
-                        selected_map_coords = []
-                        for view_idx in range(num_views):
-                            if all_view_map_paths[view_idx]:  
-                                selected_map_images.append(all_view_map_paths[view_idx][nearest_map_idx])
-                                selected_map_coords.append(map_coords_base[nearest_map_idx])
-                            else:
-                                selected_map_images.append(None)  
-                                selected_map_coords.append(None)
-                        self.query_images.append(query_path)
-                        self.query_coords.append(query_coord)
-                        self.map_images.append(selected_map_images)  
-                        self.map_coords.append(selected_map_coords) 
-
+                    nearest_map_idx = np.argmin(distances)
+                    selected_map_images = []
+                    selected_map_coords = []
+                    for view_idx in range(num_views):
+                        if all_view_map_paths[view_idx]:  
+                            selected_map_images.append(all_view_map_paths[view_idx][nearest_map_idx])
+                            selected_map_coords.append(map_coords_base[nearest_map_idx])
+                        else:
+                            selected_map_images.append(None)  
+                            selected_map_coords.append(None)
+                    self.query_images.append(query_path)
+                    self.query_coords.append(query_coord)
+                    self.map_images.append(selected_map_images)  
+                    self.map_coords.append(selected_map_coords) 
             self.query_coords = np.array(self.query_coords)
             self.map_coords = np.array(self.map_coords)
 

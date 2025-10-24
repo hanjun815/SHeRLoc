@@ -43,6 +43,6 @@ def process_images(polar_dir, cart_dir, output_size=(384, 192), threshold=100):
 
 if __name__ == "__main__":
     current_dir = os.getcwd()
-    raw_dir = os.path.join(current_dir, 'HeRCULES/Mountaon/01/raw_navtech')  
-    output_dir = os.path.join(current_dir, 'HeRCULES/Mountaon/01/Navtech_before_calibration')  
+    raw_dir = os.path.join(current_dir, 'HeRCULES/Mountain/01/raw_navtech')  
+    output_dir = os.path.join(current_dir, 'HeRCULES/Mountain/01/Navtech_before_calibration')  
     process_images(raw_dir, output_dir, output_size=(192, 384), threshold=123)

@@ -22,13 +22,12 @@ class HeRCULES(Dataset):
 
         if self.phase == "train":
             self.sequences = [
-                'Bridge/01'
-                # 'Mountain/01', 'Mountain/02', 'Mountain/03',
-                # 'Bridge/01', 'Stream/02', 'Parking_Lot/03', 'Parking_Lot/04',
+                'Mountain/01', 'Mountain/02', 'Mountain/03',
+                'Bridge/01', 'Stream/02', 'Parking_Lot/03', 'Parking_Lot/04'
             ]
         elif self.phase == "val":
-            # self.sequences = ['Parking_Lot/01', 'Parking_Lot/02']
-            self.sequences = ['Parking_Lot/01']
+            self.sequences = ['Parking_Lot/01', 'Parking_Lot/02']
+            # self.sequences = ['Parking_Lot/01']
 
         else:
             raise ValueError(f"Invalid phase: {self.phase}. Must be 'train' or 'val'.")

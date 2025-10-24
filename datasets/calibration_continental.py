@@ -245,6 +245,6 @@ def save_polar_images_with_combined_scans(input_folder, output_folder, rcs_thres
 
 if __name__ == "__main__":
     current_dir = os.getcwd()
-    raw_dir = os.path.join(current_dir, "HeRCULES/Mountaon/01/raw_continental")
-    output_dir = os.path.join(current_dir, "HeRCULES/Mountaon/01/Continental_before_calibration")
+    raw_dir = os.path.join(current_dir, "HeRCULES/Mountain/01/raw_continental")
+    output_dir = os.path.join(current_dir, "HeRCULES/Mountain/01/Continental_before_calibration")
     save_polar_images_with_combined_scans(raw_dir, output_dir)

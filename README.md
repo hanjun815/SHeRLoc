@@ -72,7 +72,7 @@ tar -zxvf Aeva.tar.gz
 
 Preprocess 4D radar point clouds, spinning radar scans, and LiDAR point clouds. Pass the folder containing the raw data to `--input`, and the folder where preprocessed results should be saved to `--output`. Preprocess all data you plan to use for training or evaluation in advance.
 
-- Calibration with Mountain 01 Sequence
+- (Skippable) Calibration with Mountain 01 Sequence 
 ```
 cd SHeRLoc/datasets
 python calibration_continental.py

@@ -85,4 +85,4 @@ if __name__ == "__main__":
     parser.add_argument("--output", dest="output", default=default_img)
 
     args = parser.parse_args()
-    process_images(args.input, args.output, output_size=(192, 384), threshold=123, n=6)
+    process_images(args.input, args.output, output_size=(192, 384), threshold=123, n=36)

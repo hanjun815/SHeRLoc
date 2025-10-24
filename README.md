@@ -11,7 +11,7 @@
 
 ## News
 - 2025/10/08 : SHeRLoc is accepted in IEEE RA-L 2025.
-- 2025/10/10 : Our project page is available via [Project](https://sites.google.com/view/radar-sherloc).
+- 2025/10/10 : Our project page is available via [**[Project]**](https://sites.google.com/view/radar-sherloc).
 - 2025/10/23 : First release of SHeRLoc code.
 
 ## 0. Overall Pipeline
@@ -56,7 +56,7 @@ export PYTHONPATH=$PYTHONPATH:/code/SHeRLoc
 
 **2-3. Download the Preprocessed HeRCULES Dataset**
 
-[[Download HeRCULES Dataset]](https://drive.google.com/drive/folders/1lrJg7MMfBzEEEyTwor3j6JysxaGwnR5i)
+[**[Download HeRCULES Dataset]**](https://drive.google.com/drive/folders/1lrJg7MMfBzEEEyTwor3j6JysxaGwnR5i)
 
 ## 3. How to Execute
 **3-0 Preprocessing**

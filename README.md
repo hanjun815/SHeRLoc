@@ -77,7 +77,7 @@ Preprocess 4D radar point clouds, spinning radar scans, and LiDAR point clouds. 
 cd SHeRLoc/datasets
 python calibration_continental.py
 python calibration_navtech.py
-python calibration_matching.pys
+python calibration_matching.py
 ```
 The heterogeneous﻿ radar calibration constant C<sub>correct</sub> obtained through calibration is already reflected in the preprocessing code (C<sub>correct</sub> = 2.1025).
 

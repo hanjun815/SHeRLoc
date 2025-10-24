@@ -139,6 +139,7 @@ Pre-trained models are available in the `weights` directory:
 **3-3 Evaluation**
 
 To evaluate pretrained models run the following commands.
+
 **For the standard model (SHeRLoc):**
 - Heterogeneous Radar Place Recognition
 ```

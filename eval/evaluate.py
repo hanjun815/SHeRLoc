@@ -127,9 +127,11 @@ class Evaluator:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset_root', type=str, required=True, help="Path to the dataset root")
+    parser.add_argument('--map_seq', type=str, required=True, help="Map sequence")
+    parser.add_argument('--query_seq', type=str, required=True, help="Query sequence")
     parser.add_argument('--model_config', type=str, required=True, help="Path to the model-specific config file")
     parser.add_argument('--weights', type=str, required=True, help="Path to the trained model weights")
-    parser.add_argument('--batch_size', type=int, default=50, help="Batch size for evaluation")
+    parser.add_argument('--batch_size', type=int, default=64, help="Batch size for evaluation")
     parser.add_argument('--radius', nargs='+', type=int, default=[5], help="True Positive thresholds in meters")
     parser.add_argument('--k', type=int, default=10, help="Number of top-K results for metrics")
     args = parser.parse_args()
@@ -154,7 +156,7 @@ if __name__ == "__main__":
     else:
         raise ValueError("The weights file does not contain 'state_dict'. Please check the saved model file.")
 
-    test_dataset = HeRCULES_test(model_params, root = args.dataset_root, phase="test")
+    test_dataset = HeRCULES_test(model_params, root=args.dataset_root, map_seq=args.map_seq, query_seq=args.query_seq, phase="test")
     test_loader = DataLoader(test_dataset, batch_size=args.batch_size, num_workers=1, pin_memory=True)
 
     evaluator = Evaluator(model_params, test_loader, device, radius=args.radius, k=args.k)

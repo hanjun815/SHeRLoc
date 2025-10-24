@@ -40,8 +40,8 @@ def transform_polar_image(image, output_size, threshold, start_angle, end_angle,
     log_range = log_range[:, None] 
     output_image = output_image + log_range
     output_image[output_image <= threshold] = 0
-    k = 2.1025
-    output_image[output_image > 0] += k
+    C_correct = 2.1025
+    output_image[output_image > 0] += C_correct
     
     return output_image
 

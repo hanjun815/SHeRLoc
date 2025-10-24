@@ -55,8 +55,7 @@ export PYTHONPATH=$PYTHONPATH:/code/SHeRLoc
 ```
 
 **2-3. Download HeRCULES Dataset**
-
-[Download](https://drive.google.com/drive/folders/1lrJg7MMfBzEEEyTwor3j6JysxaGwnR5i)
+[[Download HeRCULES Dataset]](https://drive.google.com/drive/folders/1lrJg7MMfBzEEEyTwor3j6JysxaGwnR5i)
 
 ## 3. How to Execute
 **3-0 Preprocessing**

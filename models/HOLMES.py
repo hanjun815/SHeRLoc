@@ -177,22 +177,22 @@ class HOLMES(nn.Module):
 
 
     def dynamic_regularization(self, x):
-        var_per_batch = x.var(dim=(1, 2, 3))  # [B]
-        mean_per_batch = x.abs().mean(dim=(1, 2, 3))  # [B]
-        ratio = var_per_batch / (mean_per_batch + 1e-6)  # [B]
-        reg = 1.0 + 2.0 * torch.tanh(ratio / 2.0)  # [B]
+        var_per_batch = x.var(dim=(1, 2, 3)) 
+        mean_per_batch = x.abs().mean(dim=(1, 2, 3)) 
+        ratio = var_per_batch / (mean_per_batch + 1e-6)  
+        reg = 1.0 + 2.0 * torch.tanh(ratio / 2.0) 
         return reg
     
     def forward(self, x):
-        global_feature = self.gem(x).squeeze(-1).squeeze(-1)  # [B, C]
-        t1 = self.token_features(global_feature)               # [B, token_dim]
-        f = self.cluster_features(x).flatten(2)  # [B, 256, 12*6]
-        S = self.score(x).flatten(2)             # [B, 64, 12*6]
+        global_feature = self.gem(x).squeeze(-1).squeeze(-1) 
+        t1 = self.token_features(global_feature)      
+        f = self.cluster_features(x).flatten(2)  
+        S = self.score(x).flatten(2)        
         reg = self.dynamic_regularization(x)
         log_p = get_matching_probs(S, self.ghost_bin, self.dust_bin, num_iters=3, reg=reg)
-        p = torch.exp(log_p)[:, :-2, :]         # [B, 64, 12*6]
-        p = p.unsqueeze(1).expand(-1, self.cluster_dim, -1, -1)  # [B, 256, 64, 12*6]
-        f = f.unsqueeze(2).expand(-1, -1, 64, -1)           # [B, 256, 64, 12*6]
+        p = torch.exp(log_p)[:, :-2, :]   
+        p = p.unsqueeze(1).expand(-1, self.cluster_dim, -1, -1)  
+        f = f.unsqueeze(2).expand(-1, -1, 64, -1)     
         f = torch.cat([
             nn.functional.normalize(t1, p=2, dim=-1),
             nn.functional.normalize((f * p).sum(dim=-1), p=2, dim=1).flatten(1)
@@ -203,24 +203,24 @@ class HOLMES(nn.Module):
 
 
         x2 = self.conv_layer_1(x)
-        global_feature2 = self.gem(x2).squeeze(-1).squeeze(-1)  # [B, C]
-        t2 = self.token_features2(global_feature2)               # [B, token_dim]
-        f2 = self.cluster_features2(x2).flatten(2)  # [B, 64, 6*3]
-        S2 = self.score2(x2).flatten(2)            # [B, 16, 6*3]
+        global_feature2 = self.gem(x2).squeeze(-1).squeeze(-1) 
+        t2 = self.token_features2(global_feature2)   
+        f2 = self.cluster_features2(x2).flatten(2) 
+        S2 = self.score2(x2).flatten(2)         
         reg2 = self.dynamic_regularization(x2)
         log_p2 = get_matching_probs(S2, self.ghost_bin2, self.dust_bin2, num_iters=3, reg=reg2)
-        p2 = torch.exp(log_p2)[:, :-2, :]          # [B, 16, 6*3]
-        p2 = p2.unsqueeze(1).expand(-1, 64, -1, -1)  # [B, 64, 16, 6*3]
-        f2 = f2.unsqueeze(2).expand(-1, -1, 16, -1)           # [B, 64, 16, 6*3]
+        p2 = torch.exp(log_p2)[:, :-2, :]         
+        p2 = p2.unsqueeze(1).expand(-1, 64, -1, -1) 
+        f2 = f2.unsqueeze(2).expand(-1, -1, 16, -1)      
         f2 = torch.cat([
             nn.functional.normalize(t2, p=2, dim=-1),
             nn.functional.normalize((f2 * p2).sum(dim=-1), p=2, dim=1).flatten(1)
         ], dim=-1)
-        f2 = torch.matmul(f2, self.hidden2_weights)  # [B, 64]
-        f2 = self.bn2(f2)                                # [B, 64]
+        f2 = torch.matmul(f2, self.hidden2_weights) 
+        f2 = self.bn2(f2)                             
         D2 = nn.functional.normalize(f2, p=2, dim=-1)
 
-        f_combined = torch.cat([D1, D2], dim=-1)  # [B, 256]
+        f_combined = torch.cat([D1, D2], dim=-1)  
 
 
         return nn.functional.normalize(f_combined, p=2, dim=-1)   
@@ -313,22 +313,22 @@ class HOLMES_S(nn.Module):
         self.bn2 = nn.BatchNorm1d(64)
 
     def dynamic_regularization(self, x):
-        var_per_batch = x.var(dim=(1, 2, 3))  # [B]
-        mean_per_batch = x.abs().mean(dim=(1, 2, 3))  # [B]
-        ratio = var_per_batch / (mean_per_batch + 1e-6)  # [B]
-        reg = 1.0 + 2.0 * torch.tanh(ratio / 2.0)  # [B]
+        var_per_batch = x.var(dim=(1, 2, 3)) 
+        mean_per_batch = x.abs().mean(dim=(1, 2, 3)) 
+        ratio = var_per_batch / (mean_per_batch + 1e-6) 
+        reg = 1.0 + 2.0 * torch.tanh(ratio / 2.0)  
         return reg
     
     def forward(self, x):
-        global_feature = self.gem(x).squeeze(-1).squeeze(-1)  # [B, C]
-        t1 = self.token_features(global_feature)               # [B, token_dim]
-        f = self.cluster_features(x).flatten(2)  # [B, 256, 12*6]
-        S = self.score(x).flatten(2)             # [B, 64, 12*6]
+        global_feature = self.gem(x).squeeze(-1).squeeze(-1) 
+        t1 = self.token_features(global_feature)       
+        f = self.cluster_features(x).flatten(2)  
+        S = self.score(x).flatten(2)           
         reg = self.dynamic_regularization(x)
         log_p = get_matching_probs(S, self.ghost_bin, self.dust_bin, num_iters=3, reg=reg)
-        p = torch.exp(log_p)[:, :-2, :]         # [B, 64, 12*6]
-        p = p.unsqueeze(1).expand(-1, self.cluster_dim, -1, -1)  # [B, 256, 64, 12*6]
-        f = f.unsqueeze(2).expand(-1, -1, 64, -1)           # [B, 256, 64, 12*6]
+        p = torch.exp(log_p)[:, :-2, :]   
+        p = p.unsqueeze(1).expand(-1, self.cluster_dim, -1, -1) 
+        f = f.unsqueeze(2).expand(-1, -1, 64, -1)  
         f = torch.cat([
             nn.functional.normalize(t1, p=2, dim=-1),
             nn.functional.normalize((f * p).sum(dim=-1), p=2, dim=1).flatten(1)

@@ -203,7 +203,7 @@ class HeRCULES(Dataset):
         query_coords = seq_data['query_coords']
         pos_coords = seq_data['pos_coords']
         query = np.array(Image.open(query_image_path)).astype(np.float32)
-        query = torch.tensor(query).unsqueeze(0)  # Add channel dimension
+        query = torch.tensor(query).unsqueeze(0)  
         query_timestamp = int(os.path.splitext(os.path.basename(query_image_path))[0])
         pos_timestamps = [int(os.path.splitext(os.path.basename(p))[0]) for p in seq_data['pos_images']]
         pos_distances = np.linalg.norm(query_coords[index] - pos_coords, axis=1)

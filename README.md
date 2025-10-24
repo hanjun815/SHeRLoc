@@ -60,22 +60,22 @@ export PYTHONPATH=$PYTHONPATH:/code/SHeRLoc
 Preprocess 4D radar point clouds, spinning radar scans, and LiDAR point clouds. Pass the folder containing the raw data to `--input`, and the folder where preprocessed results should be saved to `--output`. Preprocess all data you plan to use for training or evaluation in advance.
 - 4D Radar Preprocessing
 ```
-cd /SHeRLoc/datasets
+cd SHeRLoc/datasets
 python preprocess_4D.py --input HeRCULES/Bridge/01/raw_continental --output HeRCULES/Bridge/01/Continental
 ```
 - Spinning Radar Preprocessing
 ```
-cd /SHeRLoc/datasets
+cd SHeRLoc/datasets
 python preprocess_Spinning.py --input HeRCULES/Bridge/01/raw_navtech --output HeRCULES/Bridge/01/Navtech
 ```
 - LiDAR Preprocessing
 ```
-cd /SHeRLoc/datasets
+cd SHeRLoc/datasets
 python preprocess_LiDAR.py --input HeRCULES/Bridge/01/raw_aeva --output HeRCULES/Bridge/01/Aeva
 ```
 - Spinning Radar Preprocessing (384*576 size image with 360 degree FOV for homogeneous Spinning radar PR)
 ```
-cd /SHeRLoc/datasets
+cd SHeRLoc/datasets
 python preprocess_Spinning_576.py --input HeRCULES/Bridge/01/raw_navtech --output HeRCULES/Bridge/01/Navtech_576
 ```
 
@@ -84,43 +84,43 @@ python preprocess_Spinning_576.py --input HeRCULES/Bridge/01/raw_navtech --outpu
 **Train with the standard model (SHeRLoc):**
 - Heterogeneous Radar Place Recognition
 ```
-cd /SHeRLoc/training
+cd SHeRLoc/training
 python train.py --config ../config/config.txt --model_config ../models/Hetero_SHeRLoc.txt
 ```
 - 4D Radar Place Recognition
 ```
-cd /SHeRLoc/training
+cd SHeRLoc/training
 python train.py --config ../config/config.txt --model_config ../models/4d_SHeRLoc.txt
 ```
 - Spinning Radar Place Recognition
 ```
-cd /SHeRLoc/training
+cd SHeRLoc/training
 python train.py --config ../config/config.txt --model_config ../models/Spinning_SHeRLoc.txt
 ```
 - LiDAR to Spinning Radar Place Recognition
 ```
-cd /SHeRLoc/training
+cd SHeRLoc/training
 python train.py --config ../config/config.txt --model_config ../models/LiDAR_SHeRLoc.txt
 ```
 **Train with the smaller model (SHeRLoc-S):**
 - Heterogeneous Radar Place Recognition
 ```
-cd /SHeRLoc/training
+cd SHeRLoc/training
 python train.py --config ../config/config.txt --model_config ../models/SHeRLoc_S.txt
 ```
 - 4D Radar Place Recognition
 ```
-cd /SHeRLoc/training
+cd SHeRLoc/training
 python train.py --config ../config/config.txt --model_config ../models/4d_SHeRLoc_S.txt
 ```
 - Spinning Radar Place Recognition
 ```
-cd /SHeRLoc/training
+cd SHeRLoc/training
 python train.py --config ../config/config.txt --model_config ../models/Spinning_SHeRLoc_S.txt
 ```
 - LiDAR to Spinning Radar Place Recognition
 ```
-cd /SHeRLoc/training
+cd SHeRLoc/training
 python train.py --config ../config/config.txt --model_config ../models/LiDAR_SHeRLoc_S.txt
 ```
 
@@ -142,43 +142,43 @@ To evaluate pretrained models run the following commands.
 **For the standard model (SHeRLoc):**
 - Heterogeneous Radar Place Recognition
 ```
-cd /SHeRLoc/eval
+cd SHeRLoc/eval
 python evaluate.py --dataset_root /code/SHeRLoc/datasets/HeRCULES --model_config ../models/Hetero_SHeRLoc.txt --weights ../weights/Hetero_SHeRLoc.pth
 ```
 - 4D Radar Place Recognition
 ```
-cd /SHeRLoc/eval
+cd SHeRLoc/eval
 python evaluate.py --dataset_root /code/SHeRLoc/datasets/HeRCULES --model_config ../models/4d_SHeRLoc.txt --weights ../weights/4d_SHeRLoc.pth
 ```
 - Spinning Radar Place Recognition
 ```
-cd /SHeRLoc/eval
+cd SHeRLoc/eval
 python evaluate.py --dataset_root /code/SHeRLoc/datasets/HeRCULES --model_config ../models/Spinning_SHeRLoc.txt --weights ../weights/Spinning_SHeRLoc.pth
 ```
 - LiDAR to Spinning Radar Place Recognition
 ```
-cd /SHeRLoc/eval
+cd SHeRLoc/eval
 python evaluate.py --dataset_root /code/SHeRLoc/datasets/HeRCULES --model_config ../models/LiDAR_SHeRLoc.txt --weights ../weights/LiDAR_SHeRLoc.pth
 ```
 **For the smaller model (SHeRLoc-S):**
 - Heterogeneous Radar Place Recognition
 ```
-cd /SHeRLoc/eval
+cd SHeRLoc/eval
 python evaluate.py --dataset_root /code/SHeRLoc/datasets/HeRCULES --model_config ../models/Hetero_SHeRLoc_S.txt --weights ../weights/Hetero_SHeRLoc_S.pth
 ```
 - 4D Radar Place Recognition
 ```
-cd /SHeRLoc/eval
+cd SHeRLoc/eval
 python evaluate.py --dataset_root /code/SHeRLoc/datasets/HeRCULES --model_config ../models/4d_SHeRLoc_S.txt --weights ../weights/4d_SHeRLoc_S.pth
 ```
 - Spinning Radar Place Recognition
 ```
-cd /SHeRLoc/eval
+cd SHeRLoc/eval
 python evaluate.py --dataset_root /code/SHeRLoc/datasets/HeRCULES --model_config ../models/Spinning_SHeRLoc_S.txt --weights ../weights/Spinning_SHeRLoc_S.pth
 ```
 - LiDAR to Spinning Radar Place Recognition
 ```
-cd /SHeRLoc/eval
+cd SHeRLoc/eval
 python evaluate.py --dataset_root /code/SHeRLoc/datasets/HeRCULES --model_config ../models/LiDAR_SHeRLoc_S.txt --weights ../weights/LiDAR_SHeRLoc_S.pth
 ```
 ## License and Citation

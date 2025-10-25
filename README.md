@@ -13,6 +13,7 @@
 - 2025/10/08 : SHeRLoc is accepted in IEEE RA-L 2025.
 - 2025/10/10 : Our project page is available via [**[Project]**](https://sites.google.com/view/radar-sherloc).
 - 2025/10/23 : First release of SHeRLoc code.
+- 2025/10/25 : Supplementary material is available via [**[Supplement]**](https://hanjun815.github.io/assets/pdf/SHeRLoc_Supplement.pdf).
 
 ## 0. Overall Pipeline
   ![overview](https://github.com/user-attachments/assets/434cf54f-593d-4cc4-90be-4a8c56e78969)

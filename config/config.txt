@@ -4,7 +4,7 @@ dataset_folder = /code/SHeRLoc/datasets/HeRCULES
 
 [TRAIN]
 num_workers = 1
-batch_size = 20
+batch_size = 200
 
 lr = 1e-3
 epochs = 20

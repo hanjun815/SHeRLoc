@@ -57,7 +57,7 @@ export PYTHONPATH=$PYTHONPATH:/code/SHeRLoc
 
 **2-3. Download the Preprocessed HeRCULES Dataset**
 
-[**[Download HeRCULES Dataset]**](https://drive.google.com/drive/folders/1lrJg7MMfBzEEEyTwor3j6JysxaGwnR5i)
+[**[Download HeRCULES Dataset]**](https://drive.google.com/drive/folders/1boKD5HkCsOIwKvtyGCioR59kolrTh_rB?usp=drive_link)
 
 Move the downloaded `tar.gz` to each sequence directory inside `SHeRLoc/datasets/HeRCULES`, then extract it.
 ```

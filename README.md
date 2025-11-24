@@ -1,5 +1,8 @@
-# SHeRLoc: Synchronized Heterogeneous Radar Place Recognition for Cross-Modal Localization
-**[IEEE RA-L 2025]** This repository is the official repository for SHeRLoc [**[Paper]**](https://arxiv.org/pdf/2506.15175) [**[Project]**](https://sites.google.com/view/radar-sherloc).
+<p align="center">
+  <h1 align="center"> <b><em>SHeRLoc</em></b> : Synchronized Heterogeneous Radar Place Recognition for Cross-Modal Localization
+ </h1>
+
+ **[IEEE RA-L 2025]** This repository is the official repository for SHeRLoc [**[Paper]**](https://arxiv.org/pdf/2506.15175) [**[Project]**](https://sites.google.com/view/radar-sherloc).
 
 [Hanjun Kim](https://hanjun815.github.io/), [Minwoo Jung](https://scholar.google.co.kr/citations?user=aKPTi7gAAAAJ&hl=ko), [Wooseong Yang](https://scholar.google.co.kr/citations?hl=ko&user=lh2KUKMAAAAJ), [Ayoung Kim](https://scholar.google.co.kr/citations?user=7yveufgAAAAJ&hl=ko)†
 
